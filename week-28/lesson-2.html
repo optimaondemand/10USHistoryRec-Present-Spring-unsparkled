@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Containment | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">The Postwar Order and Containment</div>
+  </div>
+</div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">9 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">Containment</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">Berlin Airlift<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ber-LIN AIR-lift')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ber-LIN AIR-lift</span>The American and British effort in 1948 and 1949 to supply West Berlin by air after the Soviet Union cut off all roads, rails, and canals into the city.</span></span></li>
+    <li><span class="gloss" tabindex="0">Central Intelligence Agency<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SEN-trul in-TEL-uh-jents AY-jen-see')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SEN-trul in-TEL-uh-jents AY-jen-see</span>The U.S. agency created in 1947 to gather and study information from other countries. It is often called the CIA.</span></span></li>
+    <li><span class="gloss" tabindex="0">containment<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'kun-TAYN-ment')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kun-TAYN-ment</span>The American strategy of holding back the spread of Soviet power without starting a war.</span></span></li>
+    <li><span class="gloss" tabindex="0">George F. Kennan<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'jorj eff KEN-un')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">jorj eff KEN-un</span>An American diplomat in Moscow whose 1946 cable and 1947 article shaped the strategy of containment.</span></span></li>
+    <li><span class="gloss" tabindex="0">Mao Zedong<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'mow dzuh-DONG')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">mow dzuh-DONG</span>The communist leader who won China's civil war in 1949 and ruled the country until 1976.</span></span></li>
+    <li><span class="gloss" tabindex="0">Marshall Plan<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MAR-shul plan')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MAR-shul plan</span>The American program, begun in 1948, that gave about thirteen billion dollars to help rebuild the economies of Western Europe.</span></span></li>
+    <li><span class="gloss" tabindex="0">National Security Act<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'NASH-uh-nul sih-KYOOR-ih-tee akt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NASH-uh-nul sih-KYOOR-ih-tee akt</span>The 1947 law that created the Department of Defense, the National Security Council, and the CIA.</span></span></li>
+    <li><span class="gloss" tabindex="0">NATO<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'NAY-toh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NAY-toh</span>The North Atlantic Treaty Organization, a military alliance formed in 1949 in which an attack on one member is treated as an attack on all.</span></span></li>
+    <li><span class="gloss" tabindex="0">NSC-68<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'en-es-see SIX-tee-ayt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">en-es-see SIX-tee-ayt</span>A secret 1950 government paper that called for a large increase in American military spending to face the Soviet Union.</span></span></li>
+    <li><span class="gloss" tabindex="0">Truman Doctrine<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TROO-mun DOK-trin')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TROO-mun DOK-trin</span>President Truman's 1947 promise to support free peoples resisting takeover by armed minorities or outside pressure.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>By early 1947, American leaders needed a plan. They did not want another world war, and they did not want to hand Europe to Stalin. They also could not keep fighting with troops they had already sent home. The plan they chose came from a quiet diplomat named <span class="gloss" tabindex="0">George F. Kennan<span class="gloss-tip"><span class="gloss-pron">jorj eff KEN-un</span>An American diplomat in Moscow whose 1946 cable and 1947 article shaped the strategy of containment.</span></span>. Kennan had spent years in Moscow, spoke Russian, and had read the country's history and its writers. In February 1946, he sent the State Department a very long cable, which you will read this week. It began with a small question. The Treasury Department had asked the embassy why the Soviets had refused to join the new world financial institutions. Kennan, who was running the embassy while the ambassador was away, answered with far more than anyone expected. Some weeks earlier, Stalin had given a speech in which he said that the capitalist system made wars likely, and Kennan's cable landed in a Washington ready to listen. The Secretary of the Navy, James Forrestal, had copies made and passed them around the government. He argued that Soviet leaders, driven by an old Russian sense of insecurity as well as by communist belief, believed they were in a permanent struggle with the capitalist world, and that they would push forward wherever nobody stopped them. But he also believed that they were cautious, and that they would back away when they met firm resistance.</p>
+<p>In July 1947, Kennan published his argument in a magazine under the signature "X." He said that the United States should follow a policy of "long-term, patient but firm and vigilant <span class="gloss" tabindex="0">containment<span class="gloss-tip"><span class="gloss-pron">kun-TAYN-ment</span>The American strategy of holding back the spread of Soviet power without starting a war.</span></span>" of Soviet expansion. He wrote that the Americans should meet Soviet pressure with firm counterpressure at one point after another, wherever it appeared. The article appeared in the magazine Foreign Affairs. Kennan signed it with the letter X because he was a government official, but within weeks everyone in Washington knew who the author was. Containment did not mean rolling back communism where it already ruled, and it did not mean war. The Americans would not try to free the countries Stalin already held. They would try to stop him from taking more. It meant holding the line, and waiting. Kennan thought that a system built on fear and force would eventually weaken from the inside. He was right, though it took more than forty years.</p>
+<p>The first test came in Greece and Turkey. Britain had been helping the Greek government fight a communist rebellion, and Turkey was under Soviet pressure, since the Soviets wanted a share in controlling the narrow straits that link the Black Sea to the Mediterranean. In Greece, the rebels fought from the mountains of the north. In February 1947, after a bitter winter that had strained the British economy to its limit, the British told Washington that they were too poor to continue. Dean Acheson, an Under Secretary of State, took the problem to congressional leaders in a meeting with the president. He warned that if Greece fell, the trouble could spread from country to country, as one rotten apple spoils a barrel. Truman acted. On March 12, 1947, he asked Congress for four hundred million dollars in aid and made a larger promise: that the United States would "support free peoples who are resisting attempted subjugation by armed minorities or by outside pressures." This promise became the <span class="gloss" tabindex="0">Truman Doctrine<span class="gloss-tip"><span class="gloss-pron">TROO-mun DOK-trin</span>President Truman's 1947 promise to support free peoples resisting takeover by armed minorities or outside pressure.</span></span>. Senator Arthur Vandenberg, a leading Republican and former isolationist, told Truman that to win Congress he would have to "scare hell out of the American people." Truman did, and Congress passed the aid in May, by wide margins. That mattered, because the new Republican Congress, elected in 1946, had promised to cut spending.</p>
+<div class="optima-widget" data-wid="m10-2-1" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">In February 1947, Britain told Washington that it was too poor to keep helping Greece, and Turkey was under Soviet pressure.</div><details class="ow-reveal"><summary>What might have happened if the United States had said no? Decide first and jot down two possible results before you open this.</summary><div class="ow-reveal-body">The Greek government would have been fighting a rebellion without its main helper, and Turkey would have faced Soviet pressure alone. Other results were possible too, and we cannot know how things would have turned out. This is reasoning from what we know, not a certain result.</div></details><button class="widget-reset">Reset</button></div>
+<p>Aid to two countries was only the beginning. Europe was hungry, cold, and broke, and many Europeans were voting for communists in elections. Secretary of State George Marshall, the general who had directed the army's war effort, announced a much bigger idea in a Harvard speech in June 1947. The United States would help pay for the rebuilding of Europe, if Europeans would plan it together. The speech was short, and it did not name the Soviet Union. Britain's foreign secretary, Ernest Bevin, heard about it on the radio and moved at once, together with France, to organize a reply. The Europeans met in Paris to draw up their needs, and the Soviet foreign minister, Molotov, came and then walked out of the talks. Sixteen nations eventually took part. The <span class="gloss" tabindex="0">Marshall Plan<span class="gloss-tip"><span class="gloss-pron">MAR-shul plan</span>The American program, begun in 1948, that gave about thirteen billion dollars to help rebuild the economies of Western Europe.</span></span> provided about thirteen billion dollars between 1948 and 1952, mostly as grants. Britain, France, and West Germany received the most. Much of the money was spent on American food, fuel, and machinery, which helped American farmers and factories too. Congress hesitated until the communist takeover in Czechoslovakia in February 1948 convinced many members to vote yes. Stalin refused to take part and forced the countries he controlled to refuse too. The Marshall Plan worked. Western European factories started up again, trade grew, and communist parties lost ground. A Marshall Plan office, led by a businessman named Paul Hoffman, decided how the money was divided and spent. It was an unusual moment in history: the strongest country in the world used its wealth to rebuild its former enemies as well as its friends.</p>
+<p>At home, Congress reorganized the government for a long struggle. The <span class="gloss" tabindex="0">National Security Act<span class="gloss-tip"><span class="gloss-pron">NASH-uh-nul sih-KYOOR-ih-tee akt</span>The 1947 law that created the Department of Defense, the National Security Council, and the CIA.</span></span> of 1947 created the Department of Defense to unify the armed forces, a National Security Council, headed by the president and made up of his top foreign policy and defense officials, to advise him, and the <span class="gloss" tabindex="0">Central Intelligence Agency<span class="gloss-tip"><span class="gloss-pron">SEN-trul in-TEL-uh-jents AY-jen-see</span>The U.S. agency created in 1947 to gather and study information from other countries. It is often called the CIA.</span></span> to gather information abroad. The same law made the Air Force a separate service, and it gave the CIA no police powers at home. A republic had never kept this kind of permanent machinery in peacetime, and some Americans worried about what it meant for liberty.</p>
+<p>The next test was Berlin. The city lay more than a hundred miles inside the Soviet zone of Germany, but it was divided into four sectors, and the Western powers held three of them. In June 1948, the Western zones began to share a new currency, and four days later Stalin cut off every road, rail line, and canal into West Berlin. About two million people in the city had food for only a few weeks. The Soviets offered food to West Berliners who would register in the Soviet sector, but very few did. General Lucius Clay, the American commander in Germany, wanted to stand firm, and he argued that if the West gave up Berlin, western Germany would be next. Truman rejected a withdrawal, and he rejected an attempt to force a road through with troops, which might have started a war.</p>
+<p>Instead, American and British pilots flew supplies in. The Western powers had an agreement allowing them to fly through three air corridors, and the Soviets never shot at the planes. The planes carried food and, as winter came, coal. The <span class="gloss" tabindex="0">Berlin Airlift<span class="gloss-tip"><span class="gloss-pron">ber-LIN AIR-lift</span>The American and British effort in 1948 and 1949 to supply West Berlin by air after the Soviet Union cut off all roads, rails, and canals into the city.</span></span> lasted for more than ten months, and at its height a plane landed in Berlin about every minute. In all, the airlift took more than a quarter of a million flights. One American pilot, Lieutenant Gail Halvorsen, began dropping handkerchief parachutes with candy for the city's children, whose nickname for the planes was "raisin bombers," and soon schoolchildren in the United States were mailing him sweets to drop. Many of the people being fed had been enemies of the United States only three years earlier. In May 1949, Stalin gave up the blockade, though the planes kept flying until September to build up a stock of supplies in case it began again. It was a victory for the policy: the West had held its ground without firing a shot.</p>
+<p>The Berlin crisis also pushed Americans to take a step that George Washington had warned against. In April 1949, the United States joined eleven other countries, including Canada, Britain, France, and Italy, in the North Atlantic Treaty. The treaty was signed in Washington on April 4, 1949. The Europeans were asking for it. In 1948, Britain, France, and three small neighbors had signed a defense pact of their own, and they urged Washington to join. The treaty created <span class="gloss" tabindex="0">NATO<span class="gloss-tip"><span class="gloss-pron">NAY-toh</span>The North Atlantic Treaty Organization, a military alliance formed in 1949 in which an attack on one member is treated as an attack on all.</span></span>, the North Atlantic Treaty Organization. Its key promise was that an attack on one member would be treated as an attack on all. Each member would decide for itself what action to take, a point meant to reassure senators that Congress would still have its say about war. A year earlier, the Senate had paved the way with a resolution by Vandenberg that favored joining such alliances. The Senate approved it in July 1949, by 82 to 13. It was the first time since the French alliance of 1778 that the United States had made a binding military alliance in peacetime. Supporters argued that war was more likely without the alliance. Opponents, including Senator Robert Taft of Ohio, argued that it risked dragging the country into wars that Congress had not chosen.</p>
+<div class="optima-widget ow-scale" data-wid="m10-2-2" data-ra-skip><div class="widget-kicker">&#9889; WHERE WOULD YOU PLACE IT?</div><div class="widget-question">How united was the Senate behind the 1949 treaty that joined the United States to eleven other nations?</div><div class="widget-row" data-correct="2" data-fb="Yes. The vote was 82 to 13, and some senators feared being dragged into wars Congress had not chosen." data-hint="Think about the vote count and about what the opponents said."><div class="widget-options"><button data-choice="0" data-fb="Not quite. Some senators had real objections.">Everyone agreed</button><button data-choice="1" data-fb="Not quite. Thirteen senators voted no.">Nearly everyone agreed</button><button data-choice="2" data-fb="Yes. The vote was 82 to 13, and some senators feared being dragged into wars Congress had not chosen.">A large majority agreed, with real objections</button><button data-choice="3" data-fb="Not quite. The treaty passed by a wide margin.">About half agreed</button><button data-choice="4" data-fb="Not quite. The treaty passed by a wide margin.">Most were opposed</button></div></div><button class="widget-reset">Reset</button></div>
+<p>Late in 1949, two shocks hit within weeks of each other. In August, the Soviet Union tested its own atomic bomb, years before most experts had expected. An American plane collecting air samples over the Pacific found traces of radioactivity, and scientists worked out that the Soviets had set off a bomb. On September 23, Truman told the American people. For four years, the United States had been the only nation with the bomb, and many Americans had counted on that to keep them safe.</p>
+<p>In October, the communists led by <span class="gloss" tabindex="0">Mao Zedong<span class="gloss-tip"><span class="gloss-pron">mow dzuh-DONG</span>The communist leader who won China's civil war in 1949 and ruled the country until 1976.</span></span> won the civil war in China, which meant that the world's most populous country was now communist. China had fought on the American side in the war, and many Americans thought of it as a friend they had helped. Mao proclaimed the People's Republic of China in Beijing on October 1, and the defeated Nationalist government under Chiang Kai-shek fled to the island of Taiwan. Chiang's government had lost the trust of many Chinese as prices soared and corruption spread, even though the United States had sent it large amounts of aid. Many Americans asked who had "lost" China, and some critics in Congress blamed the administration for not doing more to help Chiang. The truth was that the United States had never had the power to decide the outcome, but the question became a political weapon at home.</p>
+<p>Truman asked his advisers to rethink strategy. Their answer, in April 1950, was a secret paper called <span class="gloss" tabindex="0">NSC-68<span class="gloss-tip"><span class="gloss-pron">en-es-see SIX-tee-ayt</span>A secret 1950 government paper that called for a large increase in American military spending to face the Soviet Union.</span></span>. Paul Nitze, who now ran the State Department's planning office, wrote most of it. It said that the Soviet Union was determined to dominate the world, and that the United States should greatly increase its military spending. It said that the Soviet Union and its allies were building up their armed forces faster than the free world was, and that the gap had to be closed. Truman worried about the cost, and he asked for estimates instead of approving it. The paper was not made public for many years. Within three months of its being delivered, the Korean War began, and the argument for it seemed proven.</p>
+<div class="optima-widget ow-seq" data-wid="m10-2-3" data-ra-skip data-n="5" data-fb="That is the order. Each step built on the one before, from 1947 to 1950." data-hint="Start with the year 1947 and move forward one year at a time."><div class="widget-kicker">&#9889; PUT IT IN ORDER</div><div class="widget-question">Put these events in order, from earliest to latest. Tap them one at a time.</div><div class="widget-options ow-seq-pool"><button data-pos="1">Truman asks Congress for aid to Greece and Turkey</button><button data-pos="2">A secretary of state proposes a plan at Harvard to help rebuild Europe</button><button data-pos="3">Stalin cuts off the roads, rails, and canals into West Berlin</button><button data-pos="4">Twelve nations sign a treaty to defend one another</button><button data-pos="5">A secret paper urges a much larger military budget</button></div><ol class="ow-seq-line"></ol><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>Was containment wise? Its defenders say that it solved the two first-order problems that every state faces. It protected the country against attack, and it did so without a third world war. It rebuilt the free economies of Europe, and those economies became rich trading partners. Its critics offer several arguments. Some say that the Soviet threat was overstated, and that the United States turned a rivalry into a permanent confrontation. Kennan himself later said that his ideas had been read as mostly military when he had meant them to be mostly political. Others say that containment gave the president too much power to act without Congress. You will weigh these views in this week's discussion. Notice, as you do, how many different outcomes were possible. If Truman had given up on Berlin, or if Congress had refused Greece, the map of Europe might look very different today.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain the strategy of containment and the reasoning behind it</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe the Truman Doctrine, the Marshall Plan, the Berlin Airlift, and NATO as parts of one policy</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> evaluate whether containment was prudent or provocative</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><a class="prev" href="primary-source-1.html"><div class="seq-kicker">&larr; Previous</div><div class="seq-label">George Kennan, The Long Telegram</div></a><a class="next" href="primary-source-2.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">Harry S. Truman, Address to Congress (The Truman Doctrine)</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; Containment</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>
