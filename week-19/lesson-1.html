@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The League Rejected, 1919 to 1922 | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Week</div>
+    <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Week 19</div>
+  </div>
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson 1.2</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">The League Rejected and the Red Scare</div>
+  </div>
+</div>
+<div class="back-to-map"><a href="module-map.html">&larr; Back to this week's Module Map</a></div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON 1.2<span class="time-pill">8 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">The League Rejected, 1919 to 1922</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">armistice<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'AR-mih-stis')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AR-mih-stis</span>An agreement to stop fighting. The Armistice of November 11, 1918, ended the Great War's fighting but did not settle the peace.</span></span></li>
+    <li><span class="gloss" tabindex="0">Article 10<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'AR-tih-kul ten')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AR-tih-kul ten</span>The part of the League of Nations Covenant that promised members would protect one another against attack. Senator Lodge feared it could pull the United States into war without a vote of Congress.</span></span></li>
+    <li><span class="gloss" tabindex="0">collective security<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'kuh-LEK-tiv sih-KYOOR-ih-tee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kuh-LEK-tiv sih-KYOOR-ih-tee</span>The idea that nations should protect one another from attack by promising to act together against an aggressor.</span></span></li>
+    <li><span class="gloss" tabindex="0">Fourteen Points<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'FOR-teen points')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FOR-teen points</span>President Wilson's January 1918 plan for peace. The last point called for a league of nations.</span></span></li>
+    <li><span class="gloss" tabindex="0">Henry Cabot Lodge<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'HEN-ree KAB-ut loj')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HEN-ree KAB-ut loj</span>The Massachusetts senator who led Senate opposition to the Treaty of Versailles without changes. He chaired the Foreign Relations Committee.</span></span></li>
+    <li><span class="gloss" tabindex="0">irreconcilables<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ih-REK-un-sy-luh-bulz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ih-REK-un-sy-luh-bulz</span>The senators who opposed joining the League of Nations on any terms.</span></span></li>
+    <li><span class="gloss" tabindex="0">League of Nations<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'leeg uv NAY-shunz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">leeg uv NAY-shunz</span>The international organization created by the Treaty of Versailles to keep the peace. The United States never joined it.</span></span></li>
+    <li><span class="gloss" tabindex="0">normalcy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'NOR-mul-see')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NOR-mul-see</span>Warren Harding's word for a calm return to ordinary life after the war and years of reform.</span></span></li>
+    <li><span class="gloss" tabindex="0">ratify<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'RAT-ih-fy')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">RAT-ih-fy</span>To give official approval. The Senate must approve a treaty by a two-thirds vote to ratify it.</span></span></li>
+    <li><span class="gloss" tabindex="0">reservations<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'rez-er-VAY-shunz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">rez-er-VAY-shunz</span>Changes or conditions that the Senate attaches to a treaty before it will approve it.</span></span></li>
+    <li><span class="gloss" tabindex="0">Treaty of Versailles<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TREE-tee uv ver-SY')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TREE-tee uv ver-SY</span>The 1919 treaty that ended the Great War with Germany. It blamed Germany for the war and created the League of Nations.</span></span></li>
+    <li><span class="gloss" tabindex="0">Warren G. Harding<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'WOR-en jee HAR-ding')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">WOR-en jee HAR-ding</span>The Republican who won the 1920 presidential election by promising a return to normalcy. He died in office in 1923.</span></span></li>
+    <li><span class="gloss" tabindex="0">Washington Naval Conference<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'WASH-ing-tun NAY-vul KON-fer-uns')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">WASH-ing-tun NAY-vul KON-fer-uns</span>The 1921 to 1922 meeting where the great naval powers agreed to limit the size of their battleship fleets.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>On November 11, 1918, the guns of the Great War fell silent. The <span class="gloss" tabindex="0">Armistice<span class="gloss-tip"><span class="gloss-pron">AR-mih-stis</span>An agreement to stop fighting. The Armistice of November 11, 1918, ended the Great War's fighting but did not settle the peace.</span></span>, signed in a railway car in a French forest, stopped the fighting, but it did not write the peace. That job fell to President Woodrow Wilson, and he did something no sitting president had ever done. He sailed to Europe to join the peace talks in person, landing in France in mid-December. Crowds in Paris, London, and Rome cheered him as a hero. Wilson carried a plan, the <span class="gloss" tabindex="0">Fourteen Points<span class="gloss-tip"><span class="gloss-pron">FOR-teen points</span>President Wilson's January 1918 plan for peace. The last point called for a league of nations.</span></span>, which he had announced to Congress in January 1918. The last point called for a "general association of nations" to keep the peace. That idea became the <span class="gloss" tabindex="0">League of Nations<span class="gloss-tip"><span class="gloss-pron">leeg uv NAY-shunz</span>The international organization created by the Treaty of Versailles to keep the peace. The United States never joined it.</span></span>.</p>
+<p>The peace conference opened in Paris in January 1919, and the real decisions were made by four men: Wilson; David Lloyd George, the prime minister of Britain; Vittorio Orlando of Italy; and Georges Clemenceau, the prime minister of France. They met behind closed doors, day after day, while the smaller nations waited outside. Clemenceau was nicknamed the Tiger, and he had his reasons for being hard. In his lifetime, German armies had marched into France twice, and he meant to make sure they never did so again. Wilson's country lay across an ocean and had seen no fighting on its own soil. That made it easier for him to speak of a peace for the whole world.</p>
+<p>The League was meant to work like a promise among neighbors. Its Covenant, or founding document, asked members to settle quarrels by talking, to wait before going to war, and to act together against any nation that attacked another. A member that went to war in defiance of the rules faced a cutoff of trade with every other member. Every member would have a seat in an Assembly, and the great powers would sit on a smaller Council. Its home would be Geneva, in Switzerland. Wilson did not leave the writing to others. He chaired the commission that drafted the Covenant, and he insisted that it be built into the peace treaty itself. He cared about it more than about any other part of the peace.</p>
+<p>Wilson was a former college president and a scholar of government. He was brilliant and sincere, and he also had a stubborn streak. He disliked giving ground once he believed he was right. At Paris, he won the League, but he gave up much else to get it. Britain and France wanted to punish Germany and make it pay. The <span class="gloss" tabindex="0">Treaty of Versailles<span class="gloss-tip"><span class="gloss-pron">TREE-tee uv ver-SY</span>The 1919 treaty that ended the Great War with Germany. It blamed Germany for the war and created the League of Nations.</span></span>, signed on June 28, 1919, blamed Germany for the war and charged it heavy payments. The place and the date were chosen with care. The signing took place in the Hall of Mirrors at the palace of Versailles, the same room where, in 1871, a victorious Germany had proclaimed its empire after beating France. June 28 was also five years to the day since the murder of Archduke Franz Ferdinand, the killing that had set off the war. Wilson tied the League to the treaty itself, so the Senate could not approve one without the other. It was a choice that would be tested in a different building, an ocean away.</p>
+<div class="optima-widget ow-reflect" data-wid="m1-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Think about a time you wanted something so much that you gave up other things to get it. Looking back, how did it feel? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="Sometimes the thing we want most really is worth the cost. Keep that feeling in mind as you read what Wilson gave up to win the League, and what it cost him later.">It was worth it</button><button data-response="Hindsight is clear. Wilson made his choices at Paris without knowing how the Senate would vote. Notice what he could not see yet.">I wish I had waited</button><button data-response="Holding firm can be a strength. As you read on, weigh when firmness helps and when it leaves no room to bargain.">I would do it again</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>Under the Constitution, a treaty needs the approval of two-thirds of the Senate. To <span class="gloss" tabindex="0">ratify<span class="gloss-tip"><span class="gloss-pron">RAT-ih-fy</span>To give official approval. The Senate must approve a treaty by a two-thirds vote to ratify it.</span></span> a treaty means to give that approval. The Senate had ninety-six members, so if all of them voted, a treaty needed sixty-four yes votes. Wilson, a Democrat, faced a Senate where Republicans held a narrow majority after the 1918 elections, forty-nine seats to forty-seven. The man who led the Republican side was Senator <span class="gloss" tabindex="0">Henry Cabot Lodge<span class="gloss-tip"><span class="gloss-pron">HEN-ree KAB-ut loj</span>The Massachusetts senator who led Senate opposition to the Treaty of Versailles without changes. He chaired the Foreign Relations Committee.</span></span> of Massachusetts, chairman of the Foreign Relations Committee. Lodge was a historian, a writer, and a hard political fighter. He and Wilson disliked each other deeply, and the feeling was old. When the treaty reached the Senate in July, Lodge used his power as chairman to slow everything down. He had the whole text read aloud to his committee, hundreds of pages of it, which took about two weeks, and then he held hearings for weeks more. Every day of delay gave the opposition more time to organize.</p>
+<p>The Senate split three ways. About a dozen senators, called <span class="gloss" tabindex="0">irreconcilables<span class="gloss-tip"><span class="gloss-pron">ih-REK-un-sy-luh-bulz</span>The senators who opposed joining the League of Nations on any terms.</span></span>, opposed the League on any terms. Two of the best known were William Borah of Idaho and Hiram Johnson of California, both famous speakers who carried their case to crowds across the country. Most Democrats stood with Wilson. In the middle were senators who would accept the League if it came with changes. Lodge led this group. He drew up a list of <span class="gloss" tabindex="0">reservations<span class="gloss-tip"><span class="gloss-pron">rez-er-VAY-shunz</span>Changes or conditions that the Senate attaches to a treaty before it will approve it.</span></span>, which are changes or conditions attached to a treaty. There were fourteen of them, a number many people took as a jab at Wilson's Fourteen Points. The most important one dealt with <span class="gloss" tabindex="0">Article 10<span class="gloss-tip"><span class="gloss-pron">AR-tih-kul ten</span>The part of the League of Nations Covenant that promised members would protect one another against attack. Senator Lodge feared it could pull the United States into war without a vote of Congress.</span></span> of the Covenant. Article 10 promised that members would protect one another from attack, an idea called <span class="gloss" tabindex="0">collective security<span class="gloss-tip"><span class="gloss-pron">kuh-LEK-tiv sih-KYOOR-ih-tee</span>The idea that nations should protect one another from attack by promising to act together against an aggressor.</span></span>. Lodge feared that this promise could drag the nation into a foreign war without a vote of Congress. Under the Constitution, only Congress can declare war. For Lodge, this was no small point. It went to the heart of who rules in a republic. The arithmetic mattered too. A reservation needed only a simple majority, while the treaty itself still needed two-thirds. Wilson's Democrats could not reach sixty-four votes alone. To win, he needed at least some of Lodge's group.</p>
+<p>In August, Wilson tried to answer the doubts face to face. He invited the Foreign Relations Committee to the White House and spent hours answering questions. The hardest question was about Article 10. If a member were attacked, would the United States have to send its army? Wilson said that the League could only advise, and that the nation would be bound by its honor, a moral duty and not a legal one. To Lodge and his allies, that answer did not calm the worry. It sharpened it. A promise of honor, made without any vote by Congress, was exactly the danger they had named.</p>
+<p>Wilson believed the American people stood with him, and in September 1919 he set out to prove it. He took a speaking tour of the West, riding more than eight thousand miles by train. There was no radio to carry his voice across the country, so he had to go to the people, city by city, beginning in Columbus, Ohio. He spoke almost every day, sometimes twice, in auditoriums and ballparks and from the back platform of his railroad car. He was already worn out from the long months in Paris, and he suffered from terrible headaches. On September 25, after a speech in Pueblo, Colorado, he broke down and the tour ended. The Pueblo speech was one of his best, and he came close to tears at the end as he spoke of American soldiers buried in France. That night, on the train, he could not sleep. In the morning he told his secretary that he had gone to pieces. The rest of the tour was canceled, and the train turned back toward Washington.</p>
+<p>A week later, on October 2, in the White House, he suffered a severe stroke that paralyzed his left side. His wife, Edith, found him on the floor of his bathroom. For months, few outsiders saw him, and the public was told only that he was exhausted. His wife and his doctor controlled who could. Senators who wanted to know his wishes about the treaty had to learn them secondhand. The president was never again fully able to lead the fight.</p>
+<p>The Senate voted on November 19, 1919. First came the treaty with Lodge's reservations. Wilson urged his Democratic allies to vote no, sending word through the Democratic leader, Senator Gilbert Hitchcock of Nebraska, because he thought the changes would weaken the League, and the treaty failed, 39 votes to 55. The no votes came from two groups that agreed on nothing else: Wilson's loyal Democrats, who wanted the treaty without changes, and the irreconcilables, who wanted no treaty at all. Next came the treaty with no changes. Lodge's followers and the irreconcilables voted no, and it failed too, by 38 to 53. A third try in March 1920 also fell short of two-thirds.</p>
+<div class="optima-widget ow-select" data-wid="m1-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; THE SENATE FIGHT</div><div class="widget-question">Check how well you followed the Senate fight.</div><div class="widget-row" data-correct="2" data-fb="Right. The middle group would accept the League if changes came with it." data-hint="Think about who would say yes, but only with conditions."><div class="widget-row-prompt">1. A senator wants the League, but only if changes come with it. Which group does this senator belong to?</div><div class="widget-options"><button data-choice="0">Wilson&#x27;s Democratic allies</button><button data-choice="1">Senators who opposed the League on any terms</button><button data-choice="2">The middle group led by Lodge</button></div></div><div class="widget-row" data-correct="1" data-fb="Right. He thought the changes would weaken the League, and the treaty failed." data-hint="Remember what Wilson feared the changes would do."><div class="widget-row-prompt">2. Wilson told his Democratic allies how to vote on the treaty with changes attached. What did he tell them?</div><div class="widget-options"><button data-choice="0">Vote yes, to save at least part of the League</button><button data-choice="1">Vote no, because he thought the changes would weaken the League</button><button data-choice="2">Stay home, so the vote would not count</button></div></div><div class="widget-row" data-correct="0" data-fb="Right. A treaty needs two-thirds of the Senate, and the third try fell short too." data-hint="Recall how many votes a treaty needs."><div class="widget-row-prompt">3. In March 1920 the Senate tried a third time. What happened?</div><div class="widget-options"><button data-choice="0">It again fell short of two-thirds</button><button data-choice="1">It passed by a narrow margin</button><button data-choice="2">Wilson pulled it back before any vote</button></div></div><button class="widget-reset">Reset</button></div>
+<p>The third try came closest. Through the winter, senators from both parties met to look for a compromise, and Wilson would not give them one. In March, the treaty with Lodge's changes won 49 votes to 35, seven short of what it needed. About twenty Democrats had by then broken with the president and voted for it. In November, they had followed him. By March, they had decided that a League with changes was better than none.</p>
+<p>Many historians think the League could have passed if Wilson had accepted a deal. But nobody can be sure. Perhaps Lodge would have kept adding demands. Perhaps a healthy Wilson would have bargained, as he had in Paris. Perhaps a sick Wilson simply could not bend. The outcome depended on stubborn men, bad health, and old grudges. It was not written in advance, and a few changed choices might have changed it.</p>
+<p>The voters had their say in 1920. Wilson had asked that the election be treated as a solemn referendum on the League. Republican <span class="gloss" tabindex="0">Warren G. Harding<span class="gloss-tip"><span class="gloss-pron">WOR-en jee HAR-ding</span>The Republican who won the 1920 presidential election by promising a return to normalcy. He died in office in 1923.</span></span>, a senator from Ohio and a small-town newspaper publisher, promised a "return to <span class="gloss" tabindex="0">normalcy<span class="gloss-tip"><span class="gloss-pron">NOR-mul-see</span>Warren Harding's word for a calm return to ordinary life after the war and years of reform.</span></span>," a calmer life after years of war and reform. He beat Democrat James M. Cox in a landslide, taking more than sixty percent of the vote and 404 electoral votes to Cox's 127. Cox's running mate, a young New Yorker named Franklin D. Roosevelt, had campaigned for the League. The League had become tied to Wilson's name, and many voters were tired of crusades. Voters had many reasons to choose Harding, and Harding's own words about the League were vague, so nobody can say how many meant their ballots as a vote against it. The United States never joined the League of Nations.</p>
+<p>Staying out of the League did not mean hiding from the world. In July 1921, Congress ended the state of war with Germany, and Harding signed the resolution. That same year, Secretary of State Charles Evans Hughes invited the great naval powers to the <span class="gloss" tabindex="0">Washington Naval Conference<span class="gloss-tip"><span class="gloss-pron">WASH-ing-tun NAY-vul KON-fer-uns</span>The 1921 to 1922 meeting where the great naval powers agreed to limit the size of their battleship fleets.</span></span>. Hughes opened it with a stunning offer. He did not speak in general terms. He named ships, one by one, that his own country was ready to give up. The United States would scrap ships it was building if Britain and Japan did the same. The treaty that followed set a ratio for the largest warships. For every five tons of battleships Britain or the United States kept, Japan could keep three, and France and Italy were given smaller shares. The Senate approved it in 1922. It was a major agreement made outside the League. The Republic would work with other nations, but on its own terms, treaty by treaty, with the Senate watching.</p>
+<div class="ow-group" data-wid="m1-1-3" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did Hughes offer when the naval conference opened?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">The United States would scrap ships it was building if Britain and Japan did the same.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">How did Wilson&#x27;s effort to win the public to his side come to an end?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">On September 25, after a speech in Pueblo, Colorado, he broke down, and a week later he suffered a severe stroke. He was never again fully able to lead the fight.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Where did the naval agreement come from, since the nation stayed out of the League?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">From a conference that Hughes invited the naval powers to attend. The Senate approved the treaty in 1922.</div></div><button class="widget-reset">Reset</button></div></div>
+<p>Two other treaties came out of the same conference. In one, the United States, Britain, France, and Japan promised to respect one another's island possessions in the Pacific. In the other, nine nations promised to respect China's independence and to keep its markets open to all. Notice what these agreements did not contain. None of them promised that the United States would fight for anyone. That was the kind of promise Lodge had feared in Article 10, and it was missing here.</p>
+<p>Was this a wise choice? Defenders of Lodge said a republic must keep the power over war and peace in the hands of its own elected representatives. Critics said America had helped win the war and then walked away from the peace, leaving Britain and France to carry a burden they could not carry alone. Both arguments have force. A nation's first duty is its own defense, and defense depends on a government that can deliberate and act. But a world without American weight in its councils proved less stable than Wilson had hoped. The price of that choice would not come due for another twenty years.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain why the Senate rejected the Treaty of Versailles and the League of Nations, and why that outcome was not fixed in advance</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe Henry Cabot Lodge's objection to Article 10 in terms of who holds the power to declare war in a republic</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> show how the United States still took part in world affairs after 1919, using the Washington Naval Conference as evidence</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><a class="prev" href="module-map.html"><div class="seq-kicker">&larr; Previous</div><div class="seq-label">Week Module Map</div></a><a class="next" href="primary-source-1.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">Primary Source 1.3</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT &middot; Quarter 3</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Week 19 &middot; Lesson 1.2 &middot; The League Rejected, 1919 to 1922</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>
