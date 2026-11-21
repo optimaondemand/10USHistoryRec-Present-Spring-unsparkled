@@ -5,3 +5,5 @@ This repository holds the plain, unsparkled versions of the course's pages, at t
 Nothing in this repository is ever edited. Pages are added one module at a time.
 
 Added 2026-11-20: week-19 (Module 1): lesson-1, lesson-2, primary-source-1, primary-source-2 (recovered from the commits just before they were sparkled), module-map, week-wrap-up.
+
+Added 2026-11-20: week-20 (Module 2): lesson-1, lesson-2, primary-source-1, primary-source-2, module-map, week-wrap-up (copied byte for byte from the live repository before they were sparkled).

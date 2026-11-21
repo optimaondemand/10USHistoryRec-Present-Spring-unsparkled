@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Henry Ford and the Assembly Line | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">Henry Ford, Mass Production, and Credit</div>
+  </div>
+</div>
+<div class="back-to-map"><a href="module-map.html">&larr; Back to this week's Module Map</a></div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">8 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">Henry Ford and the Assembly Line</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">assembly line<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'uh-SEM-blee lyn')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">uh-SEM-blee lyn</span>A way of building something in which the product moves past workers who each stay in one place and do one small job.</span></span></li>
+    <li><span class="gloss" tabindex="0">Five-Dollar Day<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'fyv DOL-er day')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">fyv DOL-er day</span>Henry Ford's 1914 wage of five dollars a day, about double the usual factory pay. It cut worker turnover sharply.</span></span></li>
+    <li><span class="gloss" tabindex="0">Frederick W. Taylor<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'FRED-rik DUB-ul-yoo TAY-ler')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FRED-rik DUB-ul-yoo TAY-ler</span>An engineer who timed workers with a stopwatch to find the one best way to do each job. His ideas were called scientific management.</span></span></li>
+    <li><span class="gloss" tabindex="0">Henry Ford<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'HEN-ree ford')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HEN-ree ford</span>The Michigan carmaker who built the Model T and introduced the moving assembly line.</span></span></li>
+    <li><span class="gloss" tabindex="0">interchangeable parts<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'in-ter-CHAYN-juh-bul parts')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">in-ter-CHAYN-juh-bul parts</span>Pieces made so exactly alike that any one of them will fit any product of the same kind.</span></span></li>
+    <li><span class="gloss" tabindex="0">mass production<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'mas pruh-DUK-shun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">mas pruh-DUK-shun</span>Making huge numbers of identical goods cheaply, using standard parts, machines, and an assembly line.</span></span></li>
+    <li><span class="gloss" tabindex="0">Model T<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MOD-ul tee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MOD-ul tee</span>Henry Ford's tough, simple car, first sold in 1908. By 1927, fifteen million had been built.</span></span></li>
+    <li><span class="gloss" tabindex="0">scientific management<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'sy-un-TIF-ik MAN-ij-ment')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">sy-un-TIF-ik MAN-ij-ment</span>A system developed by Frederick Taylor that studied and timed each task to find the most efficient way to do it.</span></span></li>
+    <li><span class="gloss" tabindex="0">turnover<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TURN-oh-ver')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TURN-oh-ver</span>How often workers quit and must be replaced. High turnover is costly because each new worker has to be trained.</span></span></li>
+    <li><span class="gloss" tabindex="0">vertical integration<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'VER-tih-kul in-tuh-GRAY-shun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">VER-tih-kul in-tuh-GRAY-shun</span>Owning every stage of making a product, from raw materials to the finished good.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>In 1908, a new car cost far more than most families earned in a year. Cars were toys for the rich. Henry Ford wanted something different. <span class="gloss" tabindex="0">Henry Ford<span class="gloss-tip"><span class="gloss-pron">HEN-ree ford</span>The Michigan carmaker who built the Model T and introduced the moving assembly line.</span></span> was a Michigan farm boy who had trained as a machinist and an engineer. He had grown up on a farm near Dearborn, disliked the chores, and loved anything with gears. As a boy he took watches apart to see how they worked, and as a young man he left for Detroit to work in machine shops. He wanted to build a car that ordinary families could buy. In October 1908, his company released the <span class="gloss" tabindex="0">Model T<span class="gloss-tip"><span class="gloss-pron">MOD-ul tee</span>Henry Ford's tough, simple car, first sold in 1908. By 1927, fifteen million had been built.</span></span>. It was tough, simple, and easy to repair. It sat high enough to bounce over rough dirt roads. Its frame was made of a light, strong steel that was new to the car business. It cost $850. That was a fair price for the time, but it was still out of reach for many families. Ford made it his mission to push the price down.</p>
+<p>The road to that car was not smooth. In 1896, Ford built his first gasoline buggy in a brick shed behind his Detroit home, while holding a full-time job as an engineer at an electric company. Then came the failures. His first car company went under in 1901, and a second one fell apart in 1902 after he quarreled with its backers. In between, in October 1901, he drove his own racing car against Alexander Winton, the most famous racer in the country, before a crowd near Detroit. Winton's car broke down, and Ford won. The victory made his name and helped him find new investors. In 1903, he founded the Ford Motor Company, and over the next five years he built one model after another, learning from each. The Model T came out of those years of tries and failures.</p>
+<p>The car itself was plain on purpose. It had a four-cylinder engine of about twenty horsepower and a top speed of roughly forty miles per hour. It had no fuel gauge, and owners checked the tank with a stick. Its controls were a few pedals and levers that a new driver could learn in an afternoon. Most of all, it was built to be fixed at home. A farmer who understood a wrench and a pair of pliers could mend most of what went wrong, and he was used to mending his own plows and wagons. Ford was building for people who could not afford a mechanic.</p>
+<p>How did he do it? Part of the answer was <span class="gloss" tabindex="0">interchangeable parts<span class="gloss-tip"><span class="gloss-pron">in-ter-CHAYN-juh-bul parts</span>Pieces made so exactly alike that any one of them will fit any product of the same kind.</span></span>. These are pieces made so exactly alike that any one will fit any car. In an older shop, a skilled worker filed and shaped each part until it fit the car in front of him. A mechanic no longer had to file and fit each piece by hand. At Ford's plants, machines turned out the same part thousands of times, and inspectors checked each one against fixed gauges. A farmer could order a spare part from a dealer, bolt it on himself, and be back on the road. Gunmakers in New England had used the idea in the early 1800s, but no one had ever applied it on Ford's scale. The little car soon earned a nickname, the "Tin Lizzie," and a flood of jokes.</p>
+<p>But the larger part of the answer came in 1913, at Ford's plant in Highland Park, Michigan. Before then, workers had walked from car to car, building each one in a single spot. Ford's engineers tried something new. The first test was small. In the spring of 1913, they tried a moving line for the magneto, the little device that makes the engine's spark. One worker alone had needed about twenty minutes to put one together. When the job was split into small steps along a line, the time fell to about five minutes. Then they set the car's frame on a moving line and brought it to the workers. Each worker stayed in place and did one small job. The idea of a moving line had been used by Chicago meatpackers, and Ford's men borrowed it. One engineer later said the idea came from watching meat move along overhead trolleys in a Chicago slaughterhouse, where each butcher cut off one piece as the carcass passed. At Ford's plant, the order was turned around. Workers put a car together instead of taking an animal apart. The result was the <span class="gloss" tabindex="0">assembly line<span class="gloss-tip"><span class="gloss-pron">uh-SEM-blee lyn</span>A way of building something in which the product moves past workers who each stay in one place and do one small job.</span></span>. The time needed to build a car's chassis, or frame, fell from more than twelve hours to about an hour and a half.</p>
+<div class="optima-widget ow-reflect" data-wid="m2-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Think about something you use every day that was made in huge numbers, such as a phone, shoes, or a game controller. How do you feel about millions of people owning the very same thing? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="That is the heart of what Ford&#x27;s methods did. Making many identical things cut the price, and more families could buy them.">I like it, because it was cheap enough for me</button><button data-response="Many people do. As you read on, think about what was gained and what was lost when goods and jobs became so uniform.">I prefer something one of a kind</button><button data-response="Most of us don&#x27;t. Notice as you read how much of daily life depends on this way of making things.">I never thought about it</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>Ford also used ideas from an engineer named <span class="gloss" tabindex="0">Frederick W. Taylor<span class="gloss-tip"><span class="gloss-pron">FRED-rik DUB-ul-yoo TAY-ler</span>An engineer who timed workers with a stopwatch to find the one best way to do each job. His ideas were called scientific management.</span></span>. Taylor timed workers with a stopwatch and tried to find the "one best way" to do each job. At a steel company in Pennsylvania, he had studied men loading heavy bars of iron onto railroad cars, timing every motion, and he claimed that the right method and the right rest breaks could let a man load several times as much in a day. Workers disliked being timed, and in 1912 a committee of Congress held hearings on the Taylor system after a strike against it at a government arsenal. His method was called <span class="gloss" tabindex="0">scientific management<span class="gloss-tip"><span class="gloss-pron">sy-un-TIF-ik MAN-ij-ment</span>A system developed by Frederick Taylor that studied and timed each task to find the most efficient way to do it.</span></span>. Put the three ideas together, and you have <span class="gloss" tabindex="0">mass production<span class="gloss-tip"><span class="gloss-pron">mas pruh-DUK-shun</span>Making huge numbers of identical goods cheaply, using standard parts, machines, and an assembly line.</span></span>, the making of huge numbers of identical goods at low cost. The Model T's price fell below $300 in the 1920s. In 1925, the cheapest Ford sold for $260. By 1927, Ford had built fifteen million of them, and by the middle of the 1920s a finished car was rolling off the line every few seconds. He also built a giant plant at River Rouge, near Detroit, and owned the forests, mines, and ships that supplied it. At Rouge, raw materials went in at one end and finished cars came out the other. This is called <span class="gloss" tabindex="0">vertical integration<span class="gloss-tip"><span class="gloss-pron">VER-tih-kul in-tuh-GRAY-shun</span>Owning every stage of making a product, from raw materials to the finished good.</span></span>, which means controlling every stage of production from raw materials to the finished product.</p>
+<p>Each price cut set off a chain. A lower price brought more buyers. More buyers meant that machines could run all day making a single part, and the cost of each car fell. That made room for another price cut. The touring car that cost $850 in 1908 sold for $360 in 1916. By 1914, Ford's workers were building more cars than all the other American car companies put together. Ford was giving up a high profit on each car in return for selling a great many of them.</p>
+<p>Not everyone liked Ford's plan to keep cutting prices and building bigger plants. Two of his own investors, the brothers John and Horace Dodge, held shares in the company and also made parts for it. In 1916, they sued, saying that Ford was spending the company's profits on lower prices and a giant new plant instead of paying them out to the owners. In 1919, a court ordered Ford to pay a larger dividend, but it let him go ahead with his plans. The lawsuit shows what Ford was risking. A company exists to make money for its owners, and he was betting that low prices would pay off in the end.</p>
+<p>The work was not pleasant. Jobs on the line were fast, dull, and tiring. A worker did the same motion hundreds of times a day, and the line set the speed, not the worker. Many were immigrants who spoke little English. Workers quit in huge numbers, and this <span class="gloss" tabindex="0">turnover<span class="gloss-tip"><span class="gloss-pron">TURN-oh-ver</span>How often workers quit and must be replaced. High turnover is costly because each new worker has to be trained.</span></span> cost Ford money, because every new worker had to be trained. In 1913, Ford had to hire about 50,000 people to keep a workforce of about 14,000. In January 1914, Ford announced the <span class="gloss" tabindex="0">Five-Dollar Day<span class="gloss-tip"><span class="gloss-pron">fyv DOL-er day</span>Henry Ford's 1914 wage of five dollars a day, about double the usual factory pay. It cut worker turnover sharply.</span></span>. It was about double the usual factory wage, and it came with a shorter day, down from nine hours to eight. Crowds of job seekers lined up outside his gates, and in the cold some of them rioted. By some accounts, thousands of men gathered in freezing weather, and Ford's guards turned fire hoses on them to push them back. Ford said that high pay would also create customers, since workers could now afford the cars they built. His motives were mixed, and historians still debate them. What is clear is that the plan worked. Quitting dropped sharply, and Ford's rivals had to raise wages too.</p>
+<p>The high wage came with strings. At first, the full five dollars went only to workers who passed a check on their habits. Ford set up a Sociological Department. Its inspectors visited workers' homes to look at how they lived. The company also ran a school to teach English to immigrant workers. A worker who drank, kept a messy house, or lived in ways Ford disliked could lose part of the pay. Some workers accepted this as help. Many resented it as an employer reaching into their private lives. It raises an old question. How far should anyone, a company or a government, go in shaping the character of fellow citizens?</p>
+<p>Ford is a good example of how one person's strengths and weaknesses can shape an era. His virtues were real. He had imagination, he kept trying after two earlier car companies failed, and he cared about producing something ordinary people could use. But he was also stubborn. He kept building the same car long after buyers wanted more. Other companies offered color, comfort, and new styles each year. Ford held on to the Model T until 1927, when he shut his factories for months to build a new model. The shutdown began in May and idled many thousands of workers while the plants were refitted with new machines. By then, General Motors had passed him as the top seller. Ford also used his own newspaper in the early 1920s to print hateful lies about Jewish Americans, and he apologized in 1927. A fair account must record both his gifts and his faults.</p>
+<div class="ow-group" data-wid="m2-1-2" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What kept Ford going after two earlier car companies failed?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">His imagination and his wish to build something ordinary people could use. Both were real strengths.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What flaw let a rival pass him in 1927?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Stubbornness. He kept building one car long after buyers wanted color, comfort, and new styles.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Besides the factory, what did Ford&#x27;s company control at River Rouge?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">The forests, mines, and ships that supplied it.</div></div><button class="widget-reset">Reset</button></div></div>
+<p>The car changed American life. It needed steel, glass, rubber, and oil, so whole industries grew up around it. It needed paved roads, gas stations, repair shops, and roadside restaurants. By 1929, there were more than 23 million cars on American roads, about one for every five people. Farm families were no longer stuck miles from the nearest town. Women gained new freedom to travel and run errands on their own. Some Black families valued the car because it let them avoid segregated trains and buses, though finding a place to eat or sleep on the road could be hard in many parts of the country. A family could drive to church, to a market, or to a relative in the next county. Towns that sat on the new highways grew. Towns that did not were sometimes left behind. Blacksmiths, stable owners, and some railroads lost business.</p>
+<p>The car also changed what governments did. Dirt wagon roads could not carry a flood of cars. In 1916, Congress passed a law that gave money to the states for better roads, and in 1919 Oregon became the first state to tax gasoline to pay for them. Within about ten years, every state had followed. Gas taxes paid for roads, better roads sold more cars, and more cars brought in more tax. Travelers who could not afford hotels began camping beside the road, and some towns set up camping grounds for them. The car was making the country smaller, and the country was being rebuilt around it.</p>
+<div class="optima-widget ow-select" data-wid="m2-1-3" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; WHO GAINED, WHO LOST?</div><div class="widget-question">The car changed life in different ways for different people. Check each case.</div><div class="widget-row" data-correct="1" data-fb="Right. Farm families were no longer stuck miles from the nearest town." data-hint="Think about distance and how often they could travel."><div class="widget-row-prompt">1. A farm family lives miles from the nearest town in the 1920s. What did the car change most for them?</div><div class="widget-options"><button data-choice="0">They no longer needed to farm for a living</button><button data-choice="1">They were no longer stuck so far from town</button><button data-choice="2">They were forced to move into a city</button></div></div><div class="widget-row" data-correct="2" data-fb="Right. Blacksmiths, stable owners, and some railroads lost business." data-hint="Who needed horses once cars were everywhere?"><div class="widget-row-prompt">2. A blacksmith or a stable owner in a small town in the 1920s. What likely happened to the business?</div><div class="widget-options"><button data-choice="0">It grew along with the new cars</button><button data-choice="1">It stayed about the same as before</button><button data-choice="2">It lost customers</button></div></div><div class="widget-row" data-correct="0" data-fb="Right. Towns on the new highways grew, and towns that were not on them were sometimes left behind." data-hint="Think about where the travelers and trucks went."><div class="widget-row-prompt">3. Two towns, one on a new highway and one far from it. What did the lesson say often followed?</div><div class="widget-options"><button data-choice="0">The highway town grew, and the other was sometimes left behind</button><button data-choice="1">Both towns grew at the same pace</button><button data-choice="2">The town far from the highway grew faster</button></div></div><button class="widget-reset">Reset</button></div>
+<p>Did the car make Americans freer? In some ways, clearly yes. People could move, shop, work, and visit as they chose. In other ways, the story is mixed. Cars made workers dependent on factory jobs, and the assembly line took away much of the pride of craft that earlier workers felt. Both sides of the story belong in an honest account, and you will return to the question in this week's discussion.</p>
+<p>None of this was fixed in advance. If Ford's early companies had not failed, he might never have learned the lessons that produced the Model T. The race against Winton shows how thin the thread was. If Winton's car had held together that day, would the investors have come? Nobody can say. If the moving line had been tried first by a rival, a different company might have led the age. Ford was not simply carried along by large forces. He made choices, some wise and some foolish, and those choices changed the country.</p>
+<p>One problem remained, and it was a new one. The factories could now make more cars than most families could pay for in cash. The next lesson explains how Americans solved that problem, and what the solution cost them.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain how interchangeable parts, the moving assembly line, and scientific management combined to make mass production possible</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> evaluate Henry Ford's strengths and weaknesses as a leader, including the costs of his methods to workers</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe how the automobile changed the economy and everyday life by 1929</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><a class="prev" href="module-map.html"><div class="seq-kicker">&larr; Previous</div><div class="seq-label">Week Module Map</div></a><a class="next" href="primary-source-1.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">Henry Ford, My Life and Work</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; Henry Ford and the Assembly Line</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>
