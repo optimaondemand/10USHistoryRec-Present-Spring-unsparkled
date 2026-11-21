@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Court Fight and the Federal Balance | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">The Second New Deal and the Court</div>
+  </div>
+</div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">8 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">The Court Fight and the Federal Balance</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">Charles Evans Hughes<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'charlz EV-unz hyooz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">charlz EV-unz hyooz</span>The Chief Justice of the United States from 1930 to 1941. He often cast the deciding vote in New Deal cases.</span></span></li>
+    <li><span class="gloss" tabindex="0">Commerce Clause<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KAH-murs klawz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KAH-murs klawz</span>The part of the Constitution that gives Congress the power to regulate trade between the states.</span></span></li>
+    <li><span class="gloss" tabindex="0">court-packing<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KORT-pak-ing')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KORT-pak-ing</span>The name critics gave to Roosevelt's 1937 plan to add justices to the Supreme Court so that it would favor his laws.</span></span></li>
+    <li><span class="gloss" tabindex="0">Four Horsemen<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'for HOR-smen')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">for HOR-smen</span>The nickname for four justices, Van Devanter, McReynolds, Sutherland, and Butler, who usually voted against New Deal laws.</span></span></li>
+    <li><span class="gloss" tabindex="0">judicial review<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'joo-DISH-ul rih-VYOO')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">joo-DISH-ul rih-VYOO</span>The power of courts to decide whether a law agrees with the Constitution and to strike it down if it does not.</span></span></li>
+    <li><span class="gloss" tabindex="0">minimum wage<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MIN-ih-mum wayj')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MIN-ih-mum wayj</span>The lowest hourly pay that an employer may legally offer a worker.</span></span></li>
+    <li><span class="gloss" tabindex="0">separation of powers<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'sep-uh-RAY-shun uv POW-urz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">sep-uh-RAY-shun uv POW-urz</span>The idea that lawmaking, enforcing, and judging belong to different branches of government, so that no one branch can rule alone.</span></span></li>
+    <li><span class="gloss" tabindex="0">Social Security Act<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SOH-shul sih-KYUR-ih-tee akt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SOH-shul sih-KYUR-ih-tee akt</span>A 1935 law that created old-age insurance and unemployment insurance and gave aid to poor children and blind people.</span></span></li>
+    <li><span class="gloss" tabindex="0">Wagner Act<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'WAG-ner akt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">WAG-ner akt</span>A 1935 law that protected the right of workers to form unions and bargain with their employers. It is also called the National Labor Relations Act.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>Who decides whether a law is allowed by the Constitution? In the United States, the answer for more than a century and a half had been the Supreme Court. This power is called <span class="gloss" tabindex="0">judicial review<span class="gloss-tip"><span class="gloss-pron">joo-DISH-ul rih-VYOO</span>The power of courts to decide whether a law agrees with the Constitution and to strike it down if it does not.</span></span>. The Court had claimed it in 1803, in a case called Marbury v. Madison, and Americans had accepted it. The New Deal put that power to its hardest test. Congress had passed laws that gave the national government far more control over the economy than ever before. Nine justices, none of them elected, would now decide if those laws could stand.</p>
+<p>The first blow came on May 27, 1935. In a case called Schechter Poultry Corporation v. United States, the Court struck down the National Industrial Recovery Act, the law at the center of the first New Deal. The ruling was unanimous. Even the justices who usually liked the New Deal voted against it. The day came to be called Black Monday, because the Court also ruled that the president could not fire a federal trade commissioner as he pleased and struck down a farm-debt relief law. The Schechter brothers ran a kosher slaughterhouse in Brooklyn that sold chickens only inside New York. The government had charged them with breaking the industry code, which set wages, hours, and prices. One code rule said that customers had to take whichever chicken came out of the coop, and the Schechters let them pick. Newspapers called it the sick chicken case. The Court gave two main reasons. First, the law gave too much power to the president and to private industry groups, with too little guidance from Congress. Second, the Constitution lets Congress regulate trade between the states under the <span class="gloss" tabindex="0">Commerce Clause<span class="gloss-tip"><span class="gloss-pron">KAH-murs klawz</span>The part of the Constitution that gives Congress the power to regulate trade between the states.</span></span>, and the Court said that a Brooklyn butcher selling to Brooklyn customers was not in that kind of trade.</p>
+<p>Roosevelt was angry. In a press conference that ran about an hour and a half, he told reporters that the country had been given a "horse-and-buggy" definition of interstate commerce. In his view, a national economy needed national rules. But the Court was not finished. In January 1936, in United States v. Butler, it struck down the Agricultural Adjustment Act by a vote of six to three. Justice Owen Roberts wrote that the law used a tax to regulate local farming, which the Constitution left to the states. Justice Harlan Stone, in dissent, warned his colleagues that the Court's job was to decide whether a law was allowed, not whether it was wise, and that courts were not the only branch able to govern. In the same year, it struck down a law to regulate the coal industry. By the end of 1936, the Court had killed or crippled several of the most important laws of the New Deal.</p>
+<p>To understand the Court, you need to know who sat on it. Four of the justices, Willis Van Devanter, James McReynolds, George Sutherland, and Pierce Butler, were very skeptical of government regulation. A newspaper cartoonist gave them a nickname that stuck, the <span class="gloss" tabindex="0">Four Horsemen<span class="gloss-tip"><span class="gloss-pron">for HOR-smen</span>The nickname for four justices, Van Devanter, McReynolds, Sutherland, and Butler, who usually voted against New Deal laws.</span></span>, borrowed from a famous Notre Dame football backfield. Reporters also took to calling the whole group the nine old men. Three justices, Louis Brandeis, Harlan Stone, and Benjamin Cardozo, were often willing to uphold the New Deal. Brandeis had been a crusading Boston lawyer, Stone had been dean of Columbia's law school and Coolidge's Attorney General, and Cardozo was a quiet scholar who had served on New York's highest court. That left two in the middle. One was <span class="gloss" tabindex="0">Charles Evans Hughes<span class="gloss-tip"><span class="gloss-pron">charlz EV-unz hyooz</span>The Chief Justice of the United States from 1930 to 1941. He often cast the deciding vote in New Deal cases.</span></span>, the Chief Justice, a careful man who had once run for president and lost to Woodrow Wilson in 1916 by a narrow margin. The other was Owen Roberts, a Philadelphia lawyer who had helped prosecute the Teapot Dome oil scandal of the 1920s. Most big cases came down to how those two voted. The fate of the New Deal rested on a few people.</p>
+<div class="optima-widget" data-wid="m6-2-1" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">Nine justices decided the fate of Roosevelt's laws, and most big cases came down to just two of them.</div><details class="ow-reveal"><summary>What might have changed if <span class="gloss" tabindex="0">Hughes<span class="gloss-tip"><span class="gloss-pron">charlz EV-unz hyooz</span>The Chief Justice of the United States from 1930 to 1941. He often cast the deciding vote in New Deal cases.</span></span> and Roberts had voted the other way? Decide first and jot down two possible results before you open this.</summary><div class="ow-reveal-body">With four justices against the new laws and three often for them, two votes in the middle decided each case. Different votes in 1935 and 1936 might have saved more of the early laws. But votes shift for many reasons, and nobody can read a justice's mind. Count what was possible, not what was certain.</div></details><button class="widget-reset">Reset</button></div>
+<p>After he won re-election in a landslide in 1936, Roosevelt decided to act. In his whole first term, he had not had a single vacancy to fill. Had one justice died or retired, as often happens, the plan might never have been needed. None did. On February 5, 1937, he sent Congress a plan to reform the courts. He said the federal courts had too much work and that older judges were slow. His bill would let the president add a new justice for every sitting justice who had reached the age of seventy and had not retired, up to a total of fifteen. At that moment, six justices were over seventy, and the oldest, Brandeis, was eighty. Roosevelt had said almost nothing about the Court in the campaign, and the announcement caught even his allies by surprise. The idea was not new. Years before, in 1913, an Attorney General named James McReynolds had proposed adding judges to the federal courts for each one over seventy who would not retire. McReynolds now sat on the Court, as one of the Four Horsemen. It was easy to see what the plan would do. Roosevelt could add six new justices who agreed with him. Critics called it <span class="gloss" tabindex="0">court-packing<span class="gloss-tip"><span class="gloss-pron">KORT-pak-ing</span>The name critics gave to Roosevelt's 1937 plan to add justices to the Supreme Court so that it would favor his laws.</span></span>, and the name stuck.</p>
+<p>On March 9, Roosevelt explained his plan to the country by radio. He compared the government to a team of three horses, Congress, the president, and the Court, pulling the same plow. One horse, he said, was not pulling with the others. He added that the Court had been acting not as a judicial body but as a policy-making body. The speech was a clever one. But many Americans, including many who liked the New Deal, were uneasy. The Constitution had set up a <span class="gloss" tabindex="0">separation of powers<span class="gloss-tip"><span class="gloss-pron">sep-uh-RAY-shun uv POW-urz</span>The idea that lawmaking, enforcing, and judging belong to different branches of government, so that no one branch can rule alone.</span></span>, which means that the lawmaking, enforcing, and judging powers belong to different branches so that no one branch can dominate the others. The Constitution does not fix the size of the Supreme Court, so Congress could pass this bill. Congress had changed the size before. The Court had been as small as six justices and as large as ten, and it had held at nine since 1869. Still, using that power to change the outcome of cases looked to many people like an attack on the independence of the judges. Some of Roosevelt's own party in the Senate turned against him. Senator Burton Wheeler of Montana, a Democrat and a liberal, led the fight against the plan. He read the Senate a letter from Chief Justice Hughes, who said that the Court was fully abreast of its work and that more justices would only slow it down. Polls showed that more Americans opposed the plan than favored it. Even his Vice President, John Nance Garner, was said to be unhappy. Garner is said to have held his nose and turned a thumb down at a friend in the Capitol.</p>
+<p>Then the Court itself changed course. On March 29, 1937, in West Coast Hotel v. Parrish, the Court upheld a Washington State law of 1913 that set a <span class="gloss" tabindex="0">minimum wage<span class="gloss-tip"><span class="gloss-pron">MIN-ih-mum wayj</span>The lowest hourly pay that an employer may legally offer a worker.</span></span> for women. The case began when Elsie Parrish, a chambermaid at a hotel in Wenatchee, sued for the difference between her pay and what state law required. The Court had voted in conference in December, but the opinion was held back until Justice Stone, who had been ill, could return. In deciding, the Court overruled a decision of 1923 that had struck down a minimum wage law for women in the District of Columbia. Only a year earlier, the Court had struck down a similar law from New York. The vote was five to four, and Owen Roberts had switched sides. In the New York case, in June 1936, he had voted with the Four Horsemen, and Hughes had dissented. A famous joke said that "a switch in time saved nine." The truth is more complicated. Roberts had cast his vote in the case months before Roosevelt announced his plan, so historians doubt that the plan alone changed his mind. We cannot be sure what he was thinking. But the timing helped the president's critics and his allies tell a story.</p>
+<div class="optima-widget ow-scale" data-wid="m6-2-2" data-ra-skip><div class="widget-kicker">&#9889; HOW MUCH DID IT MATTER?</div><div class="widget-question">In 1937 one justice switched sides on a <span class="gloss" tabindex="0">minimum wage<span class="gloss-tip"><span class="gloss-pron">MIN-ih-mum wayj</span>The lowest hourly pay that an employer may legally offer a worker.</span></span> case. How much did Roosevelt's court plan cause the switch?</div><div class="widget-row" data-correct="2" data-fb="Yes. The lesson says he had cast his vote before the plan was announced, so historians doubt the plan alone changed his mind, and we cannot be sure." data-hint="Remember when the justice cast his vote compared with when the plan was announced."><div class="widget-options"><button data-choice="0" data-fb="Not quite. His vote came before the plan was announced.">It caused the switch by itself</button><button data-choice="1" data-fb="Not quite. Historians doubt the plan alone changed his mind.">It was the main cause</button><button data-choice="2" data-fb="Yes. The timing helped the president&#x27;s critics and allies tell a story, but we cannot be sure what he was thinking.">It may have played a part, but not alone</button><button data-choice="3" data-fb="Not quite. The plan may have played some part.">It had nothing to do with it</button></div></div><button class="widget-reset">Reset</button></div>
+<p>Two weeks later, the Court upheld the <span class="gloss" tabindex="0">Wagner Act<span class="gloss-tip"><span class="gloss-pron">WAG-ner akt</span>A 1935 law that protected the right of workers to form unions and bargain with their employers. It is also called the National Labor Relations Act.</span></span> in a case about a steel company. The vote was again five to four, and Chief Justice Hughes wrote the opinion. He said that a company with plants and customers in many states could be reached by Congress, because a strike there could choke trade between the states. The company was one of the country's largest steelmakers, with mines, ships, and mills in several states, and the labor board had charged it with firing workers for joining a union. Older rulings had treated making goods as one thing and shipping them as another, and had said that Congress could reach only the shipping. Now the Court looked at effects. An event in one plant could ripple across state lines. In May, it upheld the <span class="gloss" tabindex="0">Social Security Act<span class="gloss-tip"><span class="gloss-pron">SOH-shul sih-KYUR-ih-tee akt</span>A 1935 law that created old-age insurance and unemployment insurance and gave aid to poor children and blind people.</span></span>, by votes of five to four and seven to two, on the ground that Congress may tax and spend for the general welfare. The same month, Justice Van Devanter, one of the Four Horsemen, announced that he would retire. The president would finally have a chance to name a justice. With the Court now friendly to his laws, the reason for the plan seemed to fade. In July, the Senate leader of the fight, Joseph Robinson, died suddenly of a heart attack after weeks of hard work for the bill, and the plan fell apart. It was widely believed that he had hoped for a seat on the Court himself. The bill was sent back to a committee and was never heard from again. Congress later passed only a modest bill about procedures in the lower courts.</p>
+<p>So who won? Roosevelt lost the fight over the bill, and he lost some of his political strength. Southern Democrats and Republicans began to work together against him in Congress. In 1938, he tried to defeat several Democrats who had opposed him, and most of them won anyway. Yet he won the larger struggle. Over the next several years, one justice after another retired or died, and Roosevelt named eight new justices. Among them were Felix Frankfurter and William O. Douglas. His first choice, Senator Hugo Black of Alabama, turned out to have joined the Ku Klux Klan in the 1920s, a fact the newspapers uncovered within weeks. Black stayed on the Court for thirty-four years and became known as a strong defender of the Bill of Rights. The Four Horsemen left one by one: Van Devanter in 1937, Sutherland in 1938, Butler in 1939, and McReynolds in 1941. By 1941, the Court that had struck down the first New Deal had been replaced by one that would let Congress do almost anything it chose under the Commerce Clause. In 1942, it ruled that an Ohio farmer named Roscoe Filburn had broken a national wheat limit by growing extra wheat to feed his own chickens and family, because wheat grown for home use still changed the national price. In 1941, it had already upheld the wages and hours law of 1938 and overruled a ruling of 1918 that had struck down a federal child labor law. That change shaped American government for many decades.</p>
+<div class="optima-widget ow-seq" data-wid="m6-2-3" data-ra-skip data-n="5" data-fb="That is the order. The Court changed course before the plan ever came to a vote." data-hint="Start with the first big ruling, then follow the plan from announcement to end."><div class="widget-kicker">&#9889; PUT IT IN ORDER</div><div class="widget-question">Put these events in order, from earliest to latest. Tap them one at a time.</div><div class="widget-options ow-seq-pool"><button data-pos="1">The Court unanimously strikes down the main law of Roosevelt&#x27;s first program</button><button data-pos="2">The Court strikes down the farm law by a vote of six to three</button><button data-pos="3">Roosevelt sends Congress his plan to add justices</button><button data-pos="4">The Court upholds a state law setting a lowest wage, five to four</button><button data-pos="5">The Senate leader of the fight dies and the plan falls apart</button></div><ol class="ow-seq-line"></ol><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>There is a lesson here about what a republic needs. It needs a government able to act when the country is in danger, and it needs courts that can say no. If either one wins completely, citizens lose something. Roosevelt had tried to win the argument by changing the referee. Americans, who had given him a huge victory only a few months earlier, would not let him do it. In the end, the old balance held, but the Court itself moved. As you read the sources for this week, ask yourself which of these was the true story of 1937.</p>
+<p>Next week, the story turns away from the economy. While Americans argued about courts and wages, dictators in Europe and Asia were making plans of their own.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain why the Supreme Court struck down parts of the New Deal and how Roosevelt responded</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> analyze the court-packing plan as a question about the separation of powers</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe how the Court's change of course in 1937 widened the national government's power over the economy</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><a class="prev" href="primary-source-1.html"><div class="seq-kicker">&larr; Previous</div><div class="seq-label">Schechter Poultry Corp. v. United States</div></a><a class="next" href="primary-source-2.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">Franklin D. Roosevelt, Fireside Chat on the Judiciary</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; The Court Fight and the Federal Balance</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>

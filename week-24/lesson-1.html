@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Security and the Wagner Act | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">The Second New Deal and the Court</div>
+  </div>
+</div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">8 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">Social Security and the Wagner Act</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">collective bargaining<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'koh-LEK-tiv BAR-gun-ing')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">koh-LEK-tiv BAR-gun-ing</span>Talks between a group of workers, usually in a union, and their employer about pay, hours, and working conditions.</span></span></li>
+    <li><span class="gloss" tabindex="0">Congress of Industrial Organizations<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KONG-gres uv in-DUS-tree-ul or-gun-ih-ZAY-shunz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KONG-gres uv in-DUS-tree-ul or-gun-ih-ZAY-shunz</span>A group of unions, begun by John L. Lewis, that organized all the workers in a big industry, skilled or unskilled. It was also called the CIO.</span></span></li>
+    <li><span class="gloss" tabindex="0">Fair Labor Standards Act<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'fair LAY-bur STAN-durdz akt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">fair LAY-bur STAN-durdz akt</span>A 1938 law that set the first national minimum wage, limited the workweek, and banned most child labor.</span></span></li>
+    <li><span class="gloss" tabindex="0">Huey Long<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'HYOO-ee lawng')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HYOO-ee lawng</span>A powerful Louisiana governor and senator who proposed the Share Our Wealth plan. He was shot and killed in 1935.</span></span></li>
+    <li><span class="gloss" tabindex="0">John L. Lewis<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'jon el LOO-iss')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">jon el LOO-iss</span>The head of the United Mine Workers, who helped start the CIO and led the drive to organize workers in big industries.</span></span></li>
+    <li><span class="gloss" tabindex="0">minimum wage<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MIN-ih-mum wayj')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MIN-ih-mum wayj</span>The lowest hourly pay that an employer may legally offer a worker.</span></span></li>
+    <li><span class="gloss" tabindex="0">payroll tax<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'PAY-rohl taks')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PAY-rohl taks</span>A tax taken out of a worker's paycheck, and matched by the employer, to pay for programs such as Social Security.</span></span></li>
+    <li><span class="gloss" tabindex="0">Second New Deal<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SEK-und noo deel')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SEK-und noo deel</span>The group of laws passed in 1935, including Social Security and the Wagner Act, that tried to make lasting changes rather than only meet the emergency.</span></span></li>
+    <li><span class="gloss" tabindex="0">sit-down strike<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SIT-down strike')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SIT-down strike</span>A strike in which workers stay inside the workplace and refuse to work or to leave.</span></span></li>
+    <li><span class="gloss" tabindex="0">Social Security Act<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SOH-shul sih-KYUR-ih-tee akt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SOH-shul sih-KYUR-ih-tee akt</span>A 1935 law that created old-age insurance and unemployment insurance and gave aid to poor children and blind people.</span></span></li>
+    <li><span class="gloss" tabindex="0">Townsend Plan<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TOWN-zend plan')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TOWN-zend plan</span>Dr. Francis Townsend's proposal to pay every American over sixty two hundred dollars a month, on the condition that they spend it within the month.</span></span></li>
+    <li><span class="gloss" tabindex="0">Wagner Act<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'WAG-ner akt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">WAG-ner akt</span>A 1935 law that protected the right of workers to form unions and bargain with their employers. It is also called the National Labor Relations Act.</span></span></li>
+    <li><span class="gloss" tabindex="0">Works Progress Administration<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'wurks PRAH-gres ad-min-ih-STRAY-shun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">wurks PRAH-gres ad-min-ih-STRAY-shun</span>A New Deal agency, begun in 1935, that paid unemployed Americans to build roads, schools, and parks and to work as artists and writers.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>By the start of 1935, the New Deal had helped the country, but the Depression was far from over. About one worker in five still had no job. Roosevelt also faced pressure from two directions. Critics such as <span class="gloss" tabindex="0">Huey Long<span class="gloss-tip"><span class="gloss-pron">HYOO-ee lawng</span>A powerful Louisiana governor and senator who proposed the Share Our Wealth plan. He was shot and killed in 1935.</span></span> and the supporters of the <span class="gloss" tabindex="0">Townsend Plan<span class="gloss-tip"><span class="gloss-pron">TOWN-zend plan</span>Dr. Francis Townsend's proposal to pay every American over sixty two hundred dollars a month, on the condition that they spend it within the month.</span></span> said he had not gone far enough, and millions of voters listened to them. The elections of 1934 had given him larger Democratic majorities in Congress, and many of the new members wanted bolder action. At the same time, the Supreme Court was getting ready to strike down some of his laws. Roosevelt's answer, in the spring and summer of 1935, was a new burst of lawmaking. Historians call it the <span class="gloss" tabindex="0">Second New Deal<span class="gloss-tip"><span class="gloss-pron">SEK-und noo deel</span>The group of laws passed in 1935, including Social Security and the Wagner Act, that tried to make lasting changes rather than only meet the emergency.</span></span>. The first New Deal had tried to rescue the country in an emergency. The second tried to build things that would last. That summer Congress also raised taxes on the largest incomes and inheritances, which critics called a "soak the rich" tax.</p>
+<p>The first step was more relief. In April, Congress created the <span class="gloss" tabindex="0">Works Progress Administration<span class="gloss-tip"><span class="gloss-pron">wurks PRAH-gres ad-min-ih-STRAY-shun</span>A New Deal agency, begun in 1935, that paid unemployed Americans to build roads, schools, and parks and to work as artists and writers.</span></span>, or WPA, and Roosevelt put his friend Harry Hopkins in charge. Roosevelt believed that handing out money to people who did nothing was bad for them and bad for the country. He wanted the government to pay people to work instead. Congress gave him nearly five billion dollars for the purpose, the largest sum it had ever approved for one program in peacetime. Over the next eight years, the WPA gave jobs to roughly eight million people. They built roads, bridges, schools, airports, and parks. Artists painted murals in post offices. Writers collected the stories of Americans who had lived through slavery. In Florida, the writer Zora Neale Hurston took a job with the writers' project and collected folk songs and stories. The pay was set above a relief check but below what private jobs paid, so that no one would prefer the program to a real job. Opponents sneered that the workers only leaned on their shovels, and the word boondoggle, meaning wasteful busywork, came into common use. Even so, the WPA never reached everyone who needed work.</p>
+<p>The most lasting law of that summer was the <span class="gloss" tabindex="0">Social Security Act<span class="gloss-tip"><span class="gloss-pron">SOH-shul sih-KYUR-ih-tee akt</span>A 1935 law that created old-age insurance and unemployment insurance and gave aid to poor children and blind people.</span></span>, signed on August 14, 1935. Frances Perkins stood behind the president's chair as he signed it. In 1934, roughly half of the old people in the country lacked enough income to live on, and many ended their lives in county poorhouses. Perkins, the Secretary of Labor, led the team that designed the law. When Roosevelt had offered her the job in 1933, she had handed him a list of her goals, among them unemployment insurance, old-age pensions, shorter hours, and an end to child labor, and she asked whether he would back them. He said he would try, and over the next five years she held him to it. The law did several things. It set up unemployment insurance, run through the states. To get the states moving, the law taxed employers but let them subtract whatever they paid into a state fund, so every state soon set one up. Benefits were small and lasted only a limited time, and each state set its own amounts, so a laid-off worker in one state might receive far less than one in another. It gave money to the states to help poor children in homes without a father, and to help blind people. The aid for children grew out of mothers' pensions that some states already paid. Its largest part was old-age insurance. Workers and their employers would each pay a <span class="gloss" tabindex="0">payroll tax<span class="gloss-tip"><span class="gloss-pron">PAY-rohl taks</span>A tax taken out of a worker's paycheck, and matched by the employer, to pay for programs such as Social Security.</span></span>, a tax taken out of every paycheck. The rate started at one percent each, on the first three thousand dollars a worker earned. Workers who retired at sixty-five would then receive a monthly check for the rest of their lives. The House passed the bill by 372 votes to 33, and the Senate by 77 to 6.</p>
+<div class="optima-widget ow-reflect" data-wid="m6-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Suppose a family member lost a job at age 62. What would make help from the government feel fair to you? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="Gifts can meet real need fast. Roosevelt worried that handing out money for nothing was bad for people and for the country. Watch how he built the new law differently.">It is a gift for anyone in need</button><button data-response="That is close to how Roosevelt thought. Notice how he built the new law around that idea, and why he chose to.">It is something people paid into</button><button data-response="That is a real position, and some people held it. Notice who the new laws covered and who they left out.">Only people who cannot work should get it</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>Notice how the law was built. It was not a gift. It was insurance, paid for by the people who would use it. Insurance works by pooling risk. Few workers lose a job in any given year, so small payments from everyone can pay large benefits to the few who do. Roosevelt chose this plan on purpose. He knew that workers who had paid into the system would feel they had earned their benefits, and no future Congress would find it easy to take them away. The first monthly check went to a retired legal secretary from Vermont, Ida May Fuller, in January 1940. She had paid only about twenty-five dollars in taxes. She had retired in 1939 at the age of sixty-five, after only three years of paying in, and her first check was for $22.54. She lived to be one hundred and collected far more, more than twenty thousand dollars in all.</p>
+<p>The law also had gaps. It left out farm workers and household servants, and in the 1930s that meant many Black Americans, especially in the South. Southern members of Congress had insisted on this, and Roosevelt needed their votes. The law also began collecting taxes in 1937 but did not pay monthly benefits until 1940. Critics noted that the tax pulled money out of the economy just when it was still weak. It was a trade. The government gained a steady source of money for the system, but at a cost.</p>
+<p>The second great law of 1935 helped workers in a different way. Senator Robert Wagner of New York wrote a bill to protect the right of workers to form unions. Wagner had come to New York from Germany as a boy of eight, grown up poor in the tenements, and risen to the Senate. Roosevelt was cool to the idea until it was clear that it would pass. He signed the <span class="gloss" tabindex="0">Wagner Act<span class="gloss-tip"><span class="gloss-pron">WAG-ner akt</span>A 1935 law that protected the right of workers to form unions and bargain with their employers. It is also called the National Labor Relations Act.</span></span> on July 5. The law said that workers could join a union of their choice. It required employers to take part in <span class="gloss" tabindex="0">collective bargaining<span class="gloss-tip"><span class="gloss-pron">koh-LEK-tiv BAR-gun-ing</span>Talks between a group of workers, usually in a union, and their employer about pay, hours, and working conditions.</span></span>, which means negotiating as a group over pay and working conditions. It also banned certain unfair practices, such as firing a worker for joining a union. It also banned company unions, which were groups run by the employer that workers could not truly control. A new board would enforce the rules. Like the other laws of 1935, it left out farm workers and household servants. It could hold secret-ballot elections to find out whether the workers in a plant wanted a union. Lawyers for the wealthy business group you read about last time declared the law unconstitutional and urged employers to ignore it.</p>
+<p>Many employers hated the law and refused to obey it, but it gave workers a strong new tool. Until then, most unions had been made up of skilled craftsmen, such as carpenters and machinists. <span class="gloss" tabindex="0">John L. Lewis<span class="gloss-tip"><span class="gloss-pron">jon el LOO-iss</span>The head of the United Mine Workers, who helped start the CIO and led the drive to organize workers in big industries.</span></span>, the head of the coal miners' union, believed that the time had come to organize everyone who worked in a big industry, from the skilled to the unskilled. Lewis was a burly man with thick eyebrows and a booming voice, the son of Welsh immigrants, who had worked in the mines himself. His new group became the <span class="gloss" tabindex="0">Congress of Industrial Organizations<span class="gloss-tip"><span class="gloss-pron">KONG-gres uv in-DUS-tree-ul or-gun-ih-ZAY-shunz</span>A group of unions, begun by John L. Lewis, that organized all the workers in a big industry, skilled or unskilled. It was also called the CIO.</span></span>, or CIO. It began in 1935 as a committee inside the older American Federation of Labor, whose leaders disagreed with it, and the two groups soon split. The CIO's founders argued that organizing by craft left autoworkers and steelworkers with no union at all. Lewis used money from the miners' union treasury to pay organizers. The Wagner Act gave it a chance to grow. Within a few years, union membership in the country had about tripled.</p>
+<div class="ow-group" data-wid="m6-1-2" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why did Roosevelt have workers and employers pay in?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">People who had paid in would feel they had earned their benefits, and no future Congress would find it easy to take them away.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Who wrote the bill that protected the right of workers to form unions?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Senator Robert Wagner of New York. He had come from Germany as a boy of eight, grown up poor in the tenements, and risen to the Senate.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why did the founders of the new union group say that organizing by craft was not enough?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">It left autoworkers and steelworkers with no union at all.</div></div><button class="widget-reset">Reset</button></div></div>
+<p>The great test came at General Motors. In December 1936, workers at a plant in Flint, Michigan, began a <span class="gloss" tabindex="0">sit-down strike<span class="gloss-tip"><span class="gloss-pron">SIT-down strike</span>A strike in which workers stay inside the workplace and refuse to work or to leave.</span></span>. Instead of walking off the job, they sat down at their machines and refused to leave. Since the strikers were inside, the company could not bring in other workers to replace them. The strike began at the Fisher Body plants, which made car bodies, and the workers belonged to a new union, the United Auto Workers. It started when they heard that the company planned to move the huge dies that shaped car bodies to plants where it had no union. The strike lasted forty-four days in the winter cold. Their families brought food to the windows. Wives and daughters formed a Women's Emergency Brigade, wore red berets, and stood ready to march if the police came. The strikers organized themselves like a small town. Committees ran the kitchen and kept the plant clean, and the men were forbidden liquor, so that no one could call them rioters. On January 11, the company shut off the heat in one plant, and police tried to stop the food from passing through the windows. Outside, strikers and their families answered tear gas with bottles, car-door hinges, and water from fire hoses, and the police fell back. The strikers named it the Battle of the Running Bulls. Several strikers were shot, but none died. The governor of Michigan, Frank Murphy, refused to send troops to remove them by force. A judge ordered the strikers out, but it turned out that he owned a large block of General Motors stock, and the order lost its force. Murphy did send the National Guard, but only to keep the peace. In February 1937, General Motors agreed to bargain with the union. Lewis and the governor had both pushed the company to the table.</p>
+<p>Other companies soon followed. Chrysler signed in April, after a sit-down strike of its own. In March, U.S. Steel, the nation's biggest steelmaker, signed an agreement with the CIO without a strike. But not every fight ended well for workers. On Memorial Day, 1937, police in Chicago fired on strikers marching toward a Republic Steel plant and killed ten. Not everyone cheered. Sit-down strikes meant taking over property that belonged to someone else, and many Americans, including some who liked unions, thought that was wrong. The Supreme Court would later rule that such strikes were illegal.</p>
+<div class="optima-widget" data-wid="m6-1-3" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">Governor Frank Murphy refused to send troops to remove the Flint strikers by force.</div><details class="ow-reveal"><summary>What might have happened at Flint if he had sent them? Decide first and jot down two possible results before you open this.</summary><div class="ow-reveal-body">Here is what the lesson tells us. Murphy refused to use force, a judge's order lost its power, and in February 1937 General Motors agreed to bargain. Nobody can know what troops would have done. The Republic Steel march in Chicago, where police fired on strikers and killed ten, shows that a clash could end very differently. A careful historian says what was possible, not what was certain.</div></details><button class="widget-reset">Reset</button></div>
+<p>One more law finished the work. In 1938, Congress passed the <span class="gloss" tabindex="0">Fair Labor Standards Act<span class="gloss-tip"><span class="gloss-pron">fair LAY-bur STAN-durdz akt</span>A 1938 law that set the first national minimum wage, limited the workweek, and banned most child labor.</span></span>. It set a <span class="gloss" tabindex="0">minimum wage<span class="gloss-tip"><span class="gloss-pron">MIN-ih-mum wayj</span>The lowest hourly pay that an employer may legally offer a worker.</span></span>, the lowest hourly pay that an employer may legally offer, at twenty-five cents an hour, a rate that was to rise to forty cents over seven years. It limited the workweek and banned most work by children. The workweek limit started at forty-four hours and was to drop to forty within three years, and the law required extra pay, time and a half, for overtime. Again, important groups, including farm workers and household servants, were left out, and again the law passed only after a bargain with Southern Democrats.</p>
+<p>What should we make of all this? In the classical republican tradition, a healthy republic depends on citizens who can support themselves and take part in public life. Supporters of these laws argued that no one can do that when the loss of a job or old age can bring ruin. They said security would help citizens be free. Critics worried about the opposite. They feared that a people who counted on the national government might lose the habits of self-reliance and local cooperation, which Tocqueville had thought were the strength of American life. Before 1935, many workers had relied on churches, mutual aid societies, and lodges, which paid for sickness and burial. Supporters said that these groups could not carry a whole country through a depression, and critics feared that a national program would crowd them out. Roosevelt himself shared some of that worry, which is why he preferred insurance and work to plain relief.</p>
+<div class="optima-widget ow-select" data-wid="m6-1-4" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; SUPPORTERS AND CRITICS</div><div class="widget-question">Whose view is each statement? Choose the best answer.</div><div class="widget-row" data-correct="2" data-fb="Right. Supporters argued that security would help citizens be free." data-hint="Which side thought security would make citizens more able to take part?"><div class="widget-row-prompt">1. Losing a job or growing old can bring ruin, and ruined people cannot take part in public life.</div><div class="widget-options"><button data-choice="0">Critics who feared people would lean on Washington</button><button data-choice="1">Roosevelt, who disliked plain handouts</button><button data-choice="2">Supporters who said security helps citizens be free</button></div></div><div class="widget-row" data-correct="0,2" data-fb="Right. Critics feared this, and the lesson says Roosevelt shared some of that worry." data-hint="More than one answer fits. Who worried about too much reliance?"><div class="widget-row-prompt">2. People who rely on the national government may lose the habits of self-reliance and local cooperation.</div><div class="widget-options"><button data-choice="0">Critics who feared people would lean on Washington</button><button data-choice="1">Supporters who said security helps citizens be free</button><button data-choice="2">Roosevelt, who disliked plain handouts</button></div></div><div class="widget-row" data-correct="0" data-fb="Right. This is why he preferred insurance and work." data-hint="Think about the jobs program and why Roosevelt chose it."><div class="widget-row-prompt">3. The government should pay people to work, not give them money for nothing.</div><div class="widget-options"><button data-choice="0">Roosevelt, who disliked plain handouts</button><button data-choice="1">Critics who feared people would lean on Washington</button><button data-choice="2">Supporters who said security helps citizens be free</button></div></div><button class="widget-reset">Reset</button></div>
+<p>The debate has never ended. By 1940, though, one thing had clearly changed. Americans now expected Washington to help protect their families against old age, unemployment, and hard bargains. Whether the Constitution allowed all of this was still an open question. In the next lesson, you will see how the Supreme Court answered, and why that fight almost broke the balance of power in Washington.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain how the Social Security Act and the Wagner Act changed the relationship between ordinary Americans and the national government</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe how workers used the new law of 1935 to organize, using the Flint sit-down strike as an example</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> evaluate both the benefits and the risks of building a permanent national system of economic security</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><div></div><a class="next" href="primary-source-1.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">Schechter Poultry Corp. v. United States</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; Social Security and the Wagner Act</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>
