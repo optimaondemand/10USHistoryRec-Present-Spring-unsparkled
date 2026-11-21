@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Unipolar Moment: War, Trade, and Boom | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">The Post-Cold War World</div>
+  </div>
+</div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">10 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">The Unipolar Moment: War, Trade, and Boom</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">Bill Clinton<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'BIL KLIN-tun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BIL KLIN-tun</span>The 42nd president, from 1993 to 2001. He was a Democrat and the former governor of Arkansas.</span></span></li>
+    <li><span class="gloss" tabindex="0">coalition<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'koh-uh-LISH-un')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">koh-uh-LISH-un</span>A group of nations or groups that join together for a common purpose.</span></span></li>
+    <li><span class="gloss" tabindex="0">dot-com boom<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'DOT-kom BOOM')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">DOT-kom BOOM</span>The rush of investment in internet companies in the late 1990s that drove the stock market to new heights before many of the companies failed.</span></span></li>
+    <li><span class="gloss" tabindex="0">George H. W. Bush<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'JORJ aych DUB-ul-yoo BUSH')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">JORJ aych DUB-ul-yoo BUSH</span>The 41st president, from 1989 to 1993. He led the coalition in the Persian Gulf War.</span></span></li>
+    <li><span class="gloss" tabindex="0">North American Free Trade Agreement<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'north uh-MAIR-ih-kun FREE trayd uh-GREE-munt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">north uh-MAIR-ih-kun FREE trayd uh-GREE-munt</span>A treaty, called NAFTA, that removed most trade barriers among the United States, Canada, and Mexico. It took effect in 1994.</span></span></li>
+    <li><span class="gloss" tabindex="0">Persian Gulf War<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'PER-zhun GULF WOR')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">PER-zhun GULF WOR</span>The 1991 war in which a coalition led by the United States drove Iraq's army out of Kuwait.</span></span></li>
+    <li><span class="gloss" tabindex="0">Saddam Hussein<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'sah-DAHM hoo-SAYN')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">sah-DAHM hoo-SAYN</span>The dictator of Iraq from 1979 until 2003. His invasion of Kuwait led to the Persian Gulf War.</span></span></li>
+    <li><span class="gloss" tabindex="0">unipolar world<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'yoo-nih-POH-ler WURLD')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">yoo-nih-POH-ler WURLD</span>A world with one great power, with no rival of equal strength.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>In 1991, the Cold War ended, and the United States was left as the strongest country in the world. No other nation could match its economy, its military, or its reach. A commentator named Charles Krauthammer called this a "unipolar moment." A <span class="gloss" tabindex="0">unipolar world<span class="gloss-tip"><span class="gloss-pron">yoo-nih-POH-ler WURLD</span>A world with one great power, with no rival of equal strength.</span></span> is one with a single great power, like a magnet with one pole. It is the opposite of the Cold War, when two superpowers each balanced the other. Some Americans hoped that the moment would last for a long time. Others warned that no country holds such a position forever. In this lesson, you will see how the United States used its power in the years after 1989, and what limits it met.</p>
+<p>The first test came in the Middle East. In August 1990, Iraq's dictator, <span class="gloss" tabindex="0">Saddam Hussein<span class="gloss-tip"><span class="gloss-pron">sah-DAHM hoo-SAYN</span>The dictator of Iraq from 1979 until 2003. His invasion of Kuwait led to the Persian Gulf War.</span></span>, sent his army into the small oil-rich country of Kuwait and took it in a few hours. The attack began before dawn on August 2, and Kuwait's ruling family fled across the border to Saudi Arabia. Saddam had just finished a long and costly war with Iran, and he owed large debts to Kuwait. He claimed that Kuwait had always belonged to Iraq, and he accused the Kuwaitis of pumping so much oil that prices fell, which hurt a country that earned nearly all of its income from oil. Now he controlled a large share of the world's oil, and his army threatened Saudi Arabia, the greatest oil producer of all. President <span class="gloss" tabindex="0">George H. W. Bush<span class="gloss-tip"><span class="gloss-pron">JORJ aych DUB-ul-yoo BUSH</span>The 41st president, from 1989 to 1993. He led the coalition in the Persian Gulf War.</span></span> was a World War II navy pilot, a former head of the CIA, and an experienced diplomat. He said, "This will not stand."</p>
+<p>Words alone would not stop tanks, and Saddam's army sat only a short drive from the Saudi oil fields. Bush met his advisers on the morning of the invasion, then flew to Colorado, where the British prime minister, Margaret Thatcher, was visiting. She urged him to stand firm. Within days, at the invitation of Saudi Arabia's King Fahd, American soldiers began landing in the Saudi desert, among them paratroopers of the 82nd Airborne Division. The operation was called Desert Shield, and its job was to defend, not to attack. At the same time, the United Nations ordered a trade embargo on Iraq, and warships stopped vessels that tried to carry Iraqi oil out or supplies in. By winter, more than half a million American troops were in the region, and every one of them needed food, water, fuel, and a place to sleep.</p>
+<p>Bush set out to build a <span class="gloss" tabindex="0">coalition<span class="gloss-tip"><span class="gloss-pron">koh-uh-LISH-un</span>A group of nations or groups that join together for a common purpose.</span></span>, a group of nations joined for a common purpose. He worked through the United Nations Security Council, where the Soviet Union, in its last year, voted with the United States instead of using its veto. Secretary of State James Baker traveled the world to win support one leader at a time. In November, the Council set a deadline: Iraq must leave Kuwait by January 15, 1991, or the nations could use force to make it leave. More than thirty countries joined, including Britain, France, Egypt, and Saudi Arabia, and many shared the cost. In the end, the allies paid most of the bill. Bush also asked Congress for approval, and in January 1991, Congress voted to authorize the use of force. The vote was close, 52 to 47 in the Senate and 250 to 183 in the House, and many members had wanted to give the embargo more time to work. Nothing like this had been seen since Korea: a war fought under a UN resolution, with allies, and with Congress involved. In his address to Congress in September 1990, which you will read this week, Bush spoke of a "new world order," in which nations would work together to oppose aggression.</p>
+<div class="optima-widget ow-reflect" data-wid="m17-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Bush could have answered Iraq's invasion alone. Instead he first asked other nations to join him, and he also asked Congress. When you take on a hard task, what matters most about having others with you? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="That was part of the story here: many of the more than thirty countries shared the cost. Friends can carry a load that no one could carry alone.">Sharing the cost and the work</button><button data-response="Bush made that kind of argument when he spoke of nations working together against aggression. Some would add that it makes a leader answer for what he does.">Their agreement makes the effort fair</button><button data-response="A fair worry. The more members a group has, the harder it can be to agree. The lesson shows one case where leaders chose to build the group first.">Waiting for others can slow you down</button><button data-response="Many people would answer that way. A small problem may need no help, but a big one may need many hands.">It depends on how big the problem is</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>The <span class="gloss" tabindex="0">Persian Gulf War<span class="gloss-tip"><span class="gloss-pron">PER-zhun GULF WOR</span>The 1991 war in which a coalition led by the United States drove Iraq's army out of Kuwait.</span></span> began on January 17, 1991, with a huge air campaign. Cruise missiles and stealth planes hit Iraqi targets, and television audiences watched the first "live" war. Saddam answered by firing Scud missiles at Israel, a country that was not even in the war. He hoped Israel would strike back, because then the Arab members of the coalition might refuse to fight beside it. Bush asked the Israelis to hold their fire, and the United States rushed Patriot missile batteries to Israel to shoot down the Scuds. Israel, though under attack, did not retaliate. The coalition held together, and the air campaign went on for more than five weeks.</p>
+<p>On February 24, the ground attack began. Iraq expected the blow to come from the south, into Kuwait's trenches and minefields, and Marines and Arab forces did attack there. The real weight of the coalition's army, though, swung far to the west through open desert and came around behind Iraq's best troops, the Republican Guard. The plan was the work of General Norman Schwarzkopf, who led the coalition's forces, and General Colin Powell, the chairman of the Joint Chiefs of Staff, who believed that if the United States went to war, it should use such overwhelming force that the fight would be short. In about a hundred hours, coalition forces drove Iraq's army out of Kuwait and destroyed a large part of it. American losses were light, fewer than 150 killed in combat, and Iraqi losses were many times higher. As Iraqi troops fled north out of Kuwait City, coalition aircraft struck the long columns of trucks and cars on the highway, and photographs of the burned vehicles disturbed many people.</p>
+<p>Bush then stopped. On the evening of February 27, he announced that Kuwait was free, and the ceasefire began a few hours later. He did not march on Baghdad to remove Saddam, because he believed that this would break the coalition and leave America in charge of a hostile country. The United Nations had approved a war to free Kuwait, not to topple Iraq's government, and the Arab partners had joined for that reason. In a book written years later, Bush and his national security adviser, Brent Scowcroft, said that taking Baghdad would have meant ruling Iraq with no clear way out. Saddam stayed in power, and he crushed uprisings by Kurds and Shiites that Americans had encouraged. Bush had urged the Iraqi people to take matters into their own hands, and when they tried, Saddam's helicopters and tanks put the revolts down. Hundreds of thousands of Kurds fled into the mountains of the north, and the United States and its allies soon set up a protected zone there and barred Iraqi aircraft from flying over it. Critics said the war was left unfinished. Defenders said the goal, to free Kuwait, had been reached, and that Bush had avoided a trap. It is a good example of a leader deciding what to leave undone.</p>
+<div class="optima-widget ow-select" data-wid="m17-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; WHAT THE LESSON SAYS</div><div class="widget-question">Choose the best answer for each question.</div><div class="widget-row" data-correct="3" data-fb="Yes. Iraq now held much of the world&#x27;s oil, and Saudi Arabia, the greatest producer of all, was threatened." data-hint="Look at what Iraq now controlled and which larger country it threatened."><div class="widget-row-prompt">1. Iraq took Kuwait in a few hours. Why did that alarm leaders far beyond Kuwait?</div><div class="widget-options"><button data-choice="0">Kuwait was the greatest oil producer of all, and Iraq had now taken it for itself</button><button data-choice="1">The long war with Iran had only just begun, and a wider war in the region was feared</button><button data-choice="2">Iraq&#x27;s army had already marched into Saudi Arabia and taken its capital within days</button><button data-choice="3">Iraq now held a large share of the world&#x27;s oil, and its army threatened Saudi Arabia</button></div></div><div class="widget-row" data-correct="0" data-fb="Yes. In its last year, the Soviet Union voted with the United States instead of blocking the effort." data-hint="Think about what the Soviet Union chose not to do."><div class="widget-row-prompt">2. Bush sought a vote of world leaders against Iraq. In its last year, what did the Soviet Union do about it?</div><div class="widget-options"><button data-choice="0">It joined the United States in the vote instead of blocking it</button><button data-choice="1">It blocked the vote, so Bush had to act without the support of other nations</button><button data-choice="2">It sent troops to Kuwait on the side of Iraq</button><button data-choice="3">It asked for the vote to wait until Congress had acted</button></div></div><div class="widget-row" data-correct="1" data-fb="Yes. The ground attack took about a hundred hours, and Iraq&#x27;s losses were many times higher than American losses." data-hint="Remember how quickly the ground attack went, and where Bush chose to stop."><div class="widget-row-prompt">3. Which statement about the ground war fits the lesson?</div><div class="widget-options"><button data-choice="0">It dragged on for many months, and American forces lost far more people than the enemy did</button><button data-choice="1">Iraq&#x27;s army was driven out in about a hundred hours, and its losses were many times those of the Americans</button><button data-choice="2">It ended with a march on Baghdad, where Iraq&#x27;s ruler was removed from power and put on trial</button><button data-choice="3">It was fought by American forces alone, because every other country had refused to take part</button></div></div><button class="widget-reset">Reset</button></div>
+<p>Despite the victory, Bush lost the election of 1992. At the end of the war, about nine in ten Americans approved of the job he was doing, one of the highest ratings ever recorded. It did not last. A recession had begun in 1990, and by the middle of 1992, unemployment had climbed to nearly eight percent. Bush also had trouble in his own party. In 1988, he had promised not to raise taxes, but in 1990, he agreed to a budget deal that raised some of them to shrink the deficit, and many Republicans never forgave him. Voters worried about jobs. A third-party candidate, the Texas businessman Ross Perot, took many votes. He paid for his own television ads, warned about the national debt, and won about nineteen percent of the vote. The winner was the governor of Arkansas, <span class="gloss" tabindex="0">Bill Clinton<span class="gloss-tip"><span class="gloss-pron">BIL KLIN-tun</span>The 42nd president, from 1993 to 2001. He was a Democrat and the former governor of Arkansas.</span></span>, a young Democrat who promised to focus "like a laser" on the economy.</p>
+<p>Clinton was a gifted speaker, and he had a quick mind for policy. His first budget raised taxes on high earners and cut spending to shrink the deficit. It passed in 1993 by the narrowest of margins, with the vice president casting the tie-breaking vote in the Senate, and not one Republican voted for it. In 1994, voters answered by giving Republicans control of both houses of Congress for the first time in forty years, and their leader in the House, Newt Gingrich, led them in a long fight with the president over the budget that shut down parts of the government twice in the winter of 1995 and 1996. Clinton also proved to be careful about the political center. He declared that "the era of big government is over," and in 1996 he signed a law that reformed welfare by setting time limits on benefits and requiring work. The law limited most families to five years of aid in a lifetime, and some officials in his own administration resigned in protest. He was reelected that year.</p>
+<p>Clinton's most important economic decision was to follow Bush on free trade. The <span class="gloss" tabindex="0">North American Free Trade Agreement<span class="gloss-tip"><span class="gloss-pron">north uh-MAIR-ih-kun FREE trayd uh-GREE-munt</span>A treaty, called NAFTA, that removed most trade barriers among the United States, Canada, and Mexico. It took effect in 1994.</span></span>, or NAFTA, removed most trade barriers among the United States, Canada, and Mexico. Most of those barriers were tariffs, which are taxes on goods that cross a border, and NAFTA phased them out over a number of years. Bush had signed it in December 1992, but Congress had not yet voted. After a bitter fight in Congress, in which many labor unions and many members of Clinton's own party opposed it, Clinton won its passage in 1993, and it took effect on January 1, 1994. Perot warned that jobs would flow south across the border. Supporters said that free trade would lower prices and open new markets. Opponents said it would send factory jobs to Mexico. The truth is mixed. Trade grew sharply, and consumers gained from lower prices. But some towns that depended on manufacturing were hit hard, and the pain was real for the people who lived there. In 1995, the United States also helped create a new international body to set rules for trade among its members, and over the following years, trade with China grew rapidly.</p>
+<p>At the same time, the economy took off. Much of the growth came from a new technology. The Internet had been a tool for scientists and the military. In the 1990s, it spread to homes, with the World Wide Web, web browsers, and online companies such as Amazon and Google. The first browser that ordinary people found easy to use appeared in 1993, and when Netscape, a company that sold a browser, offered its shares to the public in 1995, the price more than doubled on the first day. Amazon began in 1994 as an online bookstore started by Jeff Bezos. Google began in 1998, when two Stanford graduate students, Larry Page and Sergey Brin, built a better way to search the web. A company that lost money could still raise millions by selling shares, because investors feared missing the next Amazon. Investors poured money into any business with ".com" in its name. In 1996, the chairman of the Federal Reserve, Alan Greenspan, warned that investors seemed carried away by their own excitement, but the buying went on.</p>
+<div class="optima-widget ow-seq" data-wid="m17-1-3" data-ra-skip data-n="5" data-fb="That is the order, from 1993 to 1998." data-hint="Use the years given in the lesson. The search company came last."><div class="widget-kicker">&#9889; PUT IT IN ORDER</div><div class="widget-question">Put these events of the early internet years in order, from the earliest to the latest. Tap them one at a time.</div><div class="widget-options ow-seq-pool"><button data-pos="1">A web browser that ordinary people find easy to use appears</button><button data-pos="2">An online bookstore opens for business</button><button data-pos="3">A browser company sells shares to the public, and the price more than doubles in a day</button><button data-pos="4">A top banker warns that investors seem carried away by their own excitement</button><button data-pos="5">Two graduate students start a better way to search the web</button></div><ol class="ow-seq-line"></ol><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>The <span class="gloss" tabindex="0">dot-com boom<span class="gloss-tip"><span class="gloss-pron">DOT-kom BOOM</span>The rush of investment in internet companies in the late 1990s that drove the stock market to new heights before many of the companies failed.</span></span> pushed the stock market to new heights. The Nasdaq, an index heavy with technology stocks, passed 5,000 in March 2000. Unemployment fell to about four percent by 2000, and starting in 1998, for the first time in decades, the federal government took in more money than it spent. Rising paychecks and stock profits meant that more tax money was coming in. Not all of this was lasting. In 2000 and 2001, many internet companies failed, and stock prices fell. Pets.com, which sold pet supplies online and had advertised during the Super Bowl with a sock puppet, shut down within a year of selling its shares to the public. By 2002, the Nasdaq had lost about three fourths of its value. An old lesson was learned again: speculation can run ahead of reality.</p>
+<p>The decade was a test of how America would use its power without a rival. In some places, it acted. When Yugoslavia broke apart, war came to Bosnia in 1992, and about a hundred thousand people died. In July 1995, Serb forces killed roughly eight thousand Muslim men and boys at Srebrenica. NATO then bombed Serb positions, and talks at an air force base in Dayton, Ohio, produced a peace agreement that November, with American soldiers sent as part of a NATO force to keep the peace. In this way, the United States helped end the war in Bosnia in 1995. In 1999, Serbian forces under Slobodan Milosevic drove thousands of ethnic Albanians from their homes in Kosovo, and the United States and its allies bombed Serbian forces for 78 days until he gave way. No American was killed in combat.</p>
+<p>In others, it held back or failed. In late 1992, Bush had sent troops to Somalia to guard food shipments for people starving in a civil war, but under Clinton the mission grew into a hunt for a warlord named Mohamed Farrah Aidid. In 1993, eighteen American soldiers died in Somalia in a street battle in Mogadishu, and television showed the body of one of them dragged through the streets. Clinton pulled out. In 1994, in Rwanda, about eight hundred thousand people were killed in a genocide, and the world did not act. The killing lasted about a hundred days, and most of the dead were Tutsi, murdered by Hutu extremists, often their own neighbors. A small United Nations force already on the ground was reduced instead of strengthened. Clinton said years later that the world, including the United States, had not acted quickly enough. American leaders drew a hard lesson from Somalia and were reluctant to send troops to places where no vital interest seemed to be at stake. They also wondered what role a country with no rival should play.</p>
+<div class="ow-group" data-wid="m17-1-4" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What helped end the war in Bosnia in 1995?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Allied bombing of Serb positions, and then talks at an air force base in Dayton, Ohio, that produced a peace agreement. American soldiers went as part of a force to keep the peace.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did the United States and its allies do in Kosovo in 1999?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">They bombed Serbian forces for 78 days until Milosevic gave way. No American was killed in combat.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What question did the years after 1989 leave for a country with no rival?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">What role it should play. The lesson shows places where it acted and places where it held back.</div></div><button class="widget-reset">Reset</button></div></div>
+<p>For many Americans, the 1990s felt like a time of peace and wealth, a holiday from history. That feeling is the subject of this week's discussion, which asks whether the peace was real or only a pause. The next lesson looks at three signs of trouble that were visible in these years: terrorism, immigration, and a presidential election that was decided in the courts.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe the Persian Gulf War and why the United States built a coalition to fight it</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain the ideas behind the free trade agreements and the economic boom of the 1990s</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> evaluate the limits of American power after the Cold War</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><div></div><a class="next" href="primary-source-1.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">George H. W. Bush, Address to Congress on the Persian Gulf Crisis</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; The Unipolar Moment: War, Trade, and Boom</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>

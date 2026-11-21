@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Johnson and the Great Society | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">The Brink and the Great Society</div>
+  </div>
+</div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">9 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">Johnson and the Great Society</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">Barry Goldwater<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'BAIR-ee GOHL-waw-ter')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BAIR-ee GOHL-waw-ter</span>The Arizona senator and conservative who ran against Johnson in 1964.</span></span></li>
+    <li><span class="gloss" tabindex="0">Great Society<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'grayt suh-SY-uh-tee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">grayt suh-SY-uh-tee</span>Johnson's name for his plan to end poverty and racial injustice and to improve education, health care, and cities.</span></span></li>
+    <li><span class="gloss" tabindex="0">Head Start<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'hed start')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">hed start</span>A program begun in 1965 that gives preschool classes to children from low-income families.</span></span></li>
+    <li><span class="gloss" tabindex="0">Immigration and Nationality Act of 1965<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'im-ih-GRAY-shun and nash-uh-NAL-ih-tee akt uv nyne-TEEN SIX-tee-fyve')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">im-ih-GRAY-shun and nash-uh-NAL-ih-tee akt uv nyne-TEEN SIX-tee-fyve</span>The law that ended the quota system based on national origin and gave priority to family ties and skills.</span></span></li>
+    <li><span class="gloss" tabindex="0">Lyndon B. Johnson<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'LIN-dun bee JON-sun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LIN-dun bee JON-sun</span>The thirty-sixth president, who took office after Kennedy's death and served until 1969.</span></span></li>
+    <li><span class="gloss" tabindex="0">Medicaid<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MED-ih-kayd')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MED-ih-kayd</span>A program, begun in 1965, that helps the states pay for the health care of poor people.</span></span></li>
+    <li><span class="gloss" tabindex="0">Medicare<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MED-ih-kair')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MED-ih-kair</span>A program, begun in 1965, that pays for hospital and medical care for Americans over sixty-five.</span></span></li>
+    <li><span class="gloss" tabindex="0">poverty line<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'POV-er-tee lyne')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">POV-er-tee lyne</span>The income level the government sets as the least a family needs to meet its basic needs.</span></span></li>
+    <li><span class="gloss" tabindex="0">War on Poverty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'wor on POV-er-tee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">wor on POV-er-tee</span>Johnson's 1964 campaign of programs meant to lift Americans out of poverty.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>On the afternoon of November 22, 1963, Vice President <span class="gloss" tabindex="0">Lyndon B. Johnson<span class="gloss-tip"><span class="gloss-pron">LIN-dun bee JON-sun</span>The thirty-sixth president, who took office after Kennedy's death and served until 1969.</span></span> took the oath of office on an airplane in Dallas, with Kennedy's widow standing at his side. A federal judge, Sarah Hughes, gave him the oath, and Jacqueline Kennedy still wore the suit stained with her husband's blood. Then the plane flew to Washington with the president's coffin on board. Johnson asked Kennedy's cabinet and aides to stay on, so that the country would see that the government went on. Johnson was a very different man from Kennedy. He was a tall Texan from a poor part of the Hill Country, who had begun as a schoolteacher. In the small town of Cotulla, he taught poor Mexican American children who often came to school hungry, and he said later that the experience stayed with him. From there he had risen to become the most effective Senate majority leader of his time. He understood how Congress worked better than any president of the century. He knew whom to flatter, whom to pressure, and what each member needed. As vice president, he had felt like an outsider among Kennedy's polished circle of advisers, and he knew that many people doubted him. As Senate leader, he had been known for what people called the "Johnson treatment": standing close, leaning in, and talking and pleading until a senator gave way. When Kennedy died, his two biggest bills were stuck in committees. Within five days, he told Congress that the best memorial for Kennedy would be to pass the laws that Kennedy had proposed. His speech to Congress closed with the words "Let us continue."</p>
+<p>He started with two. The first was a tax cut, which Kennedy had asked for and which passed in 1964. It cut the top income tax rate from 91 percent to 70 percent, so that families and businesses would have more to spend and invest. A powerful senator, Harry Byrd of Virginia, held the bill in his committee until Johnson promised to keep federal spending under one hundred billion dollars, and then it moved. It helped to power a long economic boom. The second was the Civil Rights Act, which you studied in the last module.</p>
+<p>But Johnson wanted more than to finish Kennedy's work. In May 1964, speaking to a crowd of about eighty thousand in the football stadium at the University of Michigan, he described what he wanted to build. It would be a <span class="gloss" tabindex="0">Great Society<span class="gloss-tip"><span class="gloss-pron">grayt suh-SY-uh-tee</span>Johnson's name for his plan to end poverty and racial injustice and to improve education, health care, and cities.</span></span>, one "that rests on abundance and liberty for all" and that "demands an end to poverty and racial injustice." Behind the speech, Johnson set up task forces of outside experts to draft bills in advance, so that when Congress met in 1965, the plans would be ready. You will read this speech in this week's source.</p>
+<div class="optima-widget" data-wid="m13-2-1" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">Five days after he took the oath, Johnson told Congress that the best memorial to Kennedy would be to pass Kennedy's own laws.</div><details class="ow-reveal"><summary>Why might that argument work, and what else would Johnson need? Decide first and jot down two ideas before you open this.</summary><div class="ow-reveal-body">The argument may have worked because the nation was grieving. But a mood fades. Johnson also needed what the lesson says he had: a close knowledge of Congress, of whom to flatter, whom to pressure, and what each member needed. Had Kennedy lived, the same bills might have moved more slowly, or not at all. That is reasoning, not settled fact, since the lesson cannot tell us what would have happened. It does show that a good idea and a skilled legislator are two different things.</div></details><button class="widget-reset">Reset</button></div>
+<p>The first target was poverty. In 1964, nearly one in five Americans lived below the <span class="gloss" tabindex="0">poverty line<span class="gloss-tip"><span class="gloss-pron">POV-er-tee lyne</span>The income level the government sets as the least a family needs to meet its basic needs.</span></span>, the income level that the government sets as the least a family needs to meet its basic needs. That year, the line was about three thousand dollars a year for a family of four. A 1962 book, The Other America, by Michael Harrington, had shown many readers how many Americans lived in poverty in the middle of plenty, and many of the poor lived in places that prosperity had passed by. That spring, Johnson flew to Kentucky and sat on the porch of an out-of-work sawmill worker in the Appalachian mountains, with the cameras rolling, to show the nation what he meant. Johnson declared a <span class="gloss" tabindex="0">War on Poverty<span class="gloss-tip"><span class="gloss-pron">wor on POV-er-tee</span>Johnson's 1964 campaign of programs meant to lift Americans out of poverty.</span></span>. He asked Sargent Shriver, who had built the Peace Corps, to lead it.</p>
+<p>The Economic Opportunity Act, passed that August, created a number of programs. Job Corps took young people from poor families to live at training centers, where they learned job skills. VISTA sent volunteers to work in poor communities, as a kind of domestic Peace Corps. <span class="gloss" tabindex="0">Head Start<span class="gloss-tip"><span class="gloss-pron">hed start</span>A program begun in 1965 that gives preschool classes to children from low-income families.</span></span> gave preschool classes to children from low-income homes, to help them be ready for school. More than half a million children took part in its first summer. Community Action Programs let poor neighborhoods run local efforts. The law called for the "maximum feasible participation" of the poor in them. That sounded fair, but it led to quarrels. Some big-city mayors complained that federal money was paying groups that criticized them, and Congress later gave local officials more control. Some of these programs produced results. Head Start is still around today, and some studies find that children who attended did better in later life. Others had problems, and some were poorly managed. In 1964, Congress also made the food stamp program permanent, so that poor families could use stamps to buy groceries.</p>
+<div class="optima-widget ow-sat" data-wid="m13-2-2" data-ra-skip data-form="detail" data-correct="1"><div class="widget-kicker">&#9889; SAT PRACTICE</div><blockquote class="sat-passage"><p>The Economic Opportunity Act, passed that August, created a number of programs. Job Corps took young people from poor families to live at training centers, where they learned job skills. VISTA sent volunteers to work in poor communities, as a kind of domestic Peace Corps. <span class="gloss" tabindex="0">Head Start<span class="gloss-tip"><span class="gloss-pron">hed start</span>A program begun in 1965 that gives preschool classes to children from low-income families.</span></span> gave preschool classes to children from low-income homes, to help them be ready for school. More than half a million children took part in its first summer. Community Action Programs let poor neighborhoods run local efforts. The law called for the "maximum feasible participation" of the poor in them. That sounded fair, but it led to quarrels. Some big-city mayors complained that federal money was paying groups that criticized them, and Congress later gave local officials more control.</p></blockquote><div class="widget-question">According to the text, why did the call for "maximum feasible participation" of the poor lead to quarrels?</div><div class="sat-prompt">Come up with your own answer before looking at the choices.</div><button type="button" class="sat-btn ow-sat-reveal">Reveal answer choices</button><div class="ow-sat-choices" hidden><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="0" data-fb="The text says the law wanted poor neighborhoods to take part in local efforts. It never says they refused." aria-pressed="false"><span class="sat-ltr">A.</span><span>Poor neighborhoods refused to take part in the local programs that the law had set up for them.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="1" data-fb="The text states this reason directly. Locate the detail, read the sentences around it, and match it." aria-pressed="false"><span class="sat-ltr">B.</span><span>Some big-city mayors complained that federal money was paying groups that criticized them.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="2" data-fb="The text says the programs let poor neighborhoods run local efforts. It says Congress later gave local officials more control, not that it refused the money." aria-pressed="false"><span class="sat-ltr">C.</span><span>Congress would not give any federal money to the Community Action Programs after the law passed.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="3" data-fb="VISTA and Job Corps are two separate programs in the passage, and the text never says one took over the other." aria-pressed="false"><span class="sat-ltr">D.</span><span>VISTA volunteers took over the training centers that Job Corps had built in poor communities.</span></button><div class="ow-sat-cfb" role="status"></div></div></div><div class="sat-bar" hidden><button type="button" class="sat-btn ow-sat-submit" disabled>Submit answer</button><button type="button" class="sat-btn ghost ow-sat-hintbtn" disabled>Show hint</button></div><div class="ow-sat-hints" aria-live="polite"></div><div class="ow-sat-note"><strong>Question type:</strong> This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.</div><button class="widget-reset">Reset</button></div>
+<p>Johnson faced the voters in 1964 against Senator <span class="gloss" tabindex="0">Barry Goldwater<span class="gloss-tip"><span class="gloss-pron">BAIR-ee GOHL-waw-ter</span>The Arizona senator and conservative who ran against Johnson in 1964.</span></span> of Arizona. Johnson had chosen Senator Hubert Humphrey of Minnesota, a leader in the fight for the Civil Rights Act, as his running mate. Goldwater was an open conservative who believed that the federal government had grown too large and too powerful. He had voted against the Civil Rights Act, because he thought that parts of it went beyond what the Constitution allowed. His supporters liked that he spoke his mind, and his slogan was "In your heart you know he's right." His opponents tried to paint him as dangerous, and a famous Johnson television ad showed a little girl pulling the petals off a daisy while a voice counted down to a nuclear explosion. It never named Goldwater, and it aired only once, but people talked about it for weeks. It suggested that Goldwater might start a nuclear war.</p>
+<p>In November, Johnson won with about 61 percent of the vote, the largest share of any president in the twentieth century. Goldwater carried only his home state and five states of the Deep South, where the Civil Rights Act was most bitterly opposed. Democrats also won huge majorities in Congress, and in 1965, Johnson had the votes to pass nearly anything he wanted.</p>
+<div class="optima-widget ow-sat" data-wid="m13-2-3" data-ra-skip data-form="main" data-correct="3"><div class="widget-kicker">&#9889; SAT PRACTICE</div><blockquote class="sat-passage"><p>Johnson faced the voters in 1964 against Senator <span class="gloss" tabindex="0">Barry Goldwater<span class="gloss-tip"><span class="gloss-pron">BAIR-ee GOHL-waw-ter</span>The Arizona senator and conservative who ran against Johnson in 1964.</span></span> of Arizona. Johnson had chosen Senator Hubert Humphrey of Minnesota, a leader in the fight for the Civil Rights Act, as his running mate. Goldwater was an open conservative who believed that the federal government had grown too large and too powerful. He had voted against the Civil Rights Act, because he thought that parts of it went beyond what the Constitution allowed. His supporters liked that he spoke his mind, and his slogan was "In your heart you know he's right." His opponents tried to paint him as dangerous, and a famous Johnson television ad showed a little girl pulling the petals off a daisy while a voice counted down to a nuclear explosion. It never named Goldwater, and it aired only once, but people talked about it for weeks. It suggested that Goldwater might start a nuclear war.</p><p>In November, Johnson won with about 61 percent of the vote, the largest share of any president in the twentieth century. Goldwater carried only his home state and five states of the Deep South, where the Civil Rights Act was most bitterly opposed. Democrats also won huge majorities in Congress, and in 1965, Johnson had the votes to pass nearly anything he wanted.</p></blockquote><div class="widget-question">Which choice best states the main idea of the text?</div><div class="sat-prompt">Come up with your own answer before looking at the choices.</div><button type="button" class="sat-btn ow-sat-reveal">Reveal answer choices</button><div class="ow-sat-choices" hidden><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="0" data-fb="The passage says the ad suggested a nuclear war, but it never says that fear is why Goldwater lost. This distorts the passage." aria-pressed="false"><span class="sat-ltr">A.</span><span>Goldwater lost mainly because most voters came to believe that he would start a nuclear war.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="1" data-fb="The ad is one example in the passage, so this is too narrow. The passage never says it decided the election." aria-pressed="false"><span class="sat-ltr">B.</span><span>A single television ad about a daisy was the one event that decided the election of 1964.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="2" data-fb="This overstates a detail. The passage says Goldwater carried his home state as well as five Deep South states, and it never says his vote cost him the rest." aria-pressed="false"><span class="sat-ltr">C.</span><span>Goldwater&#x27;s vote against the Civil Rights Act cost him the vote of every state except those in the Deep South.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="3" data-fb="This covers both paragraphs: the opponent, how he was portrayed, and the landslide with its result. Set aside the examples and pick the choice closest to your own one-sentence summary." aria-pressed="false"><span class="sat-ltr">D.</span><span>Johnson beat a rival his campaign called dangerous, and the landslide gave him votes for his program.</span></button><div class="ow-sat-cfb" role="status"></div></div></div><div class="sat-bar" hidden><button type="button" class="sat-btn ow-sat-submit" disabled>Submit answer</button><button type="button" class="sat-btn ghost ow-sat-hintbtn" disabled>Show hint</button></div><div class="ow-sat-hints" aria-live="polite"></div><div class="ow-sat-note"><strong>Question type:</strong> This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.</div><button class="widget-reset">Reset</button></div>
+<p>What he wanted next was health care. Before 1965, many elderly Americans had no health insurance, and illness could wipe out a family's savings. Doctors' groups had fought national health insurance for years, calling it government medicine. In July 1965, Johnson signed <span class="gloss" tabindex="0">Medicare<span class="gloss-tip"><span class="gloss-pron">MED-ih-kair</span>A program, begun in 1965, that pays for hospital and medical care for Americans over sixty-five.</span></span>, which pays for hospital and medical care for Americans over sixty-five, and <span class="gloss" tabindex="0">Medicaid<span class="gloss-tip"><span class="gloss-pron">MED-ih-kayd</span>A program, begun in 1965, that helps the states pay for the health care of poor people.</span></span>, which helps the states pay for the health care of poor people. Medicare's hospital coverage was paid for by a tax on workers' paychecks, and older people could add doctor coverage for a small monthly fee. Each state ran its own Medicaid program with federal help. He signed the bill in Independence, Missouri, in front of Harry Truman, who had proposed national health insurance twenty years before. Johnson handed Truman the first Medicare card. In just a few months, millions of older Americans were enrolled. By the end of the first year, about nineteen million had signed up.</p>
+<p>The 1965 Congress passed a great deal more. The Elementary and Secondary Education Act sent federal money to schools in poor districts, the first big federal role in local education. Johnson signed it in April, outside the one-room school in Stonewall, Texas, that he had attended as a boy, with his first teacher, Kate Deadrich Loney, at his side. Earlier education bills had died in a fight over aid to church schools, so this one directed the money at poor children rather than at any kind of school.</p>
+<div class="optima-widget ow-seq" data-wid="m13-2-4" data-ra-skip data-n="5" data-fb="That is the order. The landslide of November 1964 gave Johnson the votes to pass health care in 1965." data-hint="Think of the goal first, then the law, then the vote that made more laws possible."><div class="widget-kicker">&#9889; PUT IT IN ORDER</div><div class="widget-question">Put these events in order. Tap them one at a time.</div><div class="widget-options ow-seq-pool"><button data-pos="1">Johnson takes the oath on an airplane in Dallas</button><button data-pos="2">Johnson describes his hopes for a better nation in a speech in Michigan</button><button data-pos="3">Congress passes the Economic Opportunity Act</button><button data-pos="4">Johnson beats Goldwater in a landslide</button><button data-pos="5">Johnson signs health insurance for the elderly and the poor in Independence, Missouri</button></div><ol class="ow-seq-line"></ol><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>The Higher Education Act created scholarships and loans for college. Johnson signed it at Southwest Texas State, the small college where he had trained to be a teacher. Congress also created the National Endowments for the Arts and for the Humanities, a Department of Housing and Urban Development, and the Voting Rights Act, which you have already read about. New laws set standards for the safety of cars and for clean air and water. The car-safety law, passed in 1966, followed a book by a young lawyer, Ralph Nader, that charged automakers with ignoring safety. Lady Bird Johnson, the president's wife, led a campaign to plant flowers and to clear roadsides of billboards and junkyards, and it led to the Highway Beautification Act.</p>
+<p>One of the most important laws was also one of the least noticed at the time. The <span class="gloss" tabindex="0">Immigration and Nationality Act of 1965<span class="gloss-tip"><span class="gloss-pron">im-ih-GRAY-shun and nash-uh-NAL-ih-tee akt uv nyne-TEEN SIX-tee-fyve</span>The law that ended the quota system based on national origin and gave priority to family ties and skills.</span></span> ended the quota system of the 1920s, which had set limits by national origin and favored Northern Europeans. Under the old quotas, most places went to people from Britain, Ireland, and Germany, while Italy, Greece, Poland, and other countries had small limits, and most of Asia was almost shut out. The new law gave priority to family ties and to skills. Supporters said that it was just a matter of fairness. They expected that few new immigrants would come from outside Europe. Johnson signed the law at the foot of the Statue of Liberty, and he said that it was not a revolutionary bill and would not reshape the daily lives of Americans.</p>
+<div class="optima-widget ow-select" data-wid="m13-2-5" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; SCHOOLS AND NEWCOMERS</div><div class="widget-question">Choose the best answer for each question.</div><div class="widget-row" data-correct="3" data-fb="Yes. Earlier bills had died over aid to church schools, so this one directed the money at poor children rather than at any kind of school." data-hint="Think about who the money was meant to help, instead of which schools."><div class="widget-row-prompt">1. Earlier education bills had died in a fight over aid to church schools. How did the 1965 education law get around that fight?</div><div class="widget-options"><button data-choice="0">It cut all church schools out of the plan by law</button><button data-choice="1">It paid only for church schools in poor districts</button><button data-choice="2">It waited for the Supreme Court to settle the church question first</button><button data-choice="3">The money went to poor children, not to a type of school</button></div></div><div class="widget-row" data-correct="1" data-fb="Yes. Britain, Ireland, and Germany had the most places, while Italy, Greece, Poland, and other countries had small limits and most of Asia was almost shut out." data-hint="The old system favored Northern Europeans."><div class="widget-row-prompt">2. Under the old immigration limits of the 1920s, which countries received most of the places?</div><div class="widget-options"><button data-choice="0">Italy, Greece, and Poland</button><button data-choice="1">Britain, Ireland, and Germany</button><button data-choice="2">China, Japan, and India</button><button data-choice="3">Mexico, Cuba, and Brazil</button></div></div><button class="widget-reset">Reset</button></div>
+<p>In fact, over the following decades, immigration shifted greatly toward Asia and Latin America. One reason was the family rule. Close relatives of citizens could come in without counting against the yearly limits, so each new arrival could open the door to others. The law also set a cap on immigration from the Western Hemisphere for the first time. Here, as in other cases, the results were very different from the expectations. It is one of the best examples in this course of an unintended consequence.</p>
+<p>How did the Great Society do? Supporters have a strong case. The poverty rate fell from about nineteen percent in 1964 to about twelve percent by 1969, and the elderly, who had been the poorest group in America, did far better once Medicare and Social Security grew. Medicare and Medicaid spread basic medical care. Medicare also gave hospitals a reason to end segregation, because hospitals that wanted its payments had to open their wards to all patients, and many in the South did so within months. Millions of students went to college with federal help.</p>
+<p>Critics have a case too. Some argue that welfare programs, as they grew, rewarded people for not working or not marrying, and led to long-term dependence. Conservatives made an argument that fit the Tocqueville tradition: that the real strength of America came from churches, families, and local groups, and that big federal programs pushed these aside. Others pointed out that the poverty line counted only money income, and so left out help such as medical care, which is one reason the figures are argued over. Still others said that the programs were too big and too hastily designed, that they promised more than they could deliver, and that federal spending on them added to the cost of government. A republic judges policies by whether they help solve the first-order economic problem, and this one is still contested. Another argument is about federalism: should the national government decide how to run local schools and health care, or should the states and cities?</p>
+<div class="optima-widget ow-scale" data-wid="m13-2-6" data-ra-skip><div class="widget-kicker">&#9889; HOW SETTLED IS THE VERDICT?</div><div class="widget-question">Supporters of the <span class="gloss" tabindex="0">Great Society<span class="gloss-tip"><span class="gloss-pron">grayt suh-SY-uh-tee</span>Johnson's name for his plan to end poverty and racial injustice and to improve education, health care, and cities.</span></span> point to the fall in the <span class="gloss" tabindex="0">poverty rate<span class="gloss-tip"><span class="gloss-pron">POV-er-tee lyne</span>The income level the government sets as the least a family needs to meet its basic needs.</span></span>. Critics point to dependence, cost, and who should run local schools. How settled is the question of whether it worked?</div><div class="widget-row" data-correct="3" data-fb="Yes. Supporters point to falling poverty and spreading health care. Critics point to dependence, cost, and the question of who should run schools and health care." data-hint="The lesson gives a case for supporters and a case for critics, and calls the question contested."><div class="widget-options"><button data-choice="0" data-fb="Not quite. The poverty rate fell and many people gained health care, which supporters count as real success.">Settled: it clearly failed</button><button data-choice="1" data-fb="Not quite. The lesson cites studies, and the debate is still open.">Nobody has studied it</button><button data-choice="2" data-fb="Not quite. Critics have a case too, about dependence, cost, and who should decide.">Settled: it clearly worked</button><button data-choice="3" data-fb="Yes. Supporters point to falling poverty and spreading health care. Critics point to dependence, cost, and the question of who should run schools and health care.">Still contested, with real evidence on both sides</button></div></div><button class="widget-reset">Reset</button></div>
+<p>There was one more difficulty, and it was growing. Johnson wanted to spend on both guns and butter, which means that he wanted to fight a war abroad and build a Great Society at home. By 1965, the war in Vietnam was swallowing up money, attention, and the trust of the American people. Johnson himself feared that the war would crowd out his domestic dreams, and he later told a biographer that it had done just that. He said that giving up the Great Society for a war he did not want felt like abandoning the thing he loved most. He put off asking Americans to pay higher taxes for the war, because he feared that a tax fight would sink his domestic bills. He asked in 1967, and Congress did not pass an increase until 1968. By then spending was running ahead of income, and prices were beginning to rise faster. The next module turns to that war, the largest and most troubling event of his presidency.</p>
+<div class="optima-widget ow-sat" data-wid="m13-2-7" data-ra-skip data-form="inference" data-correct="0"><div class="widget-kicker">&#9889; SAT PRACTICE</div><blockquote class="sat-passage"><p>Johnson wanted to spend on both guns and butter, which means that he wanted to fight a war abroad and build a <span class="gloss" tabindex="0">Great Society<span class="gloss-tip"><span class="gloss-pron">grayt suh-SY-uh-tee</span>Johnson's name for his plan to end poverty and racial injustice and to improve education, health care, and cities.</span></span> at home. By 1965, the war in Vietnam was swallowing up money, attention, and the trust of the American people. He put off asking Americans to pay higher taxes for the war, because he feared that a tax fight would sink his domestic bills. He asked in 1967, and Congress did not pass an increase until 1968. By then spending was running ahead of income, and prices were beginning to rise faster. In the years before the tax increase passed, then, the government was <span class="sat-blank">_____</span></p></blockquote><div class="widget-question">Which choice most logically completes the text?</div><div class="sat-prompt">Come up with your own answer before looking at the choices.</div><button type="button" class="sat-btn ow-sat-reveal">Reveal answer choices</button><div class="ow-sat-choices" hidden><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="0" data-fb="The passage establishes that Johnson delayed the tax request and that spending ran ahead of income, and this follows with no added assumptions." aria-pressed="false"><span class="sat-ltr">A.</span><span>spending on both the war and its domestic programs without raising enough money to cover them.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="1" data-fb="The passage never says programs were ended. This adds new information." aria-pressed="false"><span class="sat-ltr">B.</span><span>forced to end most of its domestic programs so that it could keep paying for the war in Vietnam.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="2" data-fb="This reverses the passage, which says spending was running ahead of income and prices were rising faster." aria-pressed="false"><span class="sat-ltr">C.</span><span>collecting more money in taxes than it spent, which kept prices from rising as fast as before.</span></button><div class="ow-sat-cfb" role="status"></div></div><div class="ow-sat-choice"><button type="button" class="ow-sat-opt" data-choice="3" data-fb="This contradicts the passage, which says Johnson put off asking for higher taxes and Congress passed no increase until 1968." aria-pressed="false"><span class="sat-ltr">D.</span><span>paying for the war entirely with new taxes that Congress had passed in 1965 to cover the costs.</span></button><div class="ow-sat-cfb" role="status"></div></div></div><div class="sat-bar" hidden><button type="button" class="sat-btn ow-sat-submit" disabled>Submit answer</button><button type="button" class="sat-btn ghost ow-sat-hintbtn" disabled>Show hint</button></div><div class="ow-sat-hints" aria-live="polite"></div><div class="ow-sat-note"><strong>Question type:</strong> This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.</div><button class="widget-reset">Reset</button></div></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe the main programs of the Great Society and the problems each was meant to solve</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain how Johnson used his political skill and the 1964 election to pass them</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> evaluate the Great Society from the standpoint of both its supporters and its critics</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><a class="prev" href="primary-source-1.html"><div class="seq-kicker">&larr; Previous</div><div class="seq-label">John F. Kennedy, Address on Missiles in Cuba</div></a><a class="next" href="primary-source-2.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">Lyndon B. Johnson, Address at the University of Michigan</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; Johnson and the Great Society</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>

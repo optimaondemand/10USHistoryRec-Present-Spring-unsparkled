@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kennedy: Berlin, Cuba, and the Brink | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">The Brink and the Great Society</div>
+  </div>
+</div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">9 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">Kennedy: Berlin, Cuba, and the Brink</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">Bay of Pigs<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'bay uv pigz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">bay uv pigz</span>The failed April 1961 invasion of Cuba by about fourteen hundred American-trained exiles.</span></span></li>
+    <li><span class="gloss" tabindex="0">Berlin Wall<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ber-LIN wawl')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ber-LIN wawl</span>The barrier built by East Germany in August 1961 to stop people from fleeing to West Berlin. It stood for twenty-eight years.</span></span></li>
+    <li><span class="gloss" tabindex="0">brinkmanship<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'BRINK-mun-ship')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BRINK-mun-ship</span>Pushing a dangerous situation to the edge of disaster to make the other side back down.</span></span></li>
+    <li><span class="gloss" tabindex="0">ExComm<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'EKS-kom')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">EKS-kom</span>The Executive Committee of the National Security Council, the group of advisers Kennedy gathered during the Cuban Missile Crisis.</span></span></li>
+    <li><span class="gloss" tabindex="0">Fidel Castro<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'fih-DEL KAS-troh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">fih-DEL KAS-troh</span>The communist leader who took power in Cuba in 1959 and ruled it for decades.</span></span></li>
+    <li><span class="gloss" tabindex="0">John F. Kennedy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'jon eff KEN-uh-dee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">jon eff KEN-uh-dee</span>The thirty-fifth president, elected in 1960 and assassinated in November 1963.</span></span></li>
+    <li><span class="gloss" tabindex="0">Limited Test Ban Treaty<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'LIM-ih-tid test ban TREE-tee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LIM-ih-tid test ban TREE-tee</span>The 1963 treaty among the United States, Britain, and the Soviet Union that banned nuclear tests in the air, in space, and underwater.</span></span></li>
+    <li><span class="gloss" tabindex="0">Nikita Khrushchev<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'nih-KEE-tuh KROOSH-chef')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">nih-KEE-tuh KROOSH-chef</span>The Soviet leader from 1953 to 1964.</span></span></li>
+    <li><span class="gloss" tabindex="0">quarantine<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KWOR-un-teen')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KWOR-un-teen</span>Kennedy's name for the naval blockade of Cuba in 1962, chosen because a "blockade" is an act of war.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>In November 1960, <span class="gloss" tabindex="0">John F. Kennedy<span class="gloss-tip"><span class="gloss-pron">jon eff KEN-uh-dee</span>The thirty-fifth president, elected in 1960 and assassinated in November 1963.</span></span>, a young senator from Massachusetts, won one of the closest elections in American history. He beat Vice President Nixon by about 100,000 votes out of nearly 69 million. Television helped. In September, the two men had met in the first televised presidential debates. Kennedy looked calm and rested. Nixon, who had recently been ill, looked pale and tired, and many viewers judged Kennedy the winner. At forty-three, he was the youngest man ever elected president. His inaugural address, given on a bitterly cold day in January 1961, promised that the United States would "pay any price, bear any burden" to defend liberty, and it urged Americans to "ask not what your country can do for you; ask what you can do for your country." Within two months, he had created the Peace Corps, which sent young volunteers to work in poor countries overseas. The test of those words came quickly, and it came in a place only ninety miles from Florida.</p>
+<p>In 1959, a rebel leader named <span class="gloss" tabindex="0">Fidel Castro<span class="gloss-tip"><span class="gloss-pron">fih-DEL KAS-troh</span>The communist leader who took power in Cuba in 1959 and ruled it for decades.</span></span> had overthrown the Cuban dictator Fulgencio Batista. Within two years, Castro had taken American property, put his opponents in jail, and turned to the Soviet Union for money and arms. The Eisenhower administration had begun a secret plan to train Cuban exiles to invade the island. Kennedy inherited the plan and approved it. On April 17, 1961, about fourteen hundred exiles landed at the Bay of Pigs, on Cuba's southern coast. The plan had expected that the Cuban people would rise up, and that American air power would help. Neither happened.</p>
+<p>The air power was a particular problem. Two days before the landing, planes flown by exiles and painted to look like Cuban planes had bombed Castro's airfields. On the night before the landing, Kennedy, worried that American fingerprints were showing, canceled a second round of strikes. Castro's surviving planes then sank ships carrying much of the invaders' ammunition and supplies. The invaders' other hope was to escape into the Escambray Mountains and fight on as guerrillas, but those mountains lay about eighty miles away across swamp. Kennedy refused to send in American planes, and Castro's forces captured most of the invaders. Nearly twelve hundred went to prison, and the next year Cuba released them in return for about fifty million dollars in food and medicine. The <span class="gloss" tabindex="0">Bay of Pigs<span class="gloss-tip"><span class="gloss-pron">bay uv pigz</span>The failed April 1961 invasion of Cuba by about fourteen hundred American-trained exiles.</span></span> was a humiliating failure. Kennedy took responsibility on television, and privately he admitted that he had been poorly advised. He also learned to be more careful about what the military and the CIA told him.</p>
+<p>Two months later, in Vienna, Kennedy met the Soviet leader <span class="gloss" tabindex="0">Nikita Khrushchev<span class="gloss-tip"><span class="gloss-pron">nih-KEE-tuh KROOSH-chef</span>The Soviet leader from 1953 to 1964.</span></span> for the first time. The meeting went badly. Khrushchev lectured and threatened, and Kennedy later told a reporter that it was the roughest experience of his life. Khrushchev concluded that the young president was weak and could be pushed. He renewed a demand that the Western powers leave Berlin. Kennedy told the nation that Berlin was a vital interest. The city was a strange place. It lay deep inside Communist East Germany, yet it was divided among the four powers that had won the Second World War, and its western half was a free island. An East German who reached West Berlin could walk out of the Communist world and fly on to the West. The real problem for Khrushchev was that thousands of East Germans were fleeing to the West through Berlin each month, including many of its most skilled workers. Since 1949, about two and a half million had gone.</p>
+<p>In the early morning of Sunday, August 13, 1961, East German soldiers began to string barbed wire across the city. Families woke to find streets they had crossed all their lives cut in two. The wire soon became a concrete wall, and the <span class="gloss" tabindex="0">Berlin Wall<span class="gloss-tip"><span class="gloss-pron">ber-LIN wawl</span>The barrier built by East Germany in August 1961 to stop people from fleeing to West Berlin. It stood for twenty-eight years.</span></span> stood for twenty-eight years. Kennedy did not try to knock it down. Privately, he said that a wall was better than a war. That October, American and Soviet tanks sat for most of a day with their guns pointed at each other at Checkpoint Charlie, a crossing point in the wall, in a dispute over whether American officials could enter East Berlin freely. Both sides backed away, and no one fired. Over the years that followed, at least a hundred people died trying to cross the wall.</p>
+<div class="optima-widget ow-reflect" data-wid="m13-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Kennedy chose not to fight the East German wall in Berlin, judging it the lesser evil. When is it wise to put up with something you dislike to avoid a bigger danger? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="That is the reasoning Kennedy used. The risk is that the other side may read your patience as weakness, as Khrushchev did after Vienna.">When the other choice could mean war</button><button data-response="A fair test. In Berlin, Kennedy accepted the wall without getting anything back. You can ask whether that was wise or whether it only avoided a fight.">Only if the other side gives something in return</button><button data-response="Many leaders have believed this. Notice that Khrushchev had already decided at Vienna that the young president could be pushed.">Almost never, because giving way invites more pushing</button><button data-response="That is often the honest answer. Kennedy had called Berlin a vital interest, yet he still let the wall stand.">It depends on what is at stake</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>In the summer of 1962, Khrushchev made a bold and risky move. He began to send medium-range nuclear missiles to Cuba, in secret. The missiles could reach Washington and much of the eastern United States. Soviet ships brought them under cover, along with about forty thousand Soviet troops to guard them, four times as many as American officials guessed. Soviet diplomats assured Kennedy that only defensive weapons were going to Cuba, and in September he warned publicly that offensive weapons there would raise the gravest issues. Khrushchev's reasons were mixed. He wanted to protect Cuba from an American invasion, and he wanted to even the balance of nuclear weapons, since the United States had missiles in Turkey and Italy that could reach the Soviet Union. He also hoped to gain an advantage in Berlin.</p>
+<p>On October 16, 1962, Kennedy was shown photographs, taken by a U-2 spy plane, that showed missile sites being built in Cuba. The pictures had been taken two days earlier, and it had taken analysts another day to be sure what the long shapes on the ground were. His national security adviser, McGeorge Bundy, brought the news to the president that morning, while he was still in his bedroom. For thirteen days, the country came close to nuclear war. For the first week, almost no one outside the White House knew. Kennedy kept to his public schedule, and when he cut a campaign trip short on October 20, reporters were told that he had a cold.</p>
+<p>Kennedy gathered a group of advisers, which later became known as <span class="gloss" tabindex="0">ExComm<span class="gloss-tip"><span class="gloss-pron">EKS-kom</span>The Executive Committee of the National Security Council, the group of advisers Kennedy gathered during the Cuban Missile Crisis.</span></span>, short for the Executive Committee of the National Security Council. Their discussions, which Kennedy secretly taped, show a group of serious people who disagreed. The Joint Chiefs wanted air strikes followed by an invasion. Others thought that a strike would lead to a Soviet attack on Berlin, or on the United States itself. Robert McNamara, the secretary of defense, favored a blockade first, which left room for something harsher later. Attorney General Robert Kennedy, the president's brother, passed him a note comparing a surprise attack on Cuba to Pearl Harbor. A few wanted to do nothing, and to accept that the Soviets had missiles too.</p>
+<p>Kennedy chose something in between. He ordered a naval blockade to stop Soviet ships carrying weapons to Cuba. The word "blockade" is an act of war under international law, so he called it a <span class="gloss" tabindex="0">quarantine<span class="gloss-tip"><span class="gloss-pron">KWOR-un-teen</span>Kennedy's name for the naval blockade of Cuba in 1962, chosen because a "blockade" is an act of war.</span></span>. Navy ships would stop Soviet vessels at a line about five hundred miles from Cuba, and American nuclear forces went to the highest alert level they have ever reached. On October 22, he went on television and told the nation about the missiles. He warned that any missile launched from Cuba would be treated as an attack by the Soviet Union, requiring a full response. Millions of Americans listened in fear. Some families stocked up on food. You will read the address this week.</p>
+<p>The crisis reached its peak over the weekend. On October 24, Soviet ships bound for Cuba stopped short of the quarantine line. Secretary of State Dean Rusk said, "We're eyeball to eyeball, and I think the other fellow just blinked." But the missiles in Cuba were still being finished. At the United Nations, the American ambassador, Adlai Stevenson, set photographs on easels before the Security Council and told the Soviet ambassador not to wait for the translation: did the Soviet Union have missiles in Cuba, yes or no? A Soviet tanker carrying only oil was let through the line after it identified itself. On Friday, October 26, Khrushchev sent a long, emotional letter offering to remove the missiles if the United States promised not to invade Cuba. That same day, a Soviet embassy official had asked a reporter for ABC News, John Scali, over lunch whether the United States would make that promise in return for the missiles' removal, and Scali carried the message to the White House.</p>
+<p>On Saturday, October 27, a second and tougher letter arrived, demanding that the United States remove its missiles from Turkey. The same day, a Soviet missile shot down an American U-2 over Cuba and killed its pilot, Major Rudolf Anderson. Some advisers urged an immediate strike. Kennedy held back. On the same day, another U-2 lost its way in a storm and strayed into Soviet airspace over Siberia, where Soviet fighters chased it off. In such a tense hour, a mistake like that could have looked like the first step of an attack.</p>
+<div class="optima-widget ow-select" data-wid="m13-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; WHO WANTED WHAT?</div><div class="widget-question">Match each fact to the right part of the October 1962 story.</div><div class="widget-row" data-correct="3" data-fb="Yes. The Joint Chiefs wanted air strikes followed by an invasion. Others feared a strike would bring an attack on Berlin or on the United States." data-hint="Think about which group wanted the strongest military answer."><div class="widget-row-prompt">1. Which advice did the Joint Chiefs give during the crisis?</div><div class="widget-options"><button data-choice="0">Do nothing and accept that the Soviets had missiles too</button><button data-choice="1">Offer to remove the American missiles in Turkey at once</button><button data-choice="2">Wait quietly while the Soviets thought it over</button><button data-choice="3">Air strikes followed by an invasion</button></div></div><div class="widget-row" data-correct="1" data-fb="Yes. He set photographs on easels and asked whether the Soviet Union had missiles in Cuba, yes or no." data-hint="He used pictures as evidence and wanted a plain answer."><div class="widget-row-prompt">2. What did the American ambassador, Adlai Stevenson, do when he faced the Soviet ambassador at a public meeting of the world's nations?</div><div class="widget-options"><button data-choice="0">He read Kennedy&#x27;s address aloud to the meeting</button><button data-choice="1">He showed photographs on easels and demanded a yes or no</button><button data-choice="2">He asked the members to vote on stopping the ships</button><button data-choice="3">He walked out when the Soviet ambassador spoke</button></div></div><div class="widget-row" data-correct="0" data-fb="Yes. He told the nation that a launch from Cuba would count as an attack by the Soviet Union." data-hint="His warning was firm, not a request for talks."><div class="widget-row-prompt">3. What did Kennedy warn on October 22 about any missile launched from Cuba?</div><div class="widget-options"><button data-choice="0">It would be treated as an attack by the Soviet Union, needing a full response</button><button data-choice="1">It would be answered with a letter of protest to Khrushchev</button><button data-choice="2">It would lead to talks about Turkey the next day</button></div></div><button class="widget-reset">Reset</button></div>
+<p>The solution was a mixture of firmness and compromise. Kennedy had recently read Barbara Tuchman's book The Guns of August, which tells how the leaders of Europe slid into war in 1914 through a chain of orders and mistakes, and he told his brother that he did not intend to be the president who let that happen again. Kennedy ignored the second letter and answered the first, accepting its offer: the missiles would come out of Cuba, and the United States would promise not to invade.</p>
+<p>That evening, Robert Kennedy met privately with the Soviet ambassador, Anatoly Dobrynin, at the Justice Department. He told him that the American missiles in Turkey would be removed within a few months, though this could not be announced as part of a deal. The missiles in Turkey were old, and the president had already wanted them gone, but Turkey was an ally, and a public trade would have looked like giving in to a threat. On Sunday, October 28, Khrushchev agreed to take his missiles out of Cuba. He did not wait for a letter to cross the ocean. His answer was broadcast over Radio Moscow so that no one could delay it. The world let out its breath.</p>
+<p>How close was it? Later evidence suggests that the danger was greater than those in the room knew. Soviet commanders in Cuba had tactical nuclear weapons, which American planners did not know were there, and at sea, the crew of a Soviet submarine, cornered by American ships, nearly launched a nuclear torpedo. American destroyers had been dropping small practice depth charges to force the submarine to the surface. Inside, the air was hot and foul, the crew had been out of touch with Moscow for days, and some aboard thought that war had already begun. According to later accounts, firing the torpedo required the agreement of three senior officers, and one of them, Vasily Arkhipov, refused to agree to the launch. Historians still debate the details. But the story is a good reminder of how the history of the century could have turned on one man's decision.</p>
+<div class="ow-group" data-wid="m13-1-3" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why was the danger greater than the people in the room knew?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Soviet commanders in Cuba had tactical nuclear weapons, and a cornered Soviet submarine nearly launched a nuclear torpedo. Historians still debate the details.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">How did Khrushchev send his answer on October 28, and why that way?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">His answer went out over Radio Moscow so that no one could delay it. He did not wait for a letter to cross the ocean.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What happened to an American U-2 over Cuba on October 27, and how did Kennedy respond?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A Soviet missile shot it down and killed its pilot. Some advisers urged an immediate strike, but Kennedy held back.</div></div><button class="widget-reset">Reset</button></div></div>
+<p>Was Kennedy a brinkmanship gambler or a skilled statesman? The word <span class="gloss" tabindex="0">brinkmanship<span class="gloss-tip"><span class="gloss-pron">BRINK-mun-ship</span>Pushing a dangerous situation to the edge of disaster to make the other side back down.</span></span> means pushing a dangerous situation to the edge of disaster in order to make the other side back down. Critics say that Kennedy's own earlier mistakes, the Bay of Pigs and the Vienna meeting, helped to cause the crisis, and that he risked the world over missiles that did not really change the balance of power. Defenders say that he refused to bomb, avoided a trap, left Khrushchev a way out, and ended the crisis without war. Virtues like prudence, which is good judgment about what to do in a hard case, were on display here. So was luck.</p>
+<p>The crisis changed the Cold War. Both leaders had seen how close they came. In June 1963, in a speech at American University, Kennedy urged Americans to look again at the Soviets and at peace, reminding them that "we all inhabit this small planet." A direct telephone line, the "hotline," was set up between Washington and Moscow in 1963. In August 1963, the United States, Britain, and the Soviet Union signed the <span class="gloss" tabindex="0">Limited Test Ban Treaty<span class="gloss-tip"><span class="gloss-pron">LIM-ih-tid test ban TREE-tee</span>The 1963 treaty among the United States, Britain, and the Soviet Union that banned nuclear tests in the air, in space, and underwater.</span></span>, which banned nuclear tests in the air, in space, and underwater. Tests underground were still allowed. Khrushchev was removed from power in 1964, in part because of the Cuban humiliation.</p>
+<p>Kennedy did not live to see what came next. On November 22, 1963, he was on a political trip to Texas, riding in an open car through the streets of Dallas, when he was shot and killed. A former Marine named Lee Harvey Oswald was arrested. Two days later, Oswald was himself shot dead by a nightclub owner, Jack Ruby, in front of television cameras. A commission headed by Chief Justice Earl Warren later concluded that Oswald had acted alone. The nation watched the funeral on television. The next lesson turns to the man who took his place, and to the great domestic plan he would launch.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe how Kennedy's first two years in office led to the Cuban Missile Crisis</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain the choices Kennedy and his advisers considered and the reasons for the one they made</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> evaluate the role of chance and personal judgment in how the crisis ended</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><div></div><a class="next" href="primary-source-1.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">John F. Kennedy, Address on Missiles in Cuba</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; Kennedy: Berlin, Cuba, and the Brink</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>

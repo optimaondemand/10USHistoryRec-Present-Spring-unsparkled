@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>September 11 and the War on Terror | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">America and the World</div>
+  </div>
+</div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">10 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">September 11 and the War on Terror</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">Authorization for Use of Military Force<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'aw-thor-ih-ZAY-shun for YOOS uv MIL-ih-tair-ee FORS')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">aw-thor-ih-ZAY-shun for YOOS uv MIL-ih-tair-ee FORS</span>The resolution Congress passed on September 14, 2001, that allowed the president to use force against those who planned or helped the attacks.</span></span></li>
+    <li><span class="gloss" tabindex="0">Barack Obama<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'buh-RAHK oh-BAH-muh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">buh-RAHK oh-BAH-muh</span>The 44th president, from 2009 to 2017, and the first African American president.</span></span></li>
+    <li><span class="gloss" tabindex="0">Department of Homeland Security<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'dih-PART-munt uv HOHM-land sih-KYOOR-ih-tee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">dih-PART-munt uv HOHM-land sih-KYOOR-ih-tee</span>A department created in 2002 that brought together twenty-two agencies to protect the country from attack.</span></span></li>
+    <li><span class="gloss" tabindex="0">insurgency<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'in-SUR-jun-see')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">in-SUR-jun-see</span>An armed rebellion against an occupying power or a new government.</span></span></li>
+    <li><span class="gloss" tabindex="0">Taliban<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TAL-ih-ban')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TAL-ih-ban</span>A strict Islamist group that ruled most of Afghanistan from the late 1990s until 2001 and sheltered al-Qaeda.</span></span></li>
+    <li><span class="gloss" tabindex="0">USA PATRIOT Act<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'yoo-ess-ay PAY-tree-ut AKT')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">yoo-ess-ay PAY-tree-ut AKT</span>A 2001 law that gave police and intelligence agencies new powers to track suspected terrorists and share information.</span></span></li>
+    <li><span class="gloss" tabindex="0">weapons of mass destruction<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'WEP-unz uv MASS dih-STRUK-shun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">WEP-unz uv MASS dih-STRUK-shun</span>Nuclear, chemical, or biological weapons that can kill large numbers of people.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>On the morning of Tuesday, September 11, 2001, nineteen men from al-Qaeda hijacked four passenger airplanes. The planes had left airports in Boston, Newark, and Washington, bound for California, and each carried a heavy load of fuel. The hijackers, armed with knives and box cutters, took control of the cockpits within an hour of takeoff. They flew two of the planes into the twin towers of the World Trade Center in New York, and both towers collapsed within two hours. A third plane struck the Pentagon, the headquarters of the American military, near Washington. Inside the building, 125 people died. The fourth was headed toward the Capitol or the White House, but its passengers, who had learned of the other attacks by telephone, fought back, and it crashed in a field near Shanksville, Pennsylvania, and no one aboard survived. Nearly three thousand people died, the greatest loss of life in an attack on American soil in the nation's history. Hundreds of the dead were firefighters and police officers who had run into the buildings to save others. The New York Fire Department alone lost 343 firefighters. Later that morning, for the first time in history, the government ordered every airplane in the country to land, and thousands of planes came down within hours.</p>
+<p>President George W. Bush was reading to schoolchildren in a Florida classroom when his chief of staff leaned in and whispered that a second plane had hit the second tower and that America was under attack. Bush stayed a few more minutes, then left. Security officers, fearing that Washington was a target, kept him moving on Air Force One, and he did not return to the capital until that evening. That evening, he spoke to the nation and said that America would make no distinction between the terrorists and those who harbored them. Three days later, he stood in the rubble in New York with a bullhorn, and a rescue worker shouted that he could not hear him. "I can hear you," Bush answered. "The rest of the world hears you." Fires in the rubble of the towers would burn for more than three months. The country was united as it had not been since Pearl Harbor. Flags appeared on houses and cars, and lines formed to donate blood. On the night of the attacks, members of both parties gathered on the steps of the Capitol and sang "God Bless America." Within weeks, Bush's approval rating climbed above ninety percent, the highest Gallup had ever recorded.</p>
+<p>Congress acted quickly. On September 14, it passed the <span class="gloss" tabindex="0">Authorization for Use of Military Force<span class="gloss-tip"><span class="gloss-pron">aw-thor-ih-ZAY-shun for YOOS uv MIL-ih-tair-ee FORS</span>The resolution Congress passed on September 14, 2001, that allowed the president to use force against those who planned or helped the attacks.</span></span>, a resolution that allowed the president to use "all necessary and appropriate force" against those who had planned or helped the attacks. It passed almost unanimously, 98 to 0 in the Senate and 420 to 1 in the House. The one member who voted no, Representative Barbara Lee of California, warned that the resolution was too open-ended, and many people were angry with her for saying so. It was broad and it had no end date. It was also unusual. The Constitution gives Congress the power to declare war, but this law named no country. It named people, those who had planned or helped the attacks, and over the years, presidents of both parties cited it for operations in a number of places. You may remember the Gulf of Tonkin Resolution, which also gave a president wide powers in a short time. Some critics have argued that the new law, like the old one, was stretched far beyond what its authors expected, and that Congress gave up too much of its role.</p>
+<div class="optima-widget ow-reflect" data-wid="m18-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Congress passed a broad law three days after the attacks, with almost no votes against it. When a country is in shock, what matters most in a decision like that? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="That is a strong reason, and it is why nearly everyone in Congress voted yes that week. Others ask what is lost when there is no time for hard questions.">Acting quickly, since delay could cost lives</button><button data-response="The lesson notes that the law had no end date and that critics said it was stretched. A limit can keep emergency powers from becoming permanent.">Setting limits, such as an end date</button><button data-response="Only one member of the House voted no. Sometimes a lone voice sees what others miss, and sometimes it does not.">Hearing from the few who disagree</button><button data-response="That is how many people felt at the time. The lesson shows a later debate over whether that trust was stretched too far.">Trusting leaders to use the power wisely</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>The intelligence pointed to Osama bin Laden, who was sheltered in Afghanistan by the <span class="gloss" tabindex="0">Taliban<span class="gloss-tip"><span class="gloss-pron">TAL-ih-ban</span>A strict Islamist group that ruled most of Afghanistan from the late 1990s until 2001 and sheltered al-Qaeda.</span></span>, a strict Islamist group that had taken control of most of the country in the 1990s. The Taliban ruled harshly: girls were barred from school, and women from most work. Bush demanded that the Taliban hand him over. They refused. In October 2001, American planes began to bomb Afghanistan, and American special forces joined Afghan fighters on the ground, with allies from Britain and other countries. Some of the first American soldiers to fight there rode horses beside Afghan commanders, calling in air strikes by radio. Kabul fell in mid-November, and Kandahar, the Taliban's stronghold, in December. The Taliban government fell within weeks.</p>
+<p>But bin Laden escaped into the mountains near Pakistan, slipping away during the fighting at Tora Bora in December, where Afghan fighters did most of the ground fighting. And the Taliban was not destroyed. Many of its fighters simply went home or crossed into Pakistan, where they found safe places to rest and rearm. That month, at a conference in Germany, Afghan leaders chose Hamid Karzai to head a new government, and the United States and its allies stayed to protect it. American and allied troops stayed to hunt the remaining fighters and to train a new Afghan army. NATO later took command of the international force. The Taliban regrouped, and a long fight began.</p>
+<p>At home, the government moved to prevent another attack. In October 2001, Congress passed the <span class="gloss" tabindex="0">USA PATRIOT Act<span class="gloss-tip"><span class="gloss-pron">yoo-ess-ay PAY-tree-ut AKT</span>A 2001 law that gave police and intelligence agencies new powers to track suspected terrorists and share information.</span></span>, by 98 to 1 in the Senate and 357 to 66 in the House. It gave law-enforcement and intelligence agencies new powers to track suspects, to share information between agencies, and to tap phones and watch communications. The sharing rules aimed at a gap like the one described in the last lesson, where the CIA and the FBI each held pieces of a picture that no one put together. In 2002, Congress created the <span class="gloss" tabindex="0">Department of Homeland Security<span class="gloss-tip"><span class="gloss-pron">dih-PART-munt uv HOHM-land sih-KYOOR-ih-tee</span>A department created in 2002 that brought together twenty-two agencies to protect the country from attack.</span></span>, which brought together twenty-two agencies, including the Coast Guard and the Secret Service, into one department. Airports installed new security, and a new agency, the Transportation Security Administration, took over screening of passengers. Before then, private companies had done the screening, and now the screeners became federal employees. These measures were popular at first. Over time, however, a debate grew about whether the government had gone too far in gathering information on its own citizens. Supporters said that no further attack of this size occurred on American soil for many years, and that the powers were needed. Critics argued that they threatened liberty and the Fourth Amendment's protection against unreasonable searches. A classical republic has always had to balance order against freedom, and this period is a fresh case.</p>
+<div class="ow-group" data-wid="m18-1-2" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">Why did the fight in Afghanistan last long after its government fell?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Bin Laden escaped into the mountains near Pakistan, and the strict Islamist group that had ruled the country was not destroyed. It regrouped, and a long fight began.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did the department created in 2002 bring together?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Twenty-two agencies, including the Coast Guard and the Secret Service, in one department.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">How did Americans feel about the new security measures at first, and later?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">At first, the measures were popular. Over time, a debate grew about whether the government had gone too far in gathering information on its own citizens.</div></div><button class="widget-reset">Reset</button></div></div>
+<p>Two parts of the debate drew special attention. In January 2002, the military opened a prison for men captured in the war at the American naval base at Guantanamo Bay, Cuba. About 780 men were held there over the years. Many were held for years without trial, and most were later released without ever being tried. The courts ruled that they had the right to challenge their detention. Supporters said that the men were dangerous enemies who could not be held in ordinary jails. Critics said that holding people without charges was not how a nation of laws should act. The other part was surveillance. In 2013, a former government contractor named Edward Snowden revealed that the National Security Agency had been collecting the records of Americans' telephone calls in bulk. Officials said the records helped them look for plots, and critics said the program gathered far more than it needed. Congress ended that program in 2015.</p>
+<p>The second war was far more controversial. In 2002, the Bush administration argued that Iraq, under Saddam Hussein, had <span class="gloss" tabindex="0">weapons of mass destruction<span class="gloss-tip"><span class="gloss-pron">WEP-unz uv MASS dih-STRUK-shun</span>Nuclear, chemical, or biological weapons that can kill large numbers of people.</span></span>, a term for nuclear, chemical, or biological weapons that can kill large numbers of people, and that he might give them to terrorists. Saddam had used chemical weapons in the past, and he had refused to let inspectors work freely. In October 2002, Congress authorized the use of force, by 77 to 23 in the Senate and 296 to 133 in the House, with members of both parties on each side of the vote. In February 2003, Secretary of State Colin Powell laid out the case before the United Nations Security Council, but the Council did not vote to approve a war, and France, Germany, and Russia asked for more time for the inspectors. In March 2003, American and British troops invaded Iraq. They took Baghdad in three weeks, and Saddam was captured that December, found hiding in a hole near his hometown. An Iraqi court later tried him, and he was hanged in December 2006. In May, Bush stood on an aircraft carrier beneath a banner that read "Mission Accomplished."</p>
+<div class="optima-widget" data-wid="m18-1-3" data-ra-skip><div class="widget-kicker">&#9889; DECIDE FIRST</div><div class="widget-question">Think back to the program that collected the records of Americans' telephone calls in bulk. Suppose you sat in Congress when it came to light.</div><details class="ow-reveal"><summary>What would you want to know before deciding whether it should go on? Decide first and jot down your questions before you open this.</summary><div class="ow-reveal-body">The lesson gives both sides. Officials said the records helped them look for plots, and critics said the program gathered far more than it needed. Congress ended it in 2015. Your questions might be whether the records really helped find plots, what was gathered beyond what was needed, and who checks that such a power is not misused. The lesson does not settle those questions, so any answer is reasoning rather than fact. A republic has always had to balance order against freedom, and thoughtful people weigh the two differently.</div></details><button class="widget-reset">Reset</button></div>
+<p>But the mission was not accomplished. No stockpiles of weapons of mass destruction were found, and the claim that had been made to justify the war proved to be mistaken. A major report later concluded that the intelligence had been faulty. More important, the American government had no plan for governing the country after Saddam's fall. Looting broke out, and the army was disbanded. Hundreds of thousands of soldiers who knew how to use weapons were suddenly out of work and out of a paycheck, and many held a grudge. An <span class="gloss" tabindex="0">insurgency<span class="gloss-tip"><span class="gloss-pron">in-SUR-jun-see</span>An armed rebellion against an occupying power or a new government.</span></span>, an armed rebellion against an occupying power or a new government, spread, and for years, the war turned into a struggle against both Sunni and Shiite militias and foreign fighters. In 2004, photographs from Abu Ghraib prison near Baghdad showed American soldiers abusing Iraqi prisoners. They shocked Americans and damaged the country's standing in the world, and some of the soldiers were punished. By 2006, Iraq was near civil war. In February of that year, a bomb destroyed the golden dome of a Shiite shrine at Samarra, and a wave of revenge killings followed. In 2007, Bush ordered a "surge" of about thirty thousand more troops and a new strategy of protecting the population. At the same time, many Sunni tribal leaders in Anbar Province turned against the foreign fighters among them and joined the Americans. Violence fell. At the peak of the surge, about 170,000 American troops were in Iraq. The war in Iraq cost the lives of nearly 4,500 American service members and many times that number of Iraqis.</p>
+<p><span class="gloss" tabindex="0">Barack Obama<span class="gloss-tip"><span class="gloss-pron">buh-RAHK oh-BAH-muh</span>The 44th president, from 2009 to 2017, and the first African American president.</span></span>, an Illinois senator who had opposed the Iraq War from the beginning, won the election of 2008 and became the first African American president. He withdrew most American troops from Iraq in 2011, on the schedule that Bush had agreed to with Iraq's government in 2008, and he sent more to Afghanistan. In December 2009, he announced that thirty thousand more troops were on their way, and the American force there rose to about a hundred thousand. On May 2, 2011, a team of Navy SEALs killed Osama bin Laden in a compound in the town of Abbottabad, Pakistan. In 2014, a new terror group, the Islamic State, seized large parts of Iraq and Syria, and American forces returned to Iraq in small numbers to help fight it.</p>
+<p>Yet the Taliban remained in the field. The war in Afghanistan was now the longest in American history. In February 2020, the administration of President Donald Trump signed an agreement with the Taliban that promised the withdrawal of American troops, and in 2021, President Joe Biden carried it out. The Taliban took Kabul on August 15, and the last American troops left on August 30. In those two weeks, American planes flew out more than 100,000 people, but a suicide bomber at the Kabul airport killed thirteen American service members and scores of Afghans. Some twenty-four hundred Americans had died in the war, along with many thousands of Afghans.</p>
+<div class="optima-widget ow-select" data-wid="m18-1-4" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; WHAT THE RECORD SHOWS</div><div class="widget-question">Choose the best answer for each question.</div><div class="widget-row" data-correct="2" data-fb="Yes. The argument was that Iraq had such weapons and might give them to terrorists. The lesson adds that the claim proved to be mistaken." data-hint="Think about what the lesson says Iraq was believed to have, and who might receive it."><div class="widget-row-prompt">1. In 2002 the Bush administration argued that Iraq was a danger. Which reason did it give?</div><div class="widget-options"><button data-choice="0">Iraq&#x27;s army had marched into Kuwait for a second time and threatened Saudi Arabia again</button><button data-choice="1">Iraq&#x27;s government had sheltered bin Laden, and he was believed to be hiding in Baghdad</button><button data-choice="2">Iraq was thought to have nuclear, chemical, or biological weapons that it might give to terrorists</button><button data-choice="3">Other nations had asked the United States to remove Iraq&#x27;s ruler from power</button></div></div><div class="widget-row" data-correct="3" data-fb="Yes. About thirty thousand more troops and a new plan to protect the population. The lesson says violence fell." data-hint="A surge is an increase, not a pullback."><div class="widget-row-prompt">2. In 2007 Bush ordered a 'surge' in Iraq. What was it?</div><div class="widget-options"><button data-choice="0">A pullback of American troops from the cities, so that Iraqi forces could take over alone</button><button data-choice="1">A new law that gave the president control over Iraq&#x27;s oil, to pay for the war</button><button data-choice="2">A bombing campaign meant to break the militias and end the war within a few weeks</button><button data-choice="3">About thirty thousand more troops, with a new plan to protect the Iraqi population</button></div></div><div class="widget-row" data-correct="0" data-fb="Yes. Most troops left Iraq in 2011, and more went to Afghanistan, where the war went on." data-hint="Remember that he had opposed the Iraq War from the start."><div class="widget-row-prompt">3. <span class="gloss" tabindex="0">Obama<span class="gloss-tip"><span class="gloss-pron">buh-RAHK oh-BAH-muh</span>The 44th president, from 2009 to 2017, and the first African American president.</span></span> had opposed the Iraq War from the beginning. After he won in 2008, what did he do?</div><div class="widget-options"><button data-choice="0">He withdrew most American troops from Iraq in 2011 and sent more to Afghanistan</button><button data-choice="1">He kept every troop in Iraq until 2020 and pulled all of them out of Afghanistan at once</button><button data-choice="2">He sent another thirty thousand troops to Iraq and cut the force in Afghanistan</button><button data-choice="3">He ended both wars within one year by signing a peace treaty with his enemies</button></div></div><button class="widget-reset">Reset</button></div>
+<p>The war on terror left a mixed record. There was no second attack on the scale of September 11, and al-Qaeda's leadership was broken. But the wars were long, costly, and in the end, uncertain. Contingency is clear here: if the intelligence about Iraq had been correct, or if the occupation had been better planned, events might have gone differently. The great questions of this week reach beyond these wars. What should America's goals be in the world, and what should it not try to do? The next lesson takes up those larger questions.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe the attacks of September 11, 2001 and the first American response</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain the reasons for the wars in Afghanistan and Iraq and what they cost</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> evaluate the debate over security and liberty at home using the idea of republican self-government</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><div></div><a class="next" href="primary-source-1.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">George W. Bush, Address to a Joint Session of Congress</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; September 11 and the War on Terror</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>
