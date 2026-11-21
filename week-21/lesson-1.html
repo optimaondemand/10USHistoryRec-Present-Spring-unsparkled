@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radio, Movies, and a Shared Culture | U.S. HISTORY: RECONSTRUCTION TO PRESENT</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Segoe UI", Segoe, Arial, sans-serif; background: #F4F6FA; color: #1a2340; }
+  .wrap { max-width: 900px; margin: 0 auto; background: #fff; min-height: 100vh; }
+  a { color: #0E1C42; }
+  blockquote.source { background: #F7F8FC; border-left: 4px solid #55C8E8; padding: 16px 20px; font-style: italic; margin: 0; white-space: pre-line; line-height: 1.7; font-size: 17px; }
+  .source-cite { font-size: 13px; font-style: normal; color: #55607f; margin-top: 10px; text-align: right; }
+  .iframe-wrap { margin: 20px 0; border: 2px solid #2196D0; border-radius: 12px; overflow: hidden; background: #f8f9fa; }
+  .iframe-header { background: #0E1C42; color: #fff; padding: 10px 18px; font-weight: bold; font-size: 15px; }
+  .iframe-fallback { padding: 6px 18px; font-size: 12px; color: #666; background: #EEF1F8; }
+  .seq-nav { display: flex; justify-content: space-between; gap: 16px; margin: 0 34px 24px; flex-wrap: wrap; }
+  .seq-nav a { flex: 1; min-width: 140px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 12px 16px; text-decoration: none; }
+  .seq-nav a.next { text-align: right; }
+  .seq-nav .seq-kicker { font-size: 10px; color: #6b7a99; }
+  .seq-nav .seq-label { font-size: 15px; color: #0e1c42; }
+  .back-to-map { margin: 0 34px 16px; }
+  .back-to-map a { font-size: 14px; color: #55607f; text-decoration: none; }
+  .back-to-map a:hover { text-decoration: underline; }
+  /* Glossary of Subject Vocabulary: one combined box for all glossed terms. */
+  .glossary-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 24px 34px 20px; }
+  .glossary-box .glossary-title { font-size: 13px; color: #0e1c42; margin-bottom: 6px; }
+  .glossary-box .glossary-note { font-size: 14px; color: #55607f; font-style: italic; margin-bottom: 10px; }
+  .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+  .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+  .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+  .gloss .gloss-tip { display: none; }
+  .gloss.open .gloss-tip, .gloss:hover .gloss-tip, .gloss:focus .gloss-tip { display: block; }
+  .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+  .gloss-audio:hover { color: #0E1C42; }
+  .gloss-tip { position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+  .gloss-pron { display: block; color: #55C8E8; font-size: 11px; margin-bottom: 4px; font-style: italic; }
+  /* Finding 7 (remediation-S2): gold time-estimate pill, optima-lesson-format's spec. */
+  .time-pill { display: inline-block; background: #C7922C; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.02em; padding: 3px 11px; border-radius: 999px; margin-left: 10px; vertical-align: middle; }
+  /* optima-world-history Part IV, borrowed in (2026-08-17): main map, figure bio box, visual boxes. */
+  .map-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 4px solid #2196D0; border-radius: 8px; margin: 0 34px 24px; overflow: hidden; }
+  .map-card .map-kicker { padding: 14px 20px 0; font-size: 11px; color: #2196D0; }
+  .map-card img { width: 100%; display: block; margin-top: 10px; }
+  .map-card .map-caption { padding: 14px 20px 4px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .map-card .map-credit { padding: 0 20px 14px; font-size: 11px; color: #8290ab; }
+  .figure-box { background: #F7F8FC; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; margin: 0 34px 24px; padding: 20px; display: flex; gap: 18px; flex-wrap: wrap; }
+  .figure-box img { width: 140px; height: auto; border-radius: 6px; flex-shrink: 0; }
+  .figure-box .figure-kicker { font-size: 11px; color: #c7922c; margin-bottom: 6px; }
+  .figure-box .figure-name { font-size: 17px; color: #0e1c42; margin-bottom: 8px; }
+  .figure-box .figure-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .figure-box .figure-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+  .visual-box { background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #55C8E8; border-radius: 8px; margin: 0 34px 24px; padding: 20px; }
+  .visual-box .visual-kicker { font-size: 11px; color: #0e1c42; margin-bottom: 10px; }
+  .visual-box img { width: 100%; max-width: 420px; display: block; border-radius: 6px; margin-bottom: 12px; }
+  .visual-box .visual-body { font-size: 15px; color: #1a2340; line-height: 1.6; }
+  .visual-box .visual-credit { font-size: 11px; color: #8290ab; margin-top: 10px; }
+
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; font-size: 16px; line-height: 1.5; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.2s; font-family: inherit; text-align: left; }
+.widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.optima-widget button:focus-visible, .ow-flip:focus-visible, .ow-reveal summary:focus-visible { outline: 3px solid #2196D0; outline-offset: 2px; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #8A6112; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 110px; }
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+.ow-seq-line { margin: 10px 0 0 0; padding-left: 22px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 14px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal .ow-reveal-body { margin-top: 10px; font-size: 15px; color: #1a2340; line-height: 1.6; }
+.optima-widget [hidden] { display: none !important; }
+.ow-sat .sat-passage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 16px; margin: 0 0 12px; font-size: 15px; line-height: 1.6; color: #1a2340; }
+.ow-sat .sat-passage p { margin: 0 0 10px; }
+.ow-sat .sat-passage p:last-child { margin-bottom: 0; }
+.ow-sat .sat-blank { letter-spacing: 1px; font-weight: bold; }
+.ow-sat .sat-prompt { background: #FFF8E8; border: 1px dashed #C7922C; border-radius: 6px; padding: 8px 12px; margin-bottom: 12px; font-size: 14px; color: #6b4a0a; }
+.ow-sat .sat-btn { background: #0E1C42; color: #FFFFFF; border: 1px solid #0E1C42; border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; }
+.ow-sat .sat-btn:hover:not(:disabled) { background: #1d3270; }
+.ow-sat .sat-btn.ghost { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+.ow-sat .sat-btn.ghost:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .sat-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.ow-sat .ow-sat-choices { margin: 14px 0 4px; }
+.ow-sat .ow-sat-choice { margin-bottom: 10px; }
+.ow-sat .ow-sat-opt { display: flex; gap: 10px; align-items: flex-start; width: 100%; text-align: left; background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 10px 14px; font-size: 15px; color: #0E1C42; line-height: 1.45; cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.ow-sat .ow-sat-opt:hover:not(:disabled) { background: #F4F6FA; border-color: #55C8E8; }
+.ow-sat .ow-sat-opt .sat-ltr { font-weight: bold; min-width: 18px; }
+.ow-sat .ow-sat-opt.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.ow-sat .ow-sat-opt.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-opt.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.ow-sat .ow-sat-opt:disabled { cursor: default; }
+.ow-sat .ow-sat-cfb { display: none; margin: 6px 0 0 4px; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; }
+.ow-sat .ow-sat-cfb.show { display: block; }
+.ow-sat .ow-sat-cfb.right { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.ow-sat .ow-sat-cfb.wrong { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.ow-sat .sat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.ow-sat .sat-hint { background: #FFFFFF; border-left: 3px solid #55C8E8; padding: 8px 12px; margin-top: 8px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note { display: none; margin-top: 10px; background: #FFFFFF; border-left: 3px solid #2196D0; padding: 8px 12px; font-size: 14px; line-height: 1.5; border-radius: 4px; color: #1a2340; }
+.ow-sat .ow-sat-note.show { display: block; }
+.ow-group { margin: 18px 0; }
+.ow-group .optima-widget { margin: 10px 0; }
+@media (prefers-reduced-motion: reduce) { .widget-options button { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] — one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+  <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+    <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+    <div>
+      <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+      <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+    </div>
+  </div>
+  <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+</div>
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 150px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Page</div>
+    <div style="font-size: 17px; color: #0e1c42;">Lesson</div>
+  </div>
+  <div style="flex: 1; min-width: 220px; padding: 12px 16px;">
+    <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">This Week's Topic</div>
+    <div style="font-size: 15px; color: #0e1c42;">Mass Culture and Culture War in the 1920s</div>
+  </div>
+</div>
+<div class="back-to-map"><a href="module-map.html">&larr; Back to this week's Module Map</a></div>
+<div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin: 24px 34px 20px;">
+  <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">&#128214; LESSON<span class="time-pill">8 min</span></div>
+  <div style="font-size: 22px; color: #0e1c42;">Radio, Movies, and a Shared Culture</div>
+</div>
+<div class="glossary-box">
+  <div class="glossary-title">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+  <div class="glossary-note">A few words below are worth a quick look before you read. Tap or click any underlined term, here or in the lesson text, to see what it means.</div>
+  <ul>
+    <li><span class="gloss" tabindex="0">broadcast<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'BRAWD-kast')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BRAWD-kast</span>A radio or television message sent out to everyone at once.</span></span></li>
+    <li><span class="gloss" tabindex="0">celebrity<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'suh-LEB-rih-tee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">suh-LEB-rih-tee</span>A famous person whose face and private life are known to many strangers.</span></span></li>
+    <li><span class="gloss" tabindex="0">Charles Lindbergh<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'chahrlz LIND-berg')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">chahrlz LIND-berg</span>The pilot who flew alone from New York to Paris in 1927 and became the best-known hero of the decade.</span></span></li>
+    <li><span class="gloss" tabindex="0">consumer durables<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'kun-SOO-mer DOOR-uh-bulz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kun-SOO-mer DOOR-uh-bulz</span>Goods meant to last for years, such as cars, radios, refrigerators, and washing machines.</span></span></li>
+    <li><span class="gloss" tabindex="0">flapper<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'FLAP-er')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FLAP-er</span>A young woman of the 1920s who wore short skirts and bobbed hair. Flappers became a symbol of the Jazz Age.</span></span></li>
+    <li><span class="gloss" tabindex="0">Great Migration<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'grayt my-GRAY-shun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">grayt my-GRAY-shun</span>The movement of millions of Black Americans from the rural South to cities in the North and West, which grew rapidly during and after the Great War.</span></span></li>
+    <li><span class="gloss" tabindex="0">Harlem Renaissance<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'HAR-lum REN-uh-sahns')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HAR-lum REN-uh-sahns</span>A flowering of Black writing, art, and music in the 1920s centered in the Harlem neighborhood of New York City.</span></span></li>
+    <li><span class="gloss" tabindex="0">installment plan<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'in-STAWL-ment plan')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">in-STAWL-ment plan</span>A way of buying in which the buyer pays a small amount down and the rest in monthly payments. If the buyer misses payments, the seller can take the product back.</span></span></li>
+    <li><span class="gloss" tabindex="0">jazz<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'jaz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">jaz</span>A style of music born in the Black neighborhoods of New Orleans. It mixes blues, ragtime, and church music and leaves room for improvising.</span></span></li>
+    <li><span class="gloss" tabindex="0">KDKA<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'kay dee kay AY')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kay dee kay AY</span>The Pittsburgh radio station that broadcast the 1920 presidential election results, one of the first regular radio stations in the country.</span></span></li>
+    <li><span class="gloss" tabindex="0">Langston Hughes<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'LANG-stun hyoos')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LANG-stun hyoos</span>A poet of the Harlem Renaissance who wrote about Black life and American hopes.</span></span></li>
+    <li><span class="gloss" tabindex="0">mass culture<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'mas KUL-chur')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">mas KUL-chur</span>A culture shared by a whole nation through radio, movies, newspapers, and magazines instead of by one town or group.</span></span></li>
+    <li><span class="gloss" tabindex="0">talkies<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TAW-keez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TAW-keez</span>Movies with recorded sound and spoken words. They replaced silent films after 1927.</span></span></li>
+  </ul>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-top: 3px solid #C7922C; border-radius: 8px; padding: 20px 24px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S LESSON</div>
+  <div style="font-size: 17px; color: #1a2340; line-height: 1.7;"><p>In November 1920, a radio station in Pittsburgh called <span class="gloss" tabindex="0">KDKA<span class="gloss-tip"><span class="gloss-pron">kay dee kay AY</span>The Pittsburgh radio station that broadcast the 1920 presidential election results, one of the first regular radio stations in the country.</span></span> did something new. It told a few thousand listeners who had won the presidential election, as the results came in. The station belonged to Westinghouse, a company that made electrical equipment, and an engineer named Frank Conrad had been playing records and talking over the air from his garage. The company saw that if people could hear programs, they would want to buy sets. Few people owned a set. But within ten years, about four in ten American homes had one, and many families bought theirs on the <span class="gloss" tabindex="0">installment plan<span class="gloss-tip"><span class="gloss-pron">in-STAWL-ment plan</span>A way of buying in which the buyer pays a small amount down and the rest in monthly payments. If the buyer misses payments, the seller can take the product back.</span></span>. Within two years of KDKA, hundreds of stations were on the air, run by department stores, newspapers, colleges, and churches. Radio was among the most wanted of the new <span class="gloss" tabindex="0">consumer durables<span class="gloss-tip"><span class="gloss-pron">kun-SOO-mer DOOR-uh-bulz</span>Goods meant to last for years, such as cars, radios, refrigerators, and washing machines.</span></span>.</p>
+<p>Radio was a <span class="gloss" tabindex="0">broadcast<span class="gloss-tip"><span class="gloss-pron">BRAWD-kast</span>A radio or television message sent out to everyone at once.</span></span>, which means a message sent out to everyone at once. Before radio, news traveled by newspaper, mail, and train, and it arrived at different times in different places. Early sets were simple crystal sets that one person listened to through headphones. By the middle of the 1920s, sets with loudspeakers let a whole family gather around the radio in the evening, the way families once gathered around the fireplace. Now a farm family in Kansas and a shop clerk in Boston could hear the same voice at the same moment. In 1926, a company called NBC linked stations into the first national network, and CBS followed in 1927. The stations were tied together by telephone wires, so a program that began in New York could be heard in a dozen cities at once. Listeners heard news, sermons, comedy, baseball games, and dance bands. Baseball announcers described games to people who could not see them, and farm stations read crop prices and weather reports so that farmers no longer had to wait for the newspaper. Even preachers took to the air. In Los Angeles, the evangelist Aimee Semple McPherson opened a station in 1924 and reached listeners far beyond the walls of her huge church. Advertisers paid for most of it. The first paid radio advertisement, in 1922, was a short talk selling apartments in a new housing development in Queens, New York. Before long, companies were sponsoring whole programs. That made American radio different from radio in Britain, where the government ran the service. Congress did step in on one point. By 1926, so many stations were crowding the same wavelengths that signals drowned one another out. The Radio Act of 1927 treated the airwaves as public property and set up a commission to license stations, but it left the programs in private hands.</p>
+<p>Radio also changed politics. In 1924, the party conventions were broadcast for the first time, and millions listened. The Democrats' convention in New York needed 103 ballots to choose a candidate, and listeners followed it for about two weeks. In 1925, millions heard President Coolidge take his oath of office. Voters could now judge a candidate's voice as well as his words.</p>
+<p>Movies were an even bigger draw. Tens of millions of Americans went to the theater each week. In big cities, the new movie palaces had thousands of seats and live orchestras. Audiences made <span class="gloss" tabindex="0">celebrities<span class="gloss-tip"><span class="gloss-pron">suh-LEB-rih-tee</span>A famous person whose face and private life are known to many strangers.</span></span> of actors like Charlie Chaplin and Mary Pickford, people whose faces and private lives were known to strangers across the country. When the silent-film star Rudolph Valentino died suddenly in 1926 at the age of thirty-one, crowds lined the New York streets for hours to pass his coffin, by some counts more than a hundred thousand people. Many of them had never met him. Vaudeville, the traveling variety shows that had been the country's favorite stage entertainment, began to empty out, because movies and radio offered the same sort of acts for far less money. In 1927, the film The Jazz Singer added spoken words and songs to a feature film. Most of that film was still silent, and only the songs and a few lines were spoken, but audiences were thrilled. These new <span class="gloss" tabindex="0">talkies<span class="gloss-tip"><span class="gloss-pron">TAW-keez</span>Movies with recorded sound and spoken words. They replaced silent films after 1927.</span></span> almost ended silent films within a few years. In 1928, a Walt Disney cartoon called Steamboat Willie starred a mouse named Mickey and became the first cartoon with a sound track that matched the pictures. Hollywood, California, became the capital of an industry that sent the same stories to every town in the nation. The studios also worried about their image. After a few scandals, they hired a Washington politician named Will Hays in 1922 to police the morals of their own films, partly to head off censorship laws.</p>
+<div class="optima-widget ow-reflect" data-wid="m3-1-1" data-ra-skip><div class="widget-kicker">&#9889; QUICK CHECK-IN</div><div class="widget-question">Think about the songs, shows, and games that nearly everyone you know has heard of. Where do you usually first run into them? (No wrong answer. Just check in with yourself.)</div><div class="widget-options"><button data-response="Then you know how a shared culture feels. In the 1920s, radio and movies made the same thing happen for the first time.">Online or on my phone</button><button data-response="People still pass things along that way. Radio and movies added something new: strangers far apart enjoying the same thing at once.">From friends or family</button><button data-response="Local places still shape what we know. In the 1920s, many local traditions began to fade as national tastes took over.">From school or my community</button></div><div class="widget-feedback" role="status"></div><button class="widget-reset">Reset</button></div>
+<p>Together, radio, movies, newspapers, and magazines created a <span class="gloss" tabindex="0">mass culture<span class="gloss-tip"><span class="gloss-pron">mas KUL-chur</span>A culture shared by a whole nation through radio, movies, newspapers, and magazines instead of by one town or group.</span></span>. That means a culture shared by the whole nation, instead of by one town or one group. Americans in different places began to sing the same songs, laugh at the same jokes, and cheer for the same heroes. Chain stores and national brands, advertised in magazines and on the radio, put the same goods on the shelves of towns far apart. Magazines did their part. Time began in 1923 to sum up the week's news in a few pages, and the Reader's Digest, started in 1922, shrank articles from other magazines to pocket size, so that a busy reader in any town could keep up with the same stories as everyone else. Sports offered heroes of their own, and newspapers and radio announcers turned athletes into household names. Babe Ruth had been sold by the Boston Red Sox to the New York Yankees in 1920 for $100,000, a huge sum then. In 1927, he hit sixty home runs in a single season, and fans followed every game by radio and newspaper.</p>
+<p>The greatest hero of the decade came from the air. On May 20, 1927, a 25-year-old airmail pilot named <span class="gloss" tabindex="0">Charles Lindbergh<span class="gloss-tip"><span class="gloss-pron">chahrlz LIND-berg</span>The pilot who flew alone from New York to Paris in 1927 and became the best-known hero of the decade.</span></span> took off from New York in a small plane called the Spirit of St. Louis. A hotel owner had offered a $25,000 prize to the first flier to cross the Atlantic nonstop between New York and Paris, and several experienced teams were competing for it. The flight would cover about 3,600 miles. He flew alone, with no radio and no parachute. He had stripped away everything he could to carry more fuel. A fuel tank sat in front of him, so he could not see straight ahead and had to look out the sides or use a small periscope. Several other fliers had died trying to cross the Atlantic, and two French fliers had vanished over the ocean just days before.</p>
+<p>Thirty-three hours later, at about ten at night, he landed at an airfield outside Paris to an enormous cheering crowd. He had struggled through the night to stay awake. More than a hundred thousand people were waiting at the airfield, and they rushed the plane so fast that the police could not hold them back. Lindbergh won because of careful planning, steady nerves, and the stubbornness to stay awake and keep going. He is a good example of the "great man" in history, a person whose courage and skill shaped what others thought was possible. When he came home, New York gave him a parade, and newspapers across the country printed his name above everything else for weeks. Millions of Americans who had never met him felt proud to share his country.</p>
+<p>Another part of mass culture was music. <span class="gloss" tabindex="0">Jazz<span class="gloss-tip"><span class="gloss-pron">jaz</span>A style of music born in the Black neighborhoods of New Orleans. It mixes blues, ragtime, and church music and leaves room for improvising.</span></span> was born in the Black neighborhoods of New Orleans. It mixed the blues, ragtime, and church music into a new sound with plenty of room for improvising. Players took a tune and made up new versions on the spot, each trying to outdo the last. As Black families moved from the rural South to northern cities, a movement later called the <span class="gloss" tabindex="0">Great Migration<span class="gloss-tip"><span class="gloss-pron">grayt my-GRAY-shun</span>The movement of millions of Black Americans from the rural South to cities in the North and West, which grew rapidly during and after the Great War.</span></span>, they brought their music with them. In all, more than a million Black Americans left the South in the years around the war. Chicago and New York became centers of jazz. Louis Armstrong and Duke Ellington became stars. Armstrong, a trumpet player from New Orleans, moved to Chicago in 1922 to play in King Oliver's band, and Ellington led an orchestra at the Cotton Club in Harlem, where his music went out over the radio. Records and radio carried the music to white and Black listeners alike. In 1920, a singer named Mamie Smith recorded a blues song that sold so well that record companies discovered a market of Black buyers and began making records just for them. The writer F. Scott Fitzgerald gave the decade its nickname, the "Jazz Age." His 1925 novel The Great Gatsby described rich men's glittering parties and the emptiness behind them. Young women who wore short skirts and bobbed hair, called <span class="gloss" tabindex="0">flappers<span class="gloss-tip"><span class="gloss-pron">FLAP-er</span>A young woman of the 1920s who wore short skirts and bobbed hair. Flappers became a symbol of the Jazz Age.</span></span>, became its symbol. Women had won the right to vote across the nation with the 19th Amendment in 1920, and many young women took new freedoms in work, dress, and public life. Older Americans often disapproved. The popular picture of the flapper was exaggerated, but it showed that styles and manners really were changing.</p>
+<div class="optima-widget ow-select" data-wid="m3-1-2" data-ra-skip><div class="widget-kicker">&#9889; TRY IT &middot; THE NEW CULTURE</div><div class="widget-question">Check what you remember about the people and tools of the new culture.</div><div class="widget-row" data-correct="2" data-fb="Right. He flew alone, with no radio and no parachute." data-hint="Think about what he did not have with him."><div class="widget-row-prompt">1. <span class="gloss" tabindex="0">Lindbergh<span class="gloss-tip"><span class="gloss-pron">chahrlz LIND-berg</span>The pilot who flew alone from New York to Paris in 1927 and became the best-known hero of the decade.</span></span> flew alone across the Atlantic in 1927. What helped him succeed where others had died?</div><div class="widget-options"><button data-choice="0">A crew of navigators and a radio to guide him</button><button data-choice="1">A plane built and paid for by the government</button><button data-choice="2">Careful planning, steady nerves, and stubbornness</button></div></div><div class="widget-row" data-correct="0" data-fb="Right. Chicago and New York became centers of this music later, as Black families moved north." data-hint="Look for the place where the blues, ragtime, and church music mixed."><div class="widget-row-prompt">2. Where was <span class="gloss" tabindex="0">jazz<span class="gloss-tip"><span class="gloss-pron">jaz</span>A style of music born in the Black neighborhoods of New Orleans. It mixes blues, ragtime, and church music and leaves room for improvising.</span></span> born?</div><div class="widget-options"><button data-choice="0">Black neighborhoods of New Orleans</button><button data-choice="1">Harlem, in New York City</button><button data-choice="2">The movie studios of Hollywood</button></div></div><div class="widget-row" data-correct="1" data-fb="Right. Advertisers paid for most of it." data-hint="Think about who wanted to reach all those listeners."><div class="widget-row-prompt">3. Who paid for most American radio programs, unlike the government-run service in Britain?</div><div class="widget-options"><button data-choice="0">Listeners, through yearly fees</button><button data-choice="1">Advertisers</button><button data-choice="2">Congress</button></div></div><button class="widget-reset">Reset</button></div>
+<p>Not all of the new music came from the big cities. In the summer of 1927, a record producer named Ralph Peer rented a vacant warehouse in Bristol, a town on the line between Tennessee and Virginia, and offered to pay local musicians to record. Among those who answered were a family group called the Carter Family and a former railroad brakeman named Jimmie Rodgers. Their records sold across the South and beyond. What later came to be called country music grew in large part out of those sessions. The same machines that carried jazz north now carried mountain ballads and railroad songs to listeners who had never seen a mountain.</p>
+<p>In Harlem, a neighborhood of New York City, Black writers, artists, and musicians produced a flowering of creative work called the <span class="gloss" tabindex="0">Harlem Renaissance<span class="gloss-tip"><span class="gloss-pron">HAR-lum REN-uh-sahns</span>A flowering of Black writing, art, and music in the 1920s centered in the Harlem neighborhood of New York City.</span></span>. Among them were the writers Zora Neale Hurston, Claude McKay, and Countee Cullen, and the painter Aaron Douglas. Among its poets was <span class="gloss" tabindex="0">Langston Hughes<span class="gloss-tip"><span class="gloss-pron">LANG-stun hyoos</span>A poet of the Harlem Renaissance who wrote about Black life and American hopes.</span></span>, who wrote in clear, strong language about Black life and American hopes. At the Savoy Ballroom in Harlem, dancers invented a wild new dance in the late 1920s and named it for the famous flier. It was called the Lindy Hop.</p>
+<p>Hughes came to notice almost by accident. He worked as a busboy in a Washington hotel, and in 1925 he left three of his poems beside the plate of the poet Vachel Lindsay, who was eating there. Lindsay read them aloud to an audience that night, and newspapers reported that a busboy poet had been found. Hughes's first book of poems came out the next year. In his poem "I, Too," he answered those who would keep him out of the national family. "I, too, sing America," he wrote. Hughes and his friends insisted that Black Americans were not outsiders to the national story. They were part of its making. This was a bold claim in a country where segregation was still the law across the South and the custom in much of the North. Black performers often played to white audiences in clubs where Black patrons were not welcome.</p>
+<p>Was this new shared culture good for the Republic? The classical republican tradition says that a political community needs citizens who feel a common affection for one another beyond their families and neighborhoods. Mass culture may have helped. Millions of people now had common stories, common songs, and a common set of heroes. When Lindbergh landed in Paris, a whole nation felt pride at once. That is a kind of bond.</p>
+<p>Yet the bond had limits. Mass culture was bought and sold. Advertisers shaped what people heard, and entertainment companies chased profit before anything else. Many local traditions faded as national tastes took over. And some Americans were kept from the shared experience, or were welcome only as entertainers. Some critics said that cheering for the same hero is a thin kind of unity. Others replied that in a country as large as the United States, any common feeling is a good thing.</p>
+<div class="ow-group" data-wid="m3-1-3" data-ra-skip><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">How could shared songs, stories, and heroes help a political community?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">They give citizens a common affection beyond family and neighborhood. When Lindbergh landed in Paris, a whole nation felt pride at once.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What limits did the lesson name on that bond?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Culture was bought and sold, local traditions faded, and some Americans were kept out or welcomed only as entertainers.</div></div><button class="widget-reset">Reset</button></div><div class="optima-widget" data-ra-skip><div class="widget-kicker">&#9889; TAP TO REVEAL</div><div class="ow-flip" tabindex="0" role="button"><div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">What did defenders say to critics who called it a thin kind of unity?<div style="font-size:11px;color:#6b7a99;margin-top:6px;">(tap to flip)</div></div><div class="ow-flip-back" style="font-size:16px;line-height:1.55;">In a country as large as the United States, any common feeling is a good thing.</div></div><button class="widget-reset">Reset</button></div></div>
+<p>The question matters because the next lesson shows what happened when Americans disagreed about what their shared life should be. The same decade that produced the Jazz Age also produced fierce fights over alcohol, race, religion, and who counted as a "real American." You will decide this week which description fits the 1920s better.</p></div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> explain how radio, movies, and national heroes created a shared American culture in the 1920s</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> describe the contribution of Black artists to jazz and the Harlem Renaissance</div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 10px;">
+    <div style="min-width: 24px; height: 24px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.6;"><strong>I will be able to</strong> evaluate whether a shared mass culture can bind citizens together as a political community</div>
+  </div>
+</div>
+<div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 22px; margin: 0 34px 20px;">
+  <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+  <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 6px; border-left: 3px solid #D0D9E8; padding-left: 12px;"><span style="color: #c7922c; font-size: 16px; flex-shrink: 0;">&#9654;</span>
+    <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Today's lesson text (below)</div>
+  </div>
+</div>
+<div class="seq-nav"><a class="prev" href="module-map.html"><div class="seq-kicker">&larr; Previous</div><div class="seq-label">Week Module Map</div></a><a class="next" href="primary-source-1.html"><div class="seq-kicker">Next &rarr;</div><div class="seq-label">W. E. B. Du Bois, "Of Mr. Booker T. Washington and Others"</div></a></div>
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+  <div style="font-size: 16px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; U.S. HISTORY: RECONSTRUCTION TO PRESENT</div>
+  <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson &middot; Radio, Movies, and a Shared Culture</div>
+  <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+</div>
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+document.addEventListener('click', function (e) {
+  var gloss = e.target.closest('.gloss');
+  if (gloss && !e.target.closest('.gloss-audio')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { if (g !== gloss) g.classList.remove('open'); });
+    gloss.classList.toggle('open');
+  } else if (!e.target.closest('.gloss-tip')) {
+    document.querySelectorAll('.gloss.open').forEach(function (g) { g.classList.remove('open'); });
+  }
+});
+</script>
+<script>
+(function () {
+  function shuffle(pool) {
+    var bs = [].slice.call(pool.children), n = bs.length, ok = false, i, j, t;
+    if (n < 3) return;
+    while (!ok) {
+      for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); t = bs[i]; bs[i] = bs[j]; bs[j] = t; }
+      for (i = 0; i < n; i++) { if (+bs[i].dataset.pos !== i + 1) { ok = true; break; } }
+    }
+    bs.forEach(function (b) { pool.appendChild(b); });
+  }
+  document.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+  var SAT = {"h1":"Read the whole passage before anything else. Go back to the text instead of answering from memory. A choice can be true and still not be what the question asks for.","forms":{"detail":["This is a specific detail question. Locate what the passage says, check the sentences around it, and match it to the choice.","Four steps: 1) Decide exactly what information the question asks for. 2) Scan the passage for the matching name, event, or reason. 3) Read the sentence or two around it closely. 4) Pick the choice that matches what the passage actually says, not what you remember."],"inference":["This is an inference question. Find what the passage establishes, then pick the choice that needs the fewest extra assumptions.","Four steps: 1) Identify what the passage explicitly establishes. 2) Ask what follows most naturally from it. 3) Pick the choice that needs the fewest added assumptions. 4) Eliminate choices that add new information, exaggerate, or go beyond the passage."],"main":["This is a main idea question. Look for the organizing proposition: what the author is mainly trying to say about the whole passage.","Four steps: 1) Read the entire passage before choosing. 2) Ask what the author is mainly trying to communicate. 3) Separate the central point from examples and side details. 4) Eliminate choices that are too narrow, too broad, or that distort the author's position."]}};
+  function satHints(w) {
+    var shown = +(w.dataset.shown || 0), texts = [SAT.h1, SAT.forms[w.dataset.form][0], SAT.forms[w.dataset.form][1]];
+    var box = w.querySelector('.ow-sat-hints');
+    box.innerHTML = '';
+    for (var i = 0; i < shown; i++) { var d = document.createElement('div'); d.className = 'sat-hint'; d.textContent = texts[i]; box.appendChild(d); }
+    w.querySelector('.ow-sat-hintbtn').textContent = shown === 0 ? 'Show hint' : (shown < 3 ? 'Show another hint' : 'Hide hints');
+    w.querySelector('.ow-sat-note').classList.toggle('show', shown >= 2 || w.dataset.submitted === '1');
+  }
+  function satReset(w) {
+    w.dataset.picked = '-1'; w.dataset.shown = '0'; w.dataset.submitted = '0';
+    w.querySelector('.ow-sat-choices').hidden = true;
+    w.querySelector('.sat-bar').hidden = true;
+    w.querySelector('.ow-sat-reveal').hidden = false;
+    w.querySelector('.ow-sat-submit').disabled = true;
+    w.querySelector('.ow-sat-hintbtn').disabled = true;
+    w.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.disabled = false; b.className = 'ow-sat-opt'; b.setAttribute('aria-pressed', 'false'); });
+    w.querySelectorAll('.ow-sat-cfb').forEach(function (c) { c.className = 'ow-sat-cfb'; c.textContent = ''; });
+    satHints(w);
+  }
+  document.addEventListener('click', function (e) {
+    var gl = e.target.closest('.ow-reveal summary .gloss');
+    if (gl) e.preventDefault();
+    var sat = e.target.closest('.ow-sat');
+    if (sat) {
+      if (e.target.closest('.widget-reset')) { satReset(sat); return; }
+      if (e.target.closest('.ow-sat-reveal')) {
+        sat.querySelector('.ow-sat-choices').hidden = false;
+        sat.querySelector('.sat-bar').hidden = false;
+        sat.querySelector('.ow-sat-reveal').hidden = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = false;
+        return;
+      }
+      var opt = e.target.closest('.ow-sat-opt');
+      if (opt && sat.dataset.submitted !== '1') {
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b) { b.classList.remove('selected'); b.setAttribute('aria-pressed', 'false'); });
+        opt.classList.add('selected'); opt.setAttribute('aria-pressed', 'true');
+        sat.dataset.picked = opt.dataset.choice;
+        sat.querySelector('.ow-sat-submit').disabled = false;
+        return;
+      }
+      if (e.target.closest('.ow-sat-hintbtn') && sat.dataset.submitted !== '1') {
+        var n = +(sat.dataset.shown || 0);
+        sat.dataset.shown = String(n >= 3 ? 0 : n + 1);
+        satHints(sat);
+        return;
+      }
+      if (e.target.closest('.ow-sat-submit') && sat.dataset.submitted !== '1' && +sat.dataset.picked >= 0) {
+        sat.dataset.submitted = '1';
+        var right = +sat.dataset.correct, cfbs = sat.querySelectorAll('.ow-sat-cfb');
+        sat.querySelectorAll('.ow-sat-opt').forEach(function (b, i) {
+          b.disabled = true; b.classList.remove('selected');
+          if (i === right) b.classList.add('correct'); else if (i === +sat.dataset.picked) b.classList.add('incorrect');
+          cfbs[i].textContent = b.dataset.fb;
+          cfbs[i].className = 'ow-sat-cfb show ' + (i === right ? 'right' : 'wrong');
+        });
+        sat.querySelector('.ow-sat-submit').disabled = true;
+        sat.querySelector('.ow-sat-hintbtn').disabled = true;
+        satHints(sat);
+        return;
+      }
+      return;
+    }
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); b.disabled = false; });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-seq-line').forEach(function (l) { l.innerHTML = ''; });
+      w.querySelectorAll('.ow-seq-pool').forEach(shuffle);
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = row.dataset.correct.split(',').indexOf(sBtn.dataset.choice) !== -1;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var sq = e.target.closest('.ow-seq .ow-seq-pool button');
+    if (sq && !sq.disabled) {
+      var sw = sq.closest('.ow-seq'), line = sw.querySelector('.ow-seq-line'), sf = sw.querySelector('.widget-feedback');
+      var next = line.children.length + 1;
+      if (+sq.dataset.pos === next) {
+        var li = document.createElement('li'); li.textContent = sq.textContent; line.appendChild(li);
+        sq.disabled = true; sq.classList.add('correct');
+        if (next === +sw.dataset.n) { sf.textContent = sw.dataset.fb || 'Right.'; sf.classList.add('show'); }
+        else { sf.classList.remove('show'); sf.textContent = ''; }
+      } else {
+        sq.classList.add('incorrect');
+        sf.textContent = sw.dataset.hint || 'Not quite. Try again.'; sf.classList.add('show');
+        setTimeout(function () { sq.classList.remove('incorrect'); }, 700);
+      }
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    var f = e.target.closest && e.target.closest('.ow-flip');
+    if (f) { e.preventDefault(); f.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>
